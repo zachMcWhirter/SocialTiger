@@ -1,17 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { BrowserRouter as Router } from "react-router-dom";
+import SocialTiger from './components/SocialTiger';
 
+
+  // Now update your index.js by adding a root component of <Router /> which gets imported from the React Router package. Within <Router>, place the <SocialTiger /> child component. This tells React "I will be placing Routes in my SocialTiger component."
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <SocialTiger/>
+  </Router>,
   document.getElementById('root')
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
