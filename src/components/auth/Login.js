@@ -1,5 +1,6 @@
 import React, { useState } from "react"
-import FolderCard from "../folder/FolderCard"
+import Home from "../Home"
+import Banner from "../Banner"
 
 const Login = props => {
     const [credentials, setCredentials] = useState({ username: "", password: "" });
@@ -22,7 +23,9 @@ const Login = props => {
 
         return (
             <>
+                {/* <Banner/>  */}
                 {credentials.username === "" || credentials.password === "" ? 
+                       
                     <form onSubmit={handleLogin}>
                         <fieldset>
                             <h3>Please sign in</h3>
@@ -42,7 +45,7 @@ const Login = props => {
                             <button type="submit">Sign in</button>
                         </fieldset>
                     </form>
-                : <FolderCard/> }
+                : <Home/> }
             </> 
         )    
     

@@ -1,6 +1,6 @@
 import React from "react";
 import FolderImage from "./folder-image.png"
-import "./FolderCard.css"
+import "./Folder.css"
 
 const FolderCard = () => {
 
