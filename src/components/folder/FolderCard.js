@@ -8,9 +8,9 @@ const FolderCard = () => {
         <div className="card">
             <div className="card-content">
                 <div className="img-container">
-                    
-                        <img src={FolderImage} alt="folder" />
-                        <div id="text" className="card-foldername">Funny Stuff</div>
+                    {/* perhaps a wrapping the image with a button would be a better solution here */}
+                    <img src={FolderImage} alt="folder" />
+                    <div id="text" className="card-foldername">Folder</div>
                 </div>
             </div>
         </div>
