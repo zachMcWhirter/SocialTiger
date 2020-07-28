@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import Home from "../Home"
 
 const Login = props => {
     const [credentials, setCredentials] = useState({ username: "", password: "" });
@@ -40,7 +39,7 @@ const Login = props => {
                                     required=""
                                     minlength="3"  />
                             </div>
-                            <button type="submit">Log in</button>
+                            <button type="submit">Log In</button>
                         </fieldset>
                     </form>
             </> 

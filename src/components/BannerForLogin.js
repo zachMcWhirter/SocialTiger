@@ -2,9 +2,7 @@ import React from "react";
 
 const isAuthenticated = () => sessionStorage.getItem("credentials") !== null;
 
-const Banner = (props) => {
-
-    
+const BannerForLogin = (props) => {
 
     if (isAuthenticated()) {
 
@@ -12,10 +10,6 @@ const Banner = (props) => {
 
             <>
                 <header>
-                    <button type="button"
-                            >
-                        Log Out
-                    </button>
                     <h1>Social Tiger</h1>
                 </header>
             </>
@@ -23,4 +17,4 @@ const Banner = (props) => {
     }
 };
 
-export default Banner;
+export default BannerForLogin;
