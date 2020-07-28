@@ -1,6 +1,5 @@
 import React from "react";
 import NavBar from "../components/nav/NavBar"
-import FolderCard from "../components/folder/FolderCard";
 import Authentication from "../components/auth/Authentication";
 import Banner from "../components/Banner"
 
@@ -9,7 +8,6 @@ const HomePage = () => {
       <>
         <Banner/>
         <NavBar/>
-        <FolderCard/>
       </>
   );
 };

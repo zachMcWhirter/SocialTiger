@@ -14,6 +14,12 @@ const NavBar = () => {
                             Home
                         </Link>
                     </li>
+                    <li>
+                        <Link className="nav-link" to="/folders">
+                            Folders
+                        </Link>
+                    </li>
+
                 </ul>
             </nav>
         </>
