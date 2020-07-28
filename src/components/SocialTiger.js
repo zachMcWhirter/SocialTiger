@@ -9,6 +9,7 @@ const SocialTiger = () => {
   return (
     <>
      <Login/>
+     <FolderCard/>
     </>
   );
 };
