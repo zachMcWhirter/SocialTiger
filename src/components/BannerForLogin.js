@@ -1,10 +1,10 @@
 import React from "react";
 
-const isAuthenticated = () => sessionStorage.getItem("credentials") !== null;
+// const isAuthenticated = () => sessionStorage.getItem("credentials") !== null;
 
 const BannerForLogin = (props) => {
 
-    if (isAuthenticated()) {
+    // if (isAuthenticated()) {
 
         return (
 
@@ -14,7 +14,7 @@ const BannerForLogin = (props) => {
                 </header>
             </>
         );
-    }
+    // }
 };
 
 export default BannerForLogin;
