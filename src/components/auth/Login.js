@@ -16,7 +16,7 @@ const Login = props => {
             "credentials",
             JSON.stringify(credentials)
         );
-        props.history.push("/")
+        props.history.push("/home")
     }
 
         return (
@@ -37,7 +37,7 @@ const Login = props => {
                                     id="password"
                                     placeholder="Password"
                                     required=""
-                                    minlength="3"  />
+                                    minLength="3"  />
                             </div>
                             <button type="submit">Log In</button>
                         </fieldset>
