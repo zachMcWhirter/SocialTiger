@@ -19,23 +19,28 @@ const FolderList = (props) => {
         getFolders();
     }, []);
 
-    // const deleteFolder = id => {
-    //     FolderManager.delete(id)
-    //         .then(() => FolderManager.getAll().then(setFolders));
-    // };
+    const deleteFolder = id => {
+        FolderManager.delete(id)
+            .then(() => FolderManager.getAll().then(setFolders));
+    };
 
     return (
         <>
-            {/* <section className="section-content">
+            <section className="section-content">
                 <button type="button"
                     className="btn"
                     onClick={() => { props.history.push("/folders/new") }}>
                     Add New Folder
             </button>
-            </section> */}
+            </section>
             <div className="container-cards">
-                {folders.map(folder => <FolderCard 
-                    key={folder.id}/>)}
+                {folders.map(folder => 
+                    <FolderCard 
+                        key={folder.id}
+                        folder={folder}
+                        deleteFolder={deleteFolder}
+                    />
+                )}
             </div>
         </>
     );
