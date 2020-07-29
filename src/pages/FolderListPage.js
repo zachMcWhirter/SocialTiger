@@ -8,7 +8,7 @@ import FolderList from "../components/folder/FolderList"
 const FolderListPage = () => {
     return (
         <>
-            <Banner/>
+            <Banner />
             <NavBar/>
             <div>
                 <h2>FolderList</h2>

@@ -1,4 +1,4 @@
-import { Route, Redirect } from "react-router-dom";
+import { Route } from "react-router-dom";
 import React from "react";
 import LoginPage from "../pages/LoginPage";
 import HomePage from "../pages/HomePage";
@@ -17,10 +17,7 @@ const ApplicationViews = () => {
             {/* <Route exact path="/" component={ImageListPage} />
             <Route exact path="/" component={AddNewImagePage} />
             <Route exact path="/" component={EditImagePage} />
-            <Route exact path="/" component={ViewImagePage} />
-            
-            
-            
+            <Route exact path="/" component={ViewImagePage} /
             <Route exact path="/" component={ViewImagePage} /> */}
 
         </>

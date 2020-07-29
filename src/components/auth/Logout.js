@@ -2,11 +2,10 @@ import React from "react";
 import { Redirect } from "react-router-dom";
 
 
-const Logout = (e) => {
-    e.preventDefault();
+const Logout = (props) => {
     sessionStorage.removeItem("credentials");
     sessionStorage.clear();
-    // <Redirect to="/login" />;
+    return <Redirect to="/" />;
 };
     
 export default Logout;
