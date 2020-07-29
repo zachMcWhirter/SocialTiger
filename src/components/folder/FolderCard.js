@@ -11,8 +11,8 @@ const FolderCard = (props) => {
                 <div className="img-container">
                     {/* I chose to make my folders clickable by wrapping the folder icon with a button here */}
                     <button type="button" 
-                                onClick={() => {alert("View ImageList contained in this Folder")}}>
-                            Folder
+                                onClick={() => {alert(`View ImageList contained in the ${props.folder.folderName} Folder`)}}>
+                            {props.folder.folderName}
                         <img src={FolderImage} alt="folder" />
                     </button>
                     <div id="text" className="card-foldername"></div>
