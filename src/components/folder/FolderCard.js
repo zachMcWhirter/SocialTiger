@@ -22,7 +22,7 @@ const FolderCard = (props) => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default FolderCard;
