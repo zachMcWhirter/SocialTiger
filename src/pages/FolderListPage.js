@@ -11,7 +11,7 @@ const FolderListPage = () => {
             <Banner />
             <NavBar/>
             <div>
-                <h2>FolderList</h2>
+                <h3>FolderList</h3>
                 <FolderList/>
                 <div>
                     <FolderCard/>

@@ -1,16 +1,16 @@
-import React, { useEffect } from "react";
-// import FolderCard from "./FolderCard";
+import React, { useState, useEffect } from "react";
+import FolderCard from "./FolderCard";
 // import FolderForm from "./FolderForm";
 import FolderManager from "../../modules/FolderManager";
 
 const FolderList = (props) => {
-    // const [folders, setFolders] = useState([]);
+    const [folders, setFolders] = useState([]);
 
     const getFolders = () => {
         // After the data comes back from the API, we use the setFolders function to update state
         return FolderManager.getAll()
             .then(foldersFromAPI => {
-                // setFolders(foldersFromAPI);
+                setFolders(foldersFromAPI);
                 console.log(foldersFromAPI);
             });
     }
@@ -34,7 +34,7 @@ const FolderList = (props) => {
             </button>
             </section>
             <div className="container-cards">
-                Folders coming soon...
+                {folders.map(folder => <FolderCard />)}
             </div>
         </>
 
