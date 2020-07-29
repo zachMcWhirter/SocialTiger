@@ -7,7 +7,7 @@ import FolderListPage from "../pages/FolderListPage";
 const ApplicationViews = () => {
 
     return (
-        
+
         <>
             <Route exact path="/" component={LoginPage} />
             <Route exact path="/home" component={HomePage} />

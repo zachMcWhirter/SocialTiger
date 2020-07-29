@@ -1,7 +1,6 @@
 import React, { useState }from "react";
 import { Redirect } from "react-router-dom";
 
-
 const BannerSignedIn = (props) => {
     
     const [isAuthenticated, setIsAuthenticated] = useState(true);
