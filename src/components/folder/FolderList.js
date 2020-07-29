@@ -26,19 +26,18 @@ const FolderList = (props) => {
 
     return (
         <>
-            <section className="section-content">
+            {/* <section className="section-content">
                 <button type="button"
                     className="btn"
                     onClick={() => { props.history.push("/folders/new") }}>
                     Add New Folder
             </button>
-            </section>
+            </section> */}
             <div className="container-cards">
-                {folders.map(folder => <FolderCard />)}
+                {folders.map(folder => <FolderCard 
+                    key={folder.id}/>)}
             </div>
         </>
-
-
     );
 }
 
