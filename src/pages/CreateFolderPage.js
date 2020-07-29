@@ -10,13 +10,10 @@ const CreateFolderPage = () => {
         <>
             <Banner/>
             <NavBar/>
-            {/* <FolderForm/> */}
+            
             <div>
                 <h3>Create Folder</h3>
-                <form>
-                    <label for="folderNmae">Folder Name: </label>
-                    <input type="text"></input>
-                </form>
+               <FolderForm/>
             </div>
         </>
     );

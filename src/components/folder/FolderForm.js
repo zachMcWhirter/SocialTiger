@@ -21,7 +21,7 @@ const FolderForm = (props) => {
         } else {
             setIsLoading(true);
             // Create the folder and redirect user to folder list
-            folderManager.post(folder)
+            FolderManager.post(folder)
                 .then(() => props.history.push("/folders"));
         }
     };

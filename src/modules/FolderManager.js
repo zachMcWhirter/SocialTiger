@@ -14,5 +14,7 @@ export default {
         return fetch(`${remoteURL}/folders/${id}`, {
           method: "DELETE"
         }).then(result => result.json())
-      }
+      },
+      
+
 }

@@ -29,10 +29,11 @@ const FolderList = (props) => {
             <section className="section-content">
                 <button type="button"
                     className="btn"
-                    onClick={() => { props.history.push("/folders/new") }}>
+                    onClick={() => { props.history.push("/folders/CreateFolder") }}>
                     Add New Folder
             </button>
             </section>
+
             <div className="container-cards">
                 {folders.map(folder => 
                     <FolderCard 
