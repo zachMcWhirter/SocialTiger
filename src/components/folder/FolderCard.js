@@ -15,7 +15,10 @@ const FolderCard = (props) => {
                             {props.folder.folderName}
                         <img src={FolderImage} alt="folder" />
                     </button>
-                    <div id="text" className="card-foldername"></div>
+                    <button 
+                        type="button" 
+                        onClick={() => props.deleteFolder(props.folder.id)}>Delete
+                    </button>
                 </div>
             </div>
         </div>
