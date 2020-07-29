@@ -16,7 +16,7 @@ const Login = props => {
             "credentials",
             JSON.stringify(credentials)
         );
-        props.history.push("/home")
+        props.history.push("/")
     }
 
         return (
