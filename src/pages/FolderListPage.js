@@ -3,14 +3,16 @@ import NavBar from "../components/nav/NavBar";
 import FolderCard from "../components/folder/FolderCard";
 import Authentication from "../components/auth/Authentication";
 import Banner from "../components/Banner";
+import FolderList from "../components/folder/FolderList"
 
 const FolderListPage = () => {
     return (
         <>
-            <Banner/>
+            <Banner />
             <NavBar/>
             <div>
                 <h2>FolderList</h2>
+                <FolderList/>
                 <div>
                     <FolderCard/>
                     <FolderCard/>

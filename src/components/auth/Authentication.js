@@ -13,7 +13,6 @@ const Authentication = (Component) => {
             return <Redirect to="/"/>
         }
     }
-
 };
 
 export default Authentication;

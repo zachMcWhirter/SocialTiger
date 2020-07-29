@@ -1,13 +1,15 @@
 import React from "react";
 import Login from "../components/auth/Login";
 import {withRouter} from "react-router-dom";
-import BannerForLogin from "../components/BannerForLogin";
+import Banner from "../components/Banner";
 
 const LoginPage = (props) => {
 
+    
+
     return (
         <>
-            <BannerForLogin/>
+            <Banner/>
             <Login { ...props}/>
         </>
     )
