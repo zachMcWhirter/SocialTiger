@@ -6,7 +6,7 @@ const Logout = (e) => {
     e.preventDefault();
     sessionStorage.removeItem("credentials");
     sessionStorage.clear();
-    <Redirect to="/login" />;
+    // <Redirect to="/login" />;
 };
     
 export default Logout;
