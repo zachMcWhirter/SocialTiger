@@ -14,7 +14,7 @@ const ApplicationViews = () => {
             <Route exact path="/home" component={HomePage} />
             <Route exact path="/folders" component={FolderListPage} />
             <Route exact path="/folders/CreateFolder" component={CreateFolderPage} />
-            
+
             {/* <Route exact path="/" component={EditFolderPage} /> */}
             {/* <Route exact path="/" component={ImageListPage} />
             <Route exact path="/" component={AddNewImagePage} />

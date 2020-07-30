@@ -33,8 +33,9 @@ const FolderList = (props) => {
                     Add New Folder
             </button>
             </section>
-                <FolderForm 
-                    getFolders={getFolders}/>
+                {/* <FolderForm 
+                    { ...props}
+                    getFolders={getFolders}/> */}
             <div className="container-cards">
                 {folders.map(folder => 
                     <FolderCard 
