@@ -10,11 +10,11 @@ const CreateFolderPage = (props) => {
         <>
             <Banner/>
             <NavBar/>
-            
             <div>
                 <h3>Create Folder</h3>
                <FolderForm
-               { ...props}/>
+               { ...props}
+               />
             </div>
         </>
     );

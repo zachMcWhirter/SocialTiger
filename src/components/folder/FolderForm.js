@@ -14,9 +14,9 @@ const FolderForm = (props) => {
         setFolder(stateToChange);
     };
 
-    const clearInputFields = () => {
-        setFolder({folderName: ""});
-    }
+    // const clearInputFields = () => {
+    //     setFolder({folderName: ""});
+    // }
 
     const createNewFolder = e => {
         e.preventDefault();
@@ -26,11 +26,10 @@ const FolderForm = (props) => {
             setIsLoading(true);
             // Create the folder and redirect user to folder list
             FolderManager.post(folder)
-            .then(() => {props.getFolders()
-            setIsLoading(false)
-            clearInputFields();
-            });
+            .then(() => props.history.push("/folders"))
         }
+            // setIsLoading(false);
+            // clearInputFields();
     };
 
     return (
@@ -48,11 +47,10 @@ const FolderForm = (props) => {
                         />
                         <div className="alignRight">
                             <button
-                                type="button"
+                                type="submit"
                                 disabled={isLoading}
                                 onClick={createNewFolder}
                             >Submit</button>
-                            <input type="reset" defaultValue="Reset" id="resetButton"/>
                         </div>
                     </div>
                 </fieldset>
