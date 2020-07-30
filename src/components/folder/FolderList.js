@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import FolderCard from "./FolderCard";
-// import FolderForm from "./FolderForm";
+import FolderForm from "./FolderForm";
 import FolderManager from "../../modules/FolderManager";
 
 const FolderList = (props) => {
@@ -33,13 +33,15 @@ const FolderList = (props) => {
                     Add New Folder
             </button>
             </section>
-
+                <FolderForm 
+                    getFolders={getFolders}/>
             <div className="container-cards">
                 {folders.map(folder => 
                     <FolderCard 
                         key={folder.id}
                         folder={folder}
                         deleteFolder={deleteFolder}
+                        { ...props}
                     />
                 )}
             </div>

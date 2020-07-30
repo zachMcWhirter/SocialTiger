@@ -12,9 +12,16 @@ export default {
     },
     delete(id) {
         return fetch(`${remoteURL}/folders/${id}`, {
-          method: "DELETE"
+            method: "DELETE"
         }).then(result => result.json())
-      },
-      
-
+    },
+    post(newFolder) {
+        return fetch(`${remoteURL}/folders`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(newFolder)
+        }).then(data => data.json())
+    }
 }

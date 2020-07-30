@@ -1,63 +1,68 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "username": "zach",
-            "email": "zach@gmail.com",
-            "password": "123"
-        },
-        {
-            "id": 2,
-            "username": "bob",
-            "email": "bob@bob.com",
-            "password": "bob"
-        }
-    ],
-    "folders": [
-        {
-            "id": 1,
-            "userId": 1,
-            "folderName": "Funny"
-        },
-        {
-            "id": 2,
-            "userId": 2,
-            "folderName": "Holidays"
-        },
-        {
-            "id": 3,
-            "userId": 1,
-            "folderName": "Family"
-        }
-    ],
-    "images": [
-        {
-            "id": 1,
-            "folderId": 1,
-            "imageName": "Chad and Rob",
-            "imageDescription": "Chad with Robs floating head",
-            "url": ""
-        },
-        {
-            "id": 2,
-            "folderId": 3,
-            "imageName": "Orange Beach",
-            "imageDescription": "Us at the Beach",
-            "url": ""
-        },
-        {
-            "id": 3,
-            "folderId": 1,
-            "imageName": "Brendas Angel",
-            "imageDescription": "Chad with Robs floating head",
-            "url": ""
-        },
-        {
-            "id": 4,
-            "folderId": 1,
-            "imageName": "Cinco De Mayo",
-            "imageDescription": "Repeating Tacos",
-            "url": ""
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "username": "zach",
+      "email": "zach@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 2,
+      "username": "bob",
+      "email": "bob@bob.com",
+      "password": "bob"
+    }
+  ],
+  "folders": [
+    {
+      "id": 1,
+      "userId": 1,
+      "folderName": "Funny"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "folderName": "Holidays"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "folderName": "Family"
+    },
+    {
+      "folderName": "",
+      "name": "tom ",
+      "id": 4
+    }
+  ],
+  "images": [
+    {
+      "id": 1,
+      "folderId": 1,
+      "imageName": "Chad and Rob",
+      "imageDescription": "Chad with Robs floating head",
+      "url": ""
+    },
+    {
+      "id": 2,
+      "folderId": 3,
+      "imageName": "Orange Beach",
+      "imageDescription": "Us at the Beach",
+      "url": ""
+    },
+    {
+      "id": 3,
+      "folderId": 1,
+      "imageName": "Brendas Angel",
+      "imageDescription": "Chad with Robs floating head",
+      "url": ""
+    },
+    {
+      "id": 4,
+      "folderId": 1,
+      "imageName": "Cinco De Mayo",
+      "imageDescription": "Repeating Tacos",
+      "url": ""
+    }
+  ]
 }
