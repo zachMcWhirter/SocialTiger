@@ -4,11 +4,7 @@ import BannerSignedIn from "../components/BannerSignedIn";
 
 const isAuthenticated = () => sessionStorage.getItem("credentials") !== null;
 
-
-
 const Banner = (props) => {
-
-    
 
     if (isAuthenticated()) {
 
@@ -17,8 +13,6 @@ const Banner = (props) => {
     } else {
         return <BannerForLogin />;
     }
-
-
 };
 
 export default Banner;

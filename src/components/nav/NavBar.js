@@ -19,7 +19,6 @@ const NavBar = () => {
                             Folders
                         </Link>
                     </li>
-
                 </ul>
             </nav>
         </>
