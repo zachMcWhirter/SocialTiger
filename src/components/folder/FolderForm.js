@@ -3,7 +3,8 @@ import FolderManager from "../../modules/FolderManager";
 
 const FolderForm = (props) => {
     const [folder, setFolder] = useState({
-        folderName: ""
+        folderName: "",
+        userId: "1"
     });
 
     const [isLoading, setIsLoading] = useState(false);

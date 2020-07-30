@@ -19,6 +19,10 @@ const FolderCard = (props) => {
                         type="button" 
                         onClick={() => props.deleteFolder(props.folder.id)}>Delete
                     </button>
+                    <button type="button"
+                    onClick={() => props.history.push(`/folders/${props.folder.id}/edit`)}>
+                    Edit
+                </button>
                 </div>
             </div>
         </div>

@@ -4,6 +4,7 @@ import LoginPage from "../pages/LoginPage";
 import HomePage from "../pages/HomePage";
 import FolderListPage from "../pages/FolderListPage";
 import CreateFolderPage from "../pages/CreateFolderPage";
+import EditFolderPage from "../pages/EditFolderPage";
 
 const ApplicationViews = (props) => {
 
@@ -14,25 +15,12 @@ const ApplicationViews = (props) => {
             <Route exact path="/home" component={HomePage} />    
             <Route exact path="/folders" component={FolderListPage} />
             <Route exact path="/folders/CreateFolder" component={CreateFolderPage} />
-            
-            {/* <Route exact path="/" component={EditFolderPage} /> */}
+            <Route exact path="/folders/:folderId(\d+)/edit" component={EditFolderPage} />
             {/* <Route exact path="/" component={ImageListPage} />
             <Route exact path="/" component={AddNewImagePage} />
             <Route exact path="/" component={EditImagePage} />
             <Route exact path="/" component={ViewImagePage} /
             <Route exact path="/" component={ViewImagePage} /> */}
-
-            {/* <Route exact path="/home" render={props => {
-                return <HomePage {...props} />
-            }} /> */}
-            {/* <Route exact path="/folders" render={props => {
-                 return <FolderListPage {...props} />
-                }} /> */}
-            {/* <Route exact path="/folders/CreateFolder" 
-                render={props => {
-                    return <CreateFolderPage {...props} />
-                }} /> */}
-
         </>
     );
 };

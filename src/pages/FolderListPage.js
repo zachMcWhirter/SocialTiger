@@ -10,7 +10,7 @@ const FolderListPage = (props) => {
             <Banner />
             <NavBar/>
             <div>
-                <h3>FolderList</h3>
+                <h3>My Folders</h3>
                 <FolderList
                 { ...props }/>
                 <div>
