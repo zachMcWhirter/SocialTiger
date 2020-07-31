@@ -16,7 +16,6 @@
   "folders": [
     {
       "id": 1,
-      "userId": 1,
       "folderName": "Funny"
     },
     {
@@ -33,6 +32,15 @@
       "folderName": "",
       "name": "tom ",
       "id": 4
+    },
+    {
+      "folderName": "folder6",
+      "id": 5
+    },
+    {
+      "folderName": "new new",
+      "userId": "1",
+      "id": 6
     }
   ],
   "images": [

@@ -23,5 +23,14 @@ export default {
             },
             body: JSON.stringify(newFolder)
         }).then(data => data.json())
-    }
+    },
+    update(editedFolder) {
+        return fetch(`${remoteURL}/folders/${editedFolder.id}`, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(editedFolder)
+        }).then(data => data.json());
+      }
 }
