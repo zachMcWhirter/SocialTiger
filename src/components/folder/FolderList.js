@@ -21,7 +21,8 @@ const FolderList = (props) => {
 
     const deleteFolder = id => {
         FolderManager.delete(id)
-            .then(() => FolderManager.getAll().then(setFolders));
+            .then(() => FolderManager.getAll()
+            .then(setFolders));
     };
 
     return (
@@ -33,9 +34,6 @@ const FolderList = (props) => {
                     Add New Folder
             </button>
             </section>
-                {/* <FolderForm 
-                    { ...props}
-                    getFolders={getFolders}/> */}
             <div className="container-cards">
                 {folders.map(folder => 
                     <FolderCard 
