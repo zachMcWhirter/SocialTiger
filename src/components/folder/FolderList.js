@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import FolderCard from "./FolderCard";
-import FolderForm from "./FolderForm";
 import FolderManager from "../../modules/FolderManager";
 
 const FolderList = (props) => {

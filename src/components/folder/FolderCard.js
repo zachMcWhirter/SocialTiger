@@ -1,7 +1,6 @@
 import React from "react";
 import FolderImage from "./folder-image.png";
 import "./Folder.css";
-import { Link } from "react-router-dom";
 
 
 const FolderCard = (props) => {

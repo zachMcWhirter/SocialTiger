@@ -49,6 +49,11 @@ const ImageView = props => {
                 <button type="button" disabled={isLoading} onClick={handleDelete}>
                     Delete
                 </button>
+                {/* <a download={image.url} >
+                    <button type="button" disabled={isLoading} >
+                        Download
+                    </button>
+                </a> */}
             </div>
         </div>
     );

@@ -7,6 +7,7 @@ import CreateFolderPage from "../pages/CreateFolderPage";
 import EditFolderPage from "../pages/EditFolderPage";
 import ImageListPage from "../pages/ImageListPage";
 import ImageViewPage from "../pages/ImageViewPage";
+import CreateImagePage from "../pages/CreateImagePage";
 
 const ApplicationViews = (props) => {
 
@@ -20,8 +21,8 @@ const ApplicationViews = (props) => {
             <Route exact path="/folders/:folderId(\d+)/edit" component={EditFolderPage} />
             <Route exact path="/folders/:folderId(\d+)" component={ImageListPage} />
             <Route exact path="/images/:imageId(\d+)" component={ImageViewPage} />
-            {/* <Route exact path="/" component={AddNewImagePage} />
-            <Route exact path="/" component={EditImagePage} />
+            <Route exact path="/folders/:folderId(\d+)/images/CreateImage" component={CreateImagePage} />
+            {/* <Route exact path="/" component={EditImagePage} />
             <Route exact path="/" component={ViewImagePage} />
             <Route exact path="/" component={ViewImagePage} /> */}
         </>

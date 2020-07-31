@@ -6,7 +6,7 @@ const ImageForm = (props) => {
         imageName: "",
         imageDescription: "",
         url: "",
-        folderId: "1"
+        folderId: props.folderId
     });
 
     const [isLoading, setIsLoading] = useState(false);
@@ -25,7 +25,7 @@ const ImageForm = (props) => {
             setIsLoading(true);
             // Create the Image and redirect user to Image list
             ImageManager.post(image)
-            .then(() => props.history.push("/images"))
+            .then(() => props.history.push(`/folders/${props.folderId}`))
         }
     };
 

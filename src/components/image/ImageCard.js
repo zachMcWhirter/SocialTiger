@@ -9,6 +9,7 @@ const ImageCard = (props) => {
             <div className="card-content">
                 <div className="img-container">
                 <picture>
+                    
                     <img src={(props.image.url)} alt="My Background Img" />
                 </picture>    
                 </div>    

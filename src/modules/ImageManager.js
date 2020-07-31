@@ -25,7 +25,7 @@ export default {
         }).then(data => data.json())
     },
     update(editedImage) {
-        return fetch(`${remoteURL}/imagess/${editedImage.id}`, {
+        return fetch(`${remoteURL}/images/${editedImage.id}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json"

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import ImageCard from "./ImageCard";
-import ImageForm from "./ImageForm";
 import ImageManager from "../../modules/ImageManager";
 
 const ImageList = (props) => {
@@ -11,7 +10,6 @@ const ImageList = (props) => {
         return ImageManager.getAll()
             .then(imagesFromAPI => {
                 setImages(imagesFromAPI);
-                console.log(imagesFromAPI);
             });
     }
 
@@ -34,9 +32,7 @@ const ImageList = (props) => {
                     Add New Image
             </button>
             </section>
-                {/* <ImageForm 
-                    { ...props}
-                    getImages={getImages}/> */}
+                
             <div className="container-cards">
                 {images.map(image => 
                     <ImageCard 
