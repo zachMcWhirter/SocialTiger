@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ImageManager from "../../modules/ImageManager";
+import FolderManager from "../../modules/FolderManager";
 
 const ImageForm = (props) => {
     const [image, setImage] = useState({
@@ -7,7 +8,11 @@ const ImageForm = (props) => {
         imageDescription: "",
         url: "",
         folderId: props.folderId
+        
     });
+    console.log("test", props.folderId)
+
+    const [folders, setFolders] = useState([]);
 
     const [isLoading, setIsLoading] = useState(false);
     
@@ -23,17 +28,41 @@ const ImageForm = (props) => {
             window.alert("Please input an image name, image description, and url");
         } else {
             setIsLoading(true);
+            image.folderId = parseInt(image.folderId)
             // Create the Image and redirect user to Image list
             ImageManager.post(image)
-            .then(() => props.history.push(`/folders/${props.folderId}`))
+            .then(() => props.history.push("/folders"))
         }
     };
+
+    const getFolders = () => {
+        // After the data comes back from the API, we use the setFolders function to update state
+        return FolderManager.getAll()
+            .then(foldersFromAPI => {
+                setFolders(foldersFromAPI);
+            });
+    }
+
+    useEffect(() => {
+        getFolders();
+    }, []);
 
     return (
         <>
             <form>
                 <fieldset>
                     <div className="formgrid">
+                    <select
+                        onChange={handleFieldChange}
+                        id='folderId'
+                        placeholder='FolderId'>
+                        <option>Select</option>
+                            {folders.map((folder) => (
+                                <option key={folder.id} value={folder.id}>
+                                {folder.folderName}
+                                </option>
+                            ))}  
+                    </select> 
                         <input
                             type="text"
                             required

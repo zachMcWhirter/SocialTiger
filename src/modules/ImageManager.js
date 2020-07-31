@@ -10,6 +10,10 @@ export default {
         return fetch(`${remoteURL}/images`)
             .then(result => result.json())
     },
+    getByFolderId(folderId) {
+        return fetch(`${remoteURL}/images?folderId=${folderId}`)
+            .then(result => result.json())
+    },
     delete(id) {
         return fetch(`${remoteURL}/images/${id}`, {
             method: "DELETE"
@@ -33,4 +37,5 @@ export default {
           body: JSON.stringify(editedImage)
         }).then(data => data.json());
       }
+     
 }

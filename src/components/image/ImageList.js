@@ -5,23 +5,27 @@ import ImageManager from "../../modules/ImageManager";
 const ImageList = (props) => {
     const [images, setImages] = useState([]);
 
-    const getImages = () => {
+    const getImages = (folderId) => {
         // After the data comes back from the API, we use the setImages function to update state
-        return ImageManager.getAll()
+        return ImageManager.getByFolderId(folderId)
             .then(imagesFromAPI => {
+
+
                 setImages(imagesFromAPI);
             });
     }
 
     useEffect(() => {
-        getImages();
-    }, []);
+        getImages(props.match.params.folderId);
+    }, [props.match.params.folderId]);
 
     const deleteImage = id => {
         ImageManager.delete(id)
             .then(() => ImageManager.getAll()
             .then(setImages));
     };
+
+    //  alert(props.match.params.folderId);
 
     return (
         <>
@@ -37,6 +41,7 @@ const ImageList = (props) => {
                 {images.map(image => 
                     <ImageCard 
                         key={image.id}
+                        folder={image.folderId}
                         image={image}
                         deleteImage={deleteImage}
                         { ...props}
