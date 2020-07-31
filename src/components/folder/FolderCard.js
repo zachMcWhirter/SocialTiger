@@ -11,14 +11,14 @@ const FolderCard = (props) => {
             <div className="card-content">
                 <div className="img-container">
                     {/* I chose to make my folders clickable by wrapping the folder icon with a button here */}
-                    <Link to={`/images/${props.image.id}`}>
+                    {/* <Link to={`/images/${props.image.id}`}> */}
                     <button type="button"
-                        // onClick={() => props.history.push(`/folders/${props.folder.id}`)}>
-                        //     {props.folder.folderName}
-                        // <img src={FolderImage} alt="folder" 
-                        >
+                        onClick={() => props.history.push(`/folders/${props.folder.id}`)}>
+                            {props.folder.folderName}
+                        <img src={FolderImage} alt="folder" 
+                        />
                     </button>
-                    </Link>
+                    {/* </Link> */}
                     
                     <button 
                         type="button" 
