@@ -13,9 +13,6 @@ const FolderListPage = (props) => {
                 <h3>My Folders</h3>
                 <FolderList
                 { ...props }/>
-                <div>
-                    
-                </div>
             </div>
         </>
     );
