@@ -8,7 +8,10 @@ const ImageCard = (props) => {
         <div className="card">
             <div className="card-content">
                 <div className="img-container">
-                    
+                <picture>
+                    <img src={(props.image.url)} alt="My Background Img" />
+                </picture>    
+                </div>    
                     {/* <Link to={`/images/${props.image.id}`}> */}
                     {/* <button type="button"
                         onClick={() => props.history.push(`/images/${props.image.id}`)}>
@@ -26,7 +29,7 @@ const ImageCard = (props) => {
                         onClick={() => props.history.push(`/images/${props.image.id}/edit`)}>
                         Edit
                     </button>
-                </div>
+                
             </div>
         </div>
     );
