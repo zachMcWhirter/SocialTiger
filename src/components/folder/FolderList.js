@@ -10,7 +10,6 @@ const FolderList = (props) => {
         return FolderManager.getAll()
             .then(foldersFromAPI => {
                 setFolders(foldersFromAPI);
-                console.log(foldersFromAPI);
             });
     }
 
@@ -23,7 +22,6 @@ const FolderList = (props) => {
             .then(() => FolderManager.getAll()
             .then(setFolders));
     };
-
 
     return (
         <>

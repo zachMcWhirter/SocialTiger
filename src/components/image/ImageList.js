@@ -6,15 +6,14 @@ const ImageList = (props) => {
     const [images, setImages] = useState([]);
 
     const getImages = (folderId) => {
-        // After the data comes back from the API, we use the setImages function to update state
+        // Use the getByFolderId() fetch call to sort the images by folderId. Be sure to pass (folderId) to getImages() and getByFolderId().
         return ImageManager.getByFolderId(folderId)
             .then(imagesFromAPI => {
-
-
                 setImages(imagesFromAPI);
             });
     }
 
+        //now use getImages() and pass (props.match.params.folderId) to it as well as passing it into the array.
     useEffect(() => {
         getImages(props.match.params.folderId);
     }, [props.match.params.folderId]);
@@ -24,8 +23,6 @@ const ImageList = (props) => {
             .then(() => ImageManager.getAll()
             .then(setImages));
     };
-
-    //  alert(props.match.params.folderId);
 
     return (
         <>

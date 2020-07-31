@@ -10,6 +10,7 @@ export default {
         return fetch(`${remoteURL}/images`)
             .then(result => result.json())
     },
+    //gets images by thier folderId
     getByFolderId(folderId) {
         return fetch(`${remoteURL}/images?folderId=${folderId}`)
             .then(result => result.json())
