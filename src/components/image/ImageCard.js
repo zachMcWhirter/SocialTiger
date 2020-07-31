@@ -12,15 +12,12 @@ const ImageCard = (props) => {
                     <img src={(props.image.url)} alt="My Background Img" />
                 </picture>    
                 </div>    
-                    {/* <Link to={`/images/${props.image.id}`}> */}
                     {/* <button type="button"
                         onClick={() => props.history.push(`/images/${props.image.id}`)}>
                             {props.image.imageName} */}
                         {/* <img src={FolderImage} alt="image" 
                         /> */}
                     {/* </button> */}
-                    {/* </Link> */}
-                    
                     <button 
                         type="button" 
                         onClick={() => props.deleteImage(props.image.id)}>Delete
@@ -29,7 +26,9 @@ const ImageCard = (props) => {
                         onClick={() => props.history.push(`/images/${props.image.id}/edit`)}>
                         Edit
                     </button>
-                
+                    <Link to={`/images/${props.image.id}`}>
+                        <button>View Image</button>
+                    </Link>
             </div>
         </div>
     );
