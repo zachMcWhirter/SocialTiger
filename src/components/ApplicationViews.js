@@ -23,7 +23,7 @@ const ApplicationViews = (props) => {
             <Route exact path="/folders/:folderId(\d+)" component={ImageListPage} />
             <Route exact path="/images/:imageId(\d+)" component={ImageViewPage} />
             <Route exact path="/images/CreateImage" component={CreateImagePage} />
-            <Route exact path="/" component={EditImagePage} />
+            <Route exact path="/images/:imageId(\d+)/edit" component={EditImagePage} />
             {/* <Route exact path="/" component={ViewImagePage} /> */}
         </>
     );

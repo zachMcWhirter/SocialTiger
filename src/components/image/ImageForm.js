@@ -52,6 +52,7 @@ const ImageForm = (props) => {
             <form>
                 <fieldset>
                     <div className="formgrid">
+                        {/* dropdown select to choose the folder you want to create the image in */}
                     <select
                         onChange={handleFieldChange}
                         id='folderId'

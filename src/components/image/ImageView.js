@@ -6,7 +6,8 @@ const ImageView = props => {
     const [image, setImage] = useState({ 
         imageName: "", 
         imageDecsription: "", 
-        url: "" });
+        url: "" 
+    });
 
     const [isLoading, setIsLoading] = useState(true);
     //   isLoading is a boolean value that will indicate whether or not the component is loading. A value of true should disable the button and a value of false should enable it. By putting isLoading in the component's state, we can trigger a re-render by changing its value.
@@ -17,7 +18,7 @@ const ImageView = props => {
             .then(image => {
                 setImage({
                     imageName: image.imageName,
-                    imageDescription: image.imageDecsription,
+                    imageDescription: image.imageDescription,
                     url: image.url
                 });
                 setIsLoading(false)
