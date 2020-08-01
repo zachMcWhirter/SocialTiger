@@ -3,6 +3,7 @@ import FolderImage from "./folder-image.png";
 import "./Folder.css";
 
 
+
 const FolderCard = (props) => {
 
     return (
@@ -11,7 +12,7 @@ const FolderCard = (props) => {
                 <div className="img-container">
                     {/* I chose to make my folders clickable by wrapping the folder icon with a button here */}
                     {/* <Link to={`/images/${props.image.id}`}> */}
-                    <button type="button"
+                    <button className="folderCard" type="button"
                         onClick={() => props.history.push(`/folders/${props.folder.id}`)}>
                             {props.folder.folderName}
                         <img src={FolderImage} alt="folder" 

@@ -51,7 +51,9 @@ const ImageUpload = () => {
                         Loading ...
                     </h3>
                 ) : (
-                        <img src={image} style={{ width: "500px" }} />
+                    <div className="cloudinary">
+                        <img src={image}  alt="img"/>
+                    </div>
                     )
             }
 

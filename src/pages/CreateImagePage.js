@@ -4,6 +4,7 @@ import Authentication from "../components/auth/Authentication";
 import Banner from "../components/Banner"
 import ImageForm from "../components/image/ImageForm"
 import ImageUpload from "../components/image/ImageUpload"
+import "./CreateImagePage.css"
 
 
 const CreateImagePage = (props) => {
@@ -12,7 +13,7 @@ const CreateImagePage = (props) => {
         <>
             <Banner/>
             <NavBar/>
-            <div>
+            <div className="underNav">
                 <h3>Create Image</h3>
                <ImageForm
                { ...props}
