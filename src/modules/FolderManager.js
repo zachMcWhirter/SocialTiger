@@ -10,6 +10,11 @@ export default {
         return fetch(`${remoteURL}/folders`)
             .then(result => result.json())
     },
+    //gets folders by their userId
+    getByUserId(userId) {
+        return fetch(`${remoteURL}/folders?userId=${userId}`)
+            .then(result => result.json())
+    },
     delete(id) {
         return fetch(`${remoteURL}/folders/${id}`, {
             method: "DELETE"

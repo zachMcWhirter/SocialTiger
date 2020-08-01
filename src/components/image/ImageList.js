@@ -1,23 +1,22 @@
 import React, { useState, useEffect } from "react";
 import ImageCard from "./ImageCard";
-import ImageForm from "./ImageForm";
 import ImageManager from "../../modules/ImageManager";
 
 const ImageList = (props) => {
     const [images, setImages] = useState([]);
 
-    const getImages = () => {
-        // After the data comes back from the API, we use the setImages function to update state
-        return ImageManager.getAll()
+    const getImages = (folderId) => {
+        // Use the getByFolderId() fetch call to sort the images by folderId. Be sure to pass (folderId) to getImages() and getByFolderId().
+        return ImageManager.getByFolderId(folderId)
             .then(imagesFromAPI => {
                 setImages(imagesFromAPI);
-                console.log(imagesFromAPI);
             });
     }
 
+        //now use getImages() and pass (props.match.params.folderId) to it as well as passing it into the array.
     useEffect(() => {
-        getImages();
-    }, []);
+        getImages(props.match.params.folderId);
+    }, [props.match.params.folderId]);
 
     const deleteImage = id => {
         ImageManager.delete(id)
@@ -34,13 +33,12 @@ const ImageList = (props) => {
                     Add New Image
             </button>
             </section>
-                {/* <ImageForm 
-                    { ...props}
-                    getImages={getImages}/> */}
+                
             <div className="container-cards">
                 {images.map(image => 
                     <ImageCard 
                         key={image.id}
+                        folder={image.folderId}
                         image={image}
                         deleteImage={deleteImage}
                         { ...props}

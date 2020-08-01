@@ -10,6 +10,11 @@ export default {
         return fetch(`${remoteURL}/images`)
             .then(result => result.json())
     },
+    //gets images by thier folderId
+    getByFolderId(folderId) {
+        return fetch(`${remoteURL}/images?folderId=${folderId}`)
+            .then(result => result.json())
+    },
     delete(id) {
         return fetch(`${remoteURL}/images/${id}`, {
             method: "DELETE"
@@ -25,7 +30,7 @@ export default {
         }).then(data => data.json())
     },
     update(editedImage) {
-        return fetch(`${remoteURL}/imagess/${editedImage.id}`, {
+        return fetch(`${remoteURL}/images/${editedImage.id}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json"
@@ -33,4 +38,5 @@ export default {
           body: JSON.stringify(editedImage)
         }).then(data => data.json());
       }
+     
 }

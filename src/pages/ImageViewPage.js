@@ -2,20 +2,19 @@ import React from "react";
 import NavBar from "../components/nav/NavBar";
 import Authentication from "../components/auth/Authentication";
 import Banner from "../components/Banner";
-import FolderList from "../components/folder/FolderList"
+import ImageView from "../components/image/ImageView";
 
-const FolderListPage = (props) => {
+const ImageViewPage = (props) => {
     return (
         <>
             <Banner />
             <NavBar/>
             <div>
-                <h3>My Folders</h3>
-                <FolderList
-                { ...props }/>
+                <h3>View Image</h3>
+                <ImageView imageId={parseInt(props.match.params.imageId)} {...props} />
             </div>
         </>
     );
 };
 
-export default Authentication(FolderListPage);
+export default Authentication(ImageViewPage);

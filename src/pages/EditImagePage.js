@@ -2,20 +2,20 @@ import React from "react";
 import NavBar from "../components/nav/NavBar";
 import Authentication from "../components/auth/Authentication";
 import Banner from "../components/Banner";
-import FolderList from "../components/folder/FolderList"
+import ImageEditForm from "../components/image/ImageEditForm";
 
-const FolderListPage = (props) => {
+const EditImagePage = (props) => {
     return (
         <>
             <Banner />
-            <NavBar/>
+            <NavBar />
             <div>
-                <h3>My Folders</h3>
-                <FolderList
-                { ...props }/>
+                <h3>Edit Image</h3>
+                <ImageEditForm
+                { ...props } />
             </div>
         </>
     );
 };
 
-export default Authentication(FolderListPage);
+export default Authentication(EditImagePage);
