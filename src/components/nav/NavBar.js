@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./NavBar.css"
 
 // Create links in your navigation bar
 
@@ -10,14 +11,25 @@ const NavBar = () => {
             <nav>
                 <ul className="container">
                     <li>
-                        <Link className="nav-link" to="/home">
-                            Home
-                        </Link>
+                        <div className="link-container">
+                            <Link className="nav-link"  to="/home">
+                                Home
+                            </Link>
+                        </div>
                     </li>
                     <li>
-                        <Link className="nav-link" to="/folders">
-                            Folders
-                        </Link>
+                        <div className="link-container">
+                            <Link className="nav-link" to="/folders">
+                                Folders
+                            </Link>
+                        </div>
+                    </li>
+                    <li>
+                        <div className="link-container">
+                            <Link className="nav-link" to="/images/CreateImage">
+                                Create Image
+                            </Link>
+                        </div>    
                     </li>
                 </ul>
             </nav>

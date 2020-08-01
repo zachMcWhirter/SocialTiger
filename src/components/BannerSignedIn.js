@@ -22,7 +22,7 @@ const BannerSignedIn = (props) => {
                             onClick={handleLogout}>
                         Log Out
                     </button>
-                    <h1>Social Tiger</h1>
+                    <h1>SOCIAL TIGER</h1>
                 </header>
             </>
         );

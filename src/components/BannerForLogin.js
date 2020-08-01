@@ -7,7 +7,9 @@ const BannerForLogin = (props) => {
     return (
         <>
             <header>
-                <h1>Social Tiger</h1>
+                <div>
+                    <h1>SOCIAL TIGER</h1>
+                </div>
             </header>
         </>
     );
