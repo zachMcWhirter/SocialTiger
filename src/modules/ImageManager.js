@@ -15,6 +15,15 @@ export default {
         return fetch(`${remoteURL}/images?folderId=${folderId}`)
             .then(result => result.json())
     },
+    getRandomImageId() {
+        return fetch(`${remoteURL}/images`)
+            .then(result => result.json())
+            .then(images => {
+                const randomIndex = Math.floor(Math.random() * images.length);
+                const randomImage = images[randomIndex];
+                return randomImage.id; 
+            });
+    },
     delete(id) {
         return fetch(`${remoteURL}/images/${id}`, {
             method: "DELETE"
