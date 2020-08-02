@@ -10,7 +10,6 @@ const ImageViewPage = (props) => {
             <Banner />
             <NavBar/>
             <div className="imageViewBody">
-                {/* <h3>View Image</h3> */}
                 <ImageView imageId={parseInt(props.match.params.imageId)} {...props} />
             </div>
         </>

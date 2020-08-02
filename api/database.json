@@ -20,11 +20,6 @@
       "folderName": "Funny"
     },
     {
-      "id": 2,
-      "userId": 1,
-      "folderName": "Holiday"
-    },
-    {
       "id": 3,
       "userId": 1,
       "folderName": "Family"
@@ -33,6 +28,11 @@
       "id": 4,
       "userId": 2,
       "folderName": "ClassMates"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "folderName": "Holiday"
     }
   ],
   "images": [
@@ -106,7 +106,6 @@
       "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1595816040/testImages/starry_woods_jqdzqe.jpg",
       "folderId": 1
     },
-
     {
       "imageName": "Orange Beach",
       "imageDescription": "Us at the Beach!!!!",
@@ -120,6 +119,27 @@
       "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596291325/socialTiger/angelPoster_fbgk8m.jpg",
       "folderId": 1,
       "id": 22
+    },
+    {
+      "imageName": "Sage",
+      "imageDescription": "What's a breakout room?",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596261410/socialTiger/Wait_how_do_you_make_breakout_rooms_afsein.png",
+      "folderId": 4,
+      "id": 23
+    },
+    {
+      "imageName": "Sisi",
+      "imageDescription": "Listening to another Haiku...",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596290440/socialTiger/Screen_Shot_2020-07-17_at_1.19.27_PM_h4inpd.png",
+      "folderId": 4,
+      "id": 24
+    },
+    {
+      "imageName": "Amanda",
+      "imageDescription": "The Queen is not amused...",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1595816913/socialTiger/Screen_Shot_2020-07-17_at_1.15.49_PM_cfqeva.png",
+      "folderId": 4,
+      "id": 25
     }
   ]
 }
