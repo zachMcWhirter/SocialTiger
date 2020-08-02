@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./ImageCard.css"
+
 
 
 const ImageCard = (props) => {
@@ -10,15 +12,9 @@ const ImageCard = (props) => {
                 <div className="img-container">
                 <picture>
                     
-                    <img src={(props.image.url)} alt="My Background Img" />
+                    <img className="imageThunbnails" src={(props.image.url)} alt="My Background Img" />
                 </picture>    
-                </div>    
-                    {/* <button type="button"
-                        onClick={() => props.history.push(`/images/${props.image.id}`)}>
-                            {props.image.imageName} */}
-                        {/* <img src={FolderImage} alt="image" 
-                        /> */}
-                    {/* </button> */}
+                </div>
                     <button 
                         type="button" 
                         onClick={() => props.deleteImage(props.image.id)}>Delete

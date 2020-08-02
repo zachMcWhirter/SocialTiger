@@ -16,13 +16,11 @@
   "folders": [
     {
       "id": 1,
-      "userId": 1,
-      "folderName": "Funny Stuff"
+      "folderName": "Funny"
     },
     {
       "id": 2,
-      "userId": 2,
-      "folderName": "Holidays"
+      "folderName": "Holiday"
     },
     {
       "id": 3,
@@ -57,13 +55,6 @@
       "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1595815946/testImages/chad_rob_hk7dz2.jpg",
       "folderId": 1,
       "id": 6
-    },
-    {
-      "imageName": "Orange Beach",
-      "imageDescription": "Us at the Beach",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596210323/testImages/at_the_beach_l2hkks.jpg",
-      "folderId": 1,
-      "id": 7
     },
     {
       "imageName": "ROSE",

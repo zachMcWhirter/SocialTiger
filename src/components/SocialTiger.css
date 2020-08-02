@@ -1,23 +1,11 @@
-h1 {
-    font-size: 70px;
-    text-shadow: yellowgreen;
-}
 
-header {
-    /* display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-    background-color: #404040;
-    height: 20vh;
-}
 
 html {
     background-image: url("https://res.cloudinary.com/lordargyle22/image/upload/v1596253020/socialTiger/dark-background-pattern_nhuxcr.jpg");
     /* font-family: 'PT Sans Narrow', sans-serif; */
     /* font-family: 'Red Rose', cursive; */
     font-family: 'Ubuntu Condensed', sans-serif;
-
+    margin: 0;
 }
 
 fieldset {

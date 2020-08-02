@@ -11,10 +11,9 @@ const ImageListPage = (props) => {
             <NavBar/>
             <div>
                 <h3>My Images</h3>
-                <ImageList
-                { ...props }/>
-                <div>
-                    
+                <div className="imageList-container">
+                    <ImageList
+                    { ...props }/>
                 </div>
             </div>
         </>

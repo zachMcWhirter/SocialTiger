@@ -40,7 +40,8 @@ small {
   .nav-link:hover {
     color: black;
     background: gray;
-    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #8dff0a, 0 0 40px #8dff0a, 0 0 55px #8dff0a, 0 0 75px #49ff18;
+    /* text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #8dff0a, 0 0 40px #8dff0a, 0 0 55px #8dff0a, 0 0 75px #49ff18; */
+    text-shadow: 0 0 10px #FFFFFF, 2px 2px 17px #71D31C, 2px 2px 9px #71D31C, 2px 2px 9px #71D31C;
   }
 
 div.link-container {

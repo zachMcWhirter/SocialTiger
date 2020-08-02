@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import FolderCard from "./FolderCard";
 import FolderManager from "../../modules/FolderManager";
+import "./FolderList.css"
 
 const FolderList = (props) => {
     const [folders, setFolders] = useState([]);

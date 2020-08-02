@@ -11,7 +11,7 @@ const Banner = (props) => {
 
         return( 
             <>
-                <div className="banner">
+                <div className="bannerSignedIn">
                     <BannerSignedIn />
                 </div>
             </>
@@ -19,7 +19,7 @@ const Banner = (props) => {
     } else {
         return (
             <>
-                <div className="banner">
+                <div className="bannerForLogin">
                     <BannerForLogin />
                 </div>
             </>
