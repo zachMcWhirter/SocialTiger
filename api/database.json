@@ -20,6 +20,11 @@
       "folderName": "Funny"
     },
     {
+      "id": 2,
+      "userId": 1,
+      "folderName": "Holiday"
+    },
+    {
       "id": 3,
       "userId": 1,
       "folderName": "Family"
@@ -30,9 +35,9 @@
       "folderName": "ClassMates"
     },
     {
-      "id": 2,
+      "folderName": "new folder",
       "userId": 1,
-      "folderName": "Holiday"
+      "id": 5
     }
   ],
   "images": [
@@ -140,6 +145,13 @@
       "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1595816913/socialTiger/Screen_Shot_2020-07-17_at_1.15.49_PM_cfqeva.png",
       "folderId": 4,
       "id": 25
+    },
+    {
+      "imageName": "Orange Beach",
+      "imageDescription": "Us at the Beach",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596399706/socialTiger/at_the_beach_ruiifr.jpg",
+      "folderId": 3,
+      "id": 26
     }
   ]
 }
