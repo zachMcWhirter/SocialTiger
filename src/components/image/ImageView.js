@@ -33,7 +33,7 @@ const ImageView = props => {
         setIsLoading(true);
         ImageManager.delete(props.imageId).then(() =>
         //   props.history.push("/images") takes you back to the main images page (ImageList) and loads the remaining images after deleting the imageId you selected.
-          props.history.push("/images")
+          props.history.push("/folders/")
         //   Do not forget to update ApplicationViews.js to include {...props} at the end of the ImageDetail route path
         );
       };
@@ -42,19 +42,18 @@ const ImageView = props => {
         // this is where we use JSX to tell the browser what an ImageDetail card will look like. And return it
         <div className="card">
             <div className="card-content">
-                <picture>
-                    <img src={(image.url)} alt="My Img" />
-                </picture>
-                <h3>Image Name: <span style={{ color: 'darkslategrey' }}>{image.imageName}</span></h3>
-                <p>Description: {image.imageDescription}</p>
-                <button type="button" disabled={isLoading} onClick={handleDelete}>
-                    Delete
-                </button>
-                {/* <a download={image.url} >
-                    <button type="button" disabled={isLoading} >
-                        Download
+                <div className="imageViewImg-container">
+                    <picture>
+                        <img className="imageViewImg" src={(image.url)} alt="My Img" />
+                    </picture>
+                </div>
+                <div className="imageDetails-container">
+                    <h3>Image Name: <span>{image.imageName}</span></h3>
+                    <h3>Description: {image.imageDescription}</h3>
+                    <button type="button" disabled={isLoading} onClick={handleDelete}>
+                        Delete
                     </button>
-                </a> */}
+                </div>
             </div>
         </div>
     );

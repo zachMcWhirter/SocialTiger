@@ -1,0 +1,17 @@
+img.folderImage {
+    max-height: 20vh;
+}
+
+button.folderCard {
+    background-color: silver;
+    border-radius: 5px;
+}
+
+div.folderListBody {
+    display: flex;
+    flex-direction: row;
+}
+
+div.folderList-container {
+   
+}

@@ -50,7 +50,7 @@ const ImageForm = (props) => {
     return (
         <>
             <form>
-                <fieldset>
+                <fieldset className="imageForm">
                     <div className="formgrid">
                         {/* dropdown select to choose the folder you want to create the image in */}
                     <select
@@ -64,6 +64,7 @@ const ImageForm = (props) => {
                                 </option>
                             ))}  
                     </select> 
+                        <br/>      
                         <input
                             type="text"
                             required
@@ -72,6 +73,7 @@ const ImageForm = (props) => {
                             placeholder="Image Name"
                             value={image.imageName}
                         />
+                        <br/>
                         <input
                             type="text"
                             required
@@ -80,6 +82,7 @@ const ImageForm = (props) => {
                             placeholder="Image Description"
                             value={image.imageDescription}
                         />
+                        <br/>
                         <input
                             type="text"
                             required

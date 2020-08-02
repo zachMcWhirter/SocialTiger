@@ -17,17 +17,22 @@
     {
       "id": 1,
       "userId": 1,
-      "folderName": "Funny Stuff"
+      "folderName": "Funny"
     },
     {
       "id": 2,
-      "userId": 2,
-      "folderName": "Holidays"
+      "userId": 1,
+      "folderName": "Holiday"
     },
     {
       "id": 3,
       "userId": 1,
       "folderName": "Family"
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "folderName": "ClassMates"
     }
   ],
   "images": [
@@ -40,6 +45,7 @@
     },
     {
       "id": 4,
+      "folderId": 2,
       "imageName": "Cinco De Mayo 5",
       "imageDescription": "Repeating Tacos",
       "url": "https://www.retailmenot.com/blog/wp-content/uploads/sites/2/2020/05/CincoDeMayoDealsandFreebies2020-765x453.jpg"
@@ -100,18 +106,20 @@
       "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1595816040/testImages/starry_woods_jqdzqe.jpg",
       "folderId": 1
     },
-    {
-      "id": 20,
-      "imageName": "Orange Beach",
-      "imageDescription": "Us at the Beach!",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596210323/testImages/at_the_beach_l2hkks.jpg"
-    },
+
     {
       "imageName": "Orange Beach",
       "imageDescription": "Us at the Beach!!!!",
       "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596210323/testImages/at_the_beach_l2hkks.jpg",
       "folderId": 3,
       "id": 21
+    },
+    {
+      "imageName": "funny",
+      "imageDescription": "poster",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596291325/socialTiger/angelPoster_fbgk8m.jpg",
+      "folderId": 1,
+      "id": 22
     }
   ]
 }

@@ -9,10 +9,12 @@ const FolderListPage = (props) => {
         <>
             <Banner />
             <NavBar/>
-            <div>
+            <div className="folderListBody">
                 <h3>My Folders</h3>
-                <FolderList
-                { ...props }/>
+                <div className="folderList-container">
+                    <FolderList
+                    { ...props }/>
+                </div>
             </div>
         </>
     );

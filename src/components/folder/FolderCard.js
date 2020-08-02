@@ -1,6 +1,7 @@
 import React from "react";
 import FolderImage from "./folder-image.png";
-import "./Folder.css";
+import "./FolderList.css";
+
 
 
 const FolderCard = (props) => {
@@ -10,11 +11,10 @@ const FolderCard = (props) => {
             <div className="card-content">
                 <div className="img-container">
                     {/* I chose to make my folders clickable by wrapping the folder icon with a button here */}
-                    {/* <Link to={`/images/${props.image.id}`}> */}
-                    <button type="button"
+                    <button className="folderCard" type="button"
                         onClick={() => props.history.push(`/folders/${props.folder.id}`)}>
                             {props.folder.folderName}
-                        <img src={FolderImage} alt="folder" 
+                        <img className="folderImage" src={FolderImage} alt="folder" 
                         />
                     </button>
                     {/* </Link> */}
