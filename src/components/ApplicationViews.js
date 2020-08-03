@@ -1,6 +1,7 @@
 import { Route } from "react-router-dom";
 import React from "react";
 import LoginPage from "../pages/LoginPage";
+import RegistrationPage from "../pages/RegistrationPage"
 import HomePage from "../pages/HomePage";
 import FolderListPage from "../pages/FolderListPage";
 import CreateFolderPage from "../pages/CreateFolderPage";
@@ -16,6 +17,7 @@ const ApplicationViews = (props) => {
 
         <>
             <Route exact path="/" component={LoginPage} />
+            <Route exact path="/registration" component={RegistrationPage} />
             <Route exact path="/home" component={HomePage} />    
             <Route exact path="/folders" component={FolderListPage} />
             <Route exact path="/folders/CreateFolder" component={CreateFolderPage} />
@@ -24,7 +26,7 @@ const ApplicationViews = (props) => {
             <Route exact path="/images/:imageId(\d+)" component={ImageViewPage} />
             <Route exact path="/images/CreateImage" component={CreateImagePage} />
             <Route exact path="/images/:imageId(\d+)/edit" component={EditImagePage} />
-            {/* <Route exact path="/" component={ViewImagePage} /> */}
+            
         </>
     );
 };

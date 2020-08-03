@@ -2,11 +2,14 @@ import React, { useState } from "react"
 import "./Login.css"
 
 const Login = props => {
-    const [credentials, setCredentials] = useState({ username: "", password: "" });
+    const [credentials, setCredentials] = useState({ 
+        username: "", 
+        password: "" 
+    });
 
-    const handleFieldChange = (evt) => {
+    const handleFieldChange = (e) => {
         const stateToChange = { ...credentials };
-        stateToChange[evt.target.id] = evt.target.value;
+        stateToChange[e.target.id] = e.target.value;
         setCredentials(stateToChange);
     };
 

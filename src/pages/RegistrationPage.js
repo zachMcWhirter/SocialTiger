@@ -1,16 +1,16 @@
 import React from "react";
-import Login from "../components/auth/Login";
+import Registration from "../components/auth/RegisterNewUser";
 import {withRouter} from "react-router-dom";
 import Banner from "../components/Banner";
 
-const LoginPage = (props) => {
+const RegistrationPage = (props) => {
 
     return (
         <>
             <Banner/>
-            <Login { ...props}/>
+            <Registration { ...props}/>
         </>
     )
 };
 
-export default withRouter(LoginPage);
+export default withRouter(RegistrationPage);
