@@ -1,16 +1,23 @@
-div.homePageBody {
+/* div.homePageBody {
     margin-top: 50px;
     margin-right: 100px;
     margin-bottom: 100px;
     margin-left: 100px;
 
+} */
+
+div.homePageBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 div.image-spotlight {
     display: flex;
     background-color: rgba(58, 58, 58, 0.8);
     margin: 0;
-    border: black 20px double;
+    border: black 10px double;
+    box-shadow: -1px -1px 17px 8px #000000, -1px -1px 45px 1px rgba(0,0,0,0.28);
     width: 55vw;
 }
 
@@ -19,3 +26,8 @@ img.randomImage {
     width: auto;
     padding: 10px;
 }
+
+/* need container for h3 and reload button. then do a 10px margin.
+h3 inside needs to be h2 or h1 and the description needs to be larger text with more contrast {
+
+} */

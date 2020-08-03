@@ -2,11 +2,14 @@ import React, { useState } from "react"
 import "./Login.css"
 
 const Login = props => {
-    const [credentials, setCredentials] = useState({ username: "", password: "" });
+    const [credentials, setCredentials] = useState({ 
+        username: "", 
+        password: "" 
+    });
 
-    const handleFieldChange = (evt) => {
+    const handleFieldChange = e => {
         const stateToChange = { ...credentials };
-        stateToChange[evt.target.id] = evt.target.value;
+        stateToChange[e.target.id] = e.target.value;
         setCredentials(stateToChange);
     };
 
@@ -24,8 +27,10 @@ const Login = props => {
         <>
             <div className="form-container">
                 <form onSubmit={handleLogin}>
-                    <fieldset>
-                        <h3>Please log in</h3>
+                    <fieldset className="loginFieldset">
+                        <div className="login-h3-container">
+                            <h3 className="login-h3">Please log in</h3>
+                        </div>
                         <div className="formgrid">
                             <label htmlFor="inputUsername">Username: </label>
                             <input onChange={handleFieldChange} type="username"
@@ -45,10 +50,13 @@ const Login = props => {
                     </fieldset>
                 </form>
                 
-                <div>
-                    <button type="button"
-                    // onClick={alert("Display Register new user form")}
-                    >Register
+                <div className="registerButton-container">
+                    <button className="registerButton"
+                            type="button"
+                            onClick={() => {  
+                            props.history.push("/registration")
+                            }}   
+                    >Register New Account
                 </button>
                 </div>
             </div>

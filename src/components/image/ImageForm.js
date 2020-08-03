@@ -27,7 +27,7 @@ const ImageForm = (props) => {
             window.alert("Please input an image name, image description, and url");
         } else {
             setIsLoading(true);
-            // This will parse the "" string value of employeeId from const AnimalEditForm and make it an integer
+            // This will parse the "" string value of folderId from ImageEditForm and make it an integer
             image.folderId = parseInt(image.folderId)
             // Create the Image and redirect user to Image list
             ImageManager.post(image)

@@ -21,15 +21,16 @@ const BannerSignedIn = (props) => {
                     <button className="logOutButton"
                             type="button"
                             onClick={handleLogout}>
-                        Log Out
+                        LogOut
                     </button>
                     <h1>SOCIAL TIGER</h1>
+                </div>  
                 <div>
                     <img 
                         className="logo" 
                         src="https://res.cloudinary.com/lordargyle22/image/upload/v1596292629/socialTiger/SocialTiger_bwtvfg.png" />
                 </div>        
-                </div>
+                
             </>
         );
     } else {
