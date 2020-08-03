@@ -32,6 +32,12 @@ const RegisterNewUser = (props) => {
                             <h3 className="registration-h3">Registration Form</h3>
                         </div>
                         <div className="formgrid">
+                            <label htmlFor="inputEmail">Email: </label>
+                            <input onChange={handleFieldChange} type="email"
+                                id="email"
+                                placeholder="Email"
+                                required="" autoFocus="" />
+                            <br />
                             <label htmlFor="inputUsername">Username: </label>
                             <input onChange={handleFieldChange} type="username"
                                 id="username"
@@ -46,16 +52,11 @@ const RegisterNewUser = (props) => {
                                 required=""
                                 minLength="3" />
                         </div>
-                        <button type="submit">Register</button>
+                        <button type="submit"
+                                className="submitRegistratonButton"
+                        >Sumbit Registration</button>
                     </fieldset>
                 </form>
-                
-                <div className="registerButton-container">
-                    <button className="registerButton"
-                            type="button"
-                    >Register New Account
-                </button>
-                </div>
             </div>
         </>
     )

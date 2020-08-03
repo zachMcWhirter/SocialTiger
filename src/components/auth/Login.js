@@ -53,6 +53,9 @@ const Login = props => {
                 <div className="registerButton-container">
                     <button className="registerButton"
                             type="button"
+                            onClick={() => {  
+                            props.history.push("/registration")
+                            }}   
                     >Register New Account
                 </button>
                 </div>
