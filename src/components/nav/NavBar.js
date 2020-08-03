@@ -12,14 +12,19 @@ const NavBar = () => {
                 <nav>
                     <ul className="container">
                         <li>
-                            <div className="link-container">
-                                <Link className="nav-link"  to="/home">
+                            <div 
+                            id="navHome"
+                            className="link-container">
+                                <Link 
+                                className="nav-link"  to="/home">
                                     Home
                                 </Link>
                             </div>
                         </li>
                         <li>
-                            <div className="link-container">
+                            <div 
+                            id="navFolders"
+                            className="link-container">
                                 <Link className="nav-link" to="/folders">
                                     Folders
                                 </Link>

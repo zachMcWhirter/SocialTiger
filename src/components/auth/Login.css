@@ -20,7 +20,7 @@ h3.login-h3 {
 
 div.registerButton-container {
     margin: 15px;
-    box-shadow: -1px -1px 17px 6px #000000, -1px -1px 45px 1px rgba(0,0,0,0.28);
+    box-shadow: -1px -1px 15px 3px #000000, -1px -1px 45px 1px rgba(0,0,0,0.28);
 }
 
 input#username, input#password{
@@ -28,5 +28,5 @@ input#username, input#password{
 }
 
 fieldset.loginFieldset {
-    box-shadow: -1px -1px 17px 10px #000000, -1px -1px 45px 1px rgba(0,0,0,0.28);
+    box-shadow: -1px -1px 17px 7px #000000, -1px -1px 45px 1px rgba(0,0,0,0.28);
 }
