@@ -7,7 +7,7 @@ const Login = props => {
         password: "" 
     });
 
-    const handleFieldChange = (e) => {
+    const handleFieldChange = e => {
         const stateToChange = { ...credentials };
         stateToChange[e.target.id] = e.target.value;
         setCredentials(stateToChange);

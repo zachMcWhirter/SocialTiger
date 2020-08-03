@@ -15,10 +15,6 @@ const FolderForm = (props) => {
         setFolder(stateToChange);
     };
 
-    // const clearInputFields = () => {
-    //     setFolder({folderName: ""});
-    // }
-
     const createNewFolder = e => {
         e.preventDefault();
         if (folder.folderName === "") {
@@ -29,8 +25,6 @@ const FolderForm = (props) => {
             FolderManager.post(folder)
             .then(() => props.history.push("/folders"))
         }
-            // setIsLoading(false);
-            // clearInputFields();
     };
 
     return (

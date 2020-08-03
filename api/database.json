@@ -11,6 +11,18 @@
       "username": "bob",
       "email": "bob@bob.com",
       "password": "bob"
+    },
+    {
+      "email": "me@gmail.com",
+      "username": "me",
+      "password": "qwdsfc",
+      "id": 3
+    },
+    {
+      "email": "me@gmail.com",
+      "username": "me",
+      "password": "234",
+      "id": 4
     }
   ],
   "folders": [
@@ -37,6 +49,11 @@
     {
       "id": 6,
       "folderName": "Kids Stuff"
+    },
+    {
+      "folderName": "new folder",
+      "userId": 1,
+      "id": 7
     }
   ],
   "images": [
