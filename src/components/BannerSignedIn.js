@@ -21,7 +21,7 @@ const BannerSignedIn = (props) => {
                     <button className="logOutButton"
                             type="button"
                             onClick={handleLogout}>
-                        Log Out
+                        LogOut
                     </button>
                     <h1>SOCIAL TIGER</h1>
                 </div>  

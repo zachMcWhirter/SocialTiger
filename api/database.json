@@ -16,28 +16,27 @@
   "folders": [
     {
       "id": 1,
-      "userId": 1,
-      "folderName": "Funny"
+      "folderName": "Funny Stuff"
     },
     {
       "id": 2,
-      "userId": 1,
-      "folderName": "Holiday"
+      "folderName": "Holiday Fun"
     },
     {
       "id": 3,
-      "userId": 1,
-      "folderName": "Family"
+      "folderName": "Family Pics"
     },
     {
       "id": 4,
-      "userId": 2,
       "folderName": "ClassMates"
     },
     {
-      "folderName": "new folder",
-      "userId": 1,
-      "id": 5
+      "id": 5,
+      "folderName": "Other Junk"
+    },
+    {
+      "id": 6,
+      "folderName": "Kids Stuff"
     }
   ],
   "images": [
@@ -54,13 +53,6 @@
       "imageName": "Cinco De Mayo 5",
       "imageDescription": "Repeating Tacos",
       "url": "https://www.retailmenot.com/blog/wp-content/uploads/sites/2/2020/05/CincoDeMayoDealsandFreebies2020-765x453.jpg"
-    },
-    {
-      "imageName": "Stars in the Woods",
-      "imageDescription": "Starry Woods",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1595816040/testImages/starry_woods_jqdzqe.jpg",
-      "folderId": 1,
-      "id": 5
     },
     {
       "imageName": "Chad and Rob",

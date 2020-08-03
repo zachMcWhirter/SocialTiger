@@ -3,16 +3,17 @@ button.logOutButton {
     position: absolute;
     top: 15px;
     left: 15px;
+    height: auto;
+    font-size: 18px;
     
 }
 
 div.h1-container {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     text-align: center;
     background-color: rgba(58, 58, 58, 0.8);
-
 }
 
 h1 {
@@ -25,5 +26,5 @@ img.logo {
     position: absolute;
     top: 25px;
     right: 15px;
-    width: 250px
+    width: 250px;
 }

@@ -8,31 +8,33 @@ import "./NavBar.css"
 const NavBar = () => {
     return (
         <>
-            <nav>
-                <ul className="container">
-                    <li>
-                        <div className="link-container">
-                            <Link className="nav-link"  to="/home">
-                                Home
-                            </Link>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="link-container">
-                            <Link className="nav-link" to="/folders">
-                                Folders
-                            </Link>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="link-container">
-                            <Link className="nav-link" to="/images/CreateImage">
-                                Create Image
-                            </Link>
-                        </div>    
-                    </li>
-                </ul>
-            </nav>
+            <div className="nav-container">
+                <nav>
+                    <ul className="container">
+                        <li>
+                            <div className="link-container">
+                                <Link className="nav-link"  to="/home">
+                                    Home
+                                </Link>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="link-container">
+                                <Link className="nav-link" to="/folders">
+                                    Folders
+                                </Link>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="link-container">
+                                <Link className="nav-link" to="/images/CreateImage">
+                                    Create Image
+                                </Link>
+                            </div>    
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </>
     );
 };
