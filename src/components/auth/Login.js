@@ -5,7 +5,7 @@ import UserManager from "../../modules/UserManager";
 const Login = props => {
 
     const [credentials, setCredentials] = useState({
-        username: "",
+        email: "",
         password: "" 
     });
 
@@ -25,21 +25,18 @@ const Login = props => {
 
     const handleLogin = e => {
         e.preventDefault();
-        const userUsername = document.getElementById("username").value
+        const userEmail = document.getElementById("email").value
         const userPassword = document.getElementById("password").value
 
         UserManager.getAll()
             .then(usersFromAPI => {
-                usersFromAPI.find(user => {
-                    if (user.username === userUsername && user.password === userPassword) {
-                            setUser(user)
-                            props.history.push("/home")
-                        
-
-                    // } else {
-                    //     alert("Plaese enter a correct username and password. Or register a new account.")
-                    }
-                })
+                var foundUser = usersFromAPI.find(user => {
+                    if (user.email === userEmail && user.password === userPassword) {
+                        return true;
+                        } else {
+                            return false;
+                        }
+                });
             })
     };
 
@@ -52,10 +49,10 @@ const Login = props => {
                             <h3 className="login-h3">Please log in</h3>
                         </div>
                         <div className="formgrid">
-                            <label htmlFor="inputUsername">Username: </label>
-                            <input onChange={handleFieldChange} type="username"
-                                id="username"
-                                placeholder="Username"
+                            <label htmlFor="inputEmail">Email: </label>
+                            <input onChange={handleFieldChange} type="email"
+                                id="email"
+                                placeholder="Email"
                                 required="" autoFocus="" />
                             <br />
                             <label htmlFor="inputPassword"

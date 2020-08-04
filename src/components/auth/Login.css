@@ -23,7 +23,7 @@ div.registerButton-container {
     box-shadow: -1px -1px 15px 3px #000000, -1px -1px 45px 1px rgba(0,0,0,0.28);
 }
 
-input#username, input#password{
+input#email, input#password{
     width: 225px;
 }
 

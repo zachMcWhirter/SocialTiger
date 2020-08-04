@@ -1,19 +1,31 @@
 import React, { useState, useEffect } from "react";
 import UserManager from "../../modules/UserManager"
 
+    //Function to assign unique ID to new users
+    function nextAvailableID(allUsers) {
+        //begin with an ID
+        var highestID = 0;
+
+        // loop through the list of users and make sure
+        //  you always have the highest ID strored
+        //  in highestID
+        for (let user of allUsers) {
+            if (user.id > highestID) {
+                highestID =user.id;
+            }
+        }
+        return highestID + 1;
+    }
+
 const RegisterNewUser = (props) => {
     const [userCreds, setUserCreds] = useState({
         email: "",
-        username: "",
-        password: "",
-        id: 0
+        password: ""
     });
-
-    const [users, setUsers] = useState([]);
 
     const [isLoading, setIsLoading] = useState(false);
 
-    const handleFieldChange = (e) => {
+    const handleFieldChange = e => {
         const stateToChange = { ...userCreds };
         stateToChange[e.target.id] = e.target.value;
         setUserCreds(stateToChange);
@@ -21,56 +33,36 @@ const RegisterNewUser = (props) => {
 
     const createNewUser = e => {
         e.preventDefault();
-        const userEmail = document.getElementById("email").value
-        const userUsername = document.getElementById("username").value
-        let getUserEmail = users.find(userObj => {
-            return userObj.email === userEmail;
-        })
-        let getUsername = users.find(userObj => {
-            return userObj.username === userUsername;
-        })
-        if (getUserEmail && getUsername) {
-            alert("User email and username already exists")
-        } else if (getUserEmail) {
-            alert("Email address already in use")
-        } else if (getUsername) {
-            alert(" Username already in use")
-        } else if (userCreds.email === "" || userCreds.username === "" || userCreds.password === "") {
-            alert("Complete all form fields")
-        } else {
-            setIsLoading(true)
-            console.log(userCreds)
-            UserManager.post(userCreds)
-                .then(() => {
-                    UserManager.getAll()
-                        .then(res => {
-                            res.find(user => {
-                                if (user.username === userUsername) {
-                                    userCreds.id = user.id
-                                    props.history.push("/")
-                                }
-                            })
-
-                            sessionStorage.setItem(
-                                "credentials",
-                                JSON.stringify(userCreds)
-                            );
-                            props.history.push("/home")
-                        })
-                })
-        }
-    }
-
-    const getUsers = () => {
-        return UserManager.getAll()
-            .then(usersFromAPI => {
-                setUsers(usersFromAPI);
+        // const userEmail = userCreds.email;
+        if (!userCreds.email || !userCreds.password) {
+            alert("Please fill out the form");
+            return;
+        } 
+        
+        UserManager.getAll()
+            .then(allUsers => {
+                let foundUser = allUsers.find(userObj => userObj.email === userCreds.Email);
+                if (foundUser) {
+                    alert("User already exists")
+                    return;
+                }
+                // All conditions for creating a new 
+                // user have been met. 
+                // Now we tell it how to make one.
+                let newUser = {
+                    email: userCreds.email,
+                    password: userCreds.password,
+                    id: nextAvailableID(allUsers)
+                };
+                UserManager.post(newUser)
+                    .then(() => {
+                        sessionStorage.setItem("credentials", JSON.stringify(newUser));
+                        props.history.push("/home");
+                    });
             });
-    }
 
-    useEffect(() => {
-        getUsers();
-    }, []);
+
+    }
 
     return (
         <>
@@ -87,14 +79,6 @@ const RegisterNewUser = (props) => {
                                 placeholder="Email"
                                 required="" autoFocus=""
                                 value={userCreds.email}
-                            />
-                            <br />
-                            <label htmlFor="inputUsername">Username: </label>
-                            <input onChange={handleFieldChange} type="username"
-                                id="username"
-                                placeholder="Username"
-                                required="" autoFocus=""
-                                value={userCreds.username}
                             />
                             <br />
                             <label htmlFor="inputPassword"
