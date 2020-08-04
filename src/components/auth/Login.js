@@ -1,12 +1,22 @@
 import React, { useState } from "react"
 import "./Login.css"
+import UserManager from "../../modules/UserManager";
 
 const Login = props => {
-    const [credentials, setCredentials] = useState({ 
-        username: "", 
+
+    const [credentials, setCredentials] = useState({
+        email: "",
         password: "" 
     });
 
+    const isAuthenticated = () => sessionStorage.getItem("user") !== null
+
+    const [hasUser, setHasUser] = useState(isAuthenticated())
+    const setUser = user => {
+        sessionStorage.setItem("user" , JSON.stringify(user))
+        setHasUser(isAuthenticated()) 
+    }
+        
     const handleFieldChange = e => {
         const stateToChange = { ...credentials };
         stateToChange[e.target.id] = e.target.value;
@@ -15,13 +25,20 @@ const Login = props => {
 
     const handleLogin = e => {
         e.preventDefault();
+        const userEmail = document.getElementById("email").value
+        const userPassword = document.getElementById("password").value
 
-        sessionStorage.setItem(
-            "credentials",
-            JSON.stringify(credentials)
-        );
-        props.history.push("/home")
-    }
+        UserManager.getAll()
+            .then(usersFromAPI => {
+                var foundUser = usersFromAPI.find(user => {
+                    if (user.email === userEmail && user.password === userPassword) {
+                        return true;
+                        } else {
+                            return false;
+                        }
+                });
+            })
+    };
 
     return (
         <>
@@ -32,10 +49,10 @@ const Login = props => {
                             <h3 className="login-h3">Please log in</h3>
                         </div>
                         <div className="formgrid">
-                            <label htmlFor="inputUsername">Username: </label>
-                            <input onChange={handleFieldChange} type="username"
-                                id="username"
-                                placeholder="Username"
+                            <label htmlFor="inputEmail">Email: </label>
+                            <input onChange={handleFieldChange} type="email"
+                                id="email"
+                                placeholder="Email"
                                 required="" autoFocus="" />
                             <br />
                             <label htmlFor="inputPassword"
@@ -49,13 +66,13 @@ const Login = props => {
                         <button type="submit">Log In</button>
                     </fieldset>
                 </form>
-                
+
                 <div className="registerButton-container">
                     <button className="registerButton"
-                            type="button"
-                            onClick={() => {  
+                        type="button"
+                        onClick={() => {
                             props.history.push("/registration")
-                            }}   
+                        }}
                     >Register New Account
                 </button>
                 </div>

@@ -18,9 +18,9 @@ const CreateImagePage = (props) => {
                <ImageForm
                { ...props}
                />
-               <ImageUpload
+               {/* <ImageUpload
                {...props} 
-               />
+               /> */}
             </div>
         </>
     );

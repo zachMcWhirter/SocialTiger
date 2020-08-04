@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-const ImageUpload = () => {
+const ImageUpload = (props) => {
 
     // setting state for loading as false
     const [isLoading, setIsLoading] = useState(false);
@@ -33,16 +33,22 @@ const ImageUpload = () => {
         // Now we use dot notation to access the secure_url property
         setImage(file.secure_url);
         setIsLoading(false);
-
+        // (image.url) = file.secure_url
     }
-
+    
     return (
         <div>
-            <h3 className="upload_banner">
+            {/* <h3 className="upload_banner">
                 Upload Image
-    </h3>
-            {/* Creating the input form and calling the uploadImage function onChange */}
-            <input type="file" name="file" placeholder="Upload an Image" onChange={uploadImage} />
+            </h3> */}
+            <input 
+                type="file" 
+                name="file" 
+                placeholder="Upload an Image" 
+                onChange={uploadImage}
+                value={image.url}
+                id="url" 
+            />
 
             {
                 // This is essentially an if/else statement written inside the return using the "?" as the if, and ":" as the else. This code reads: "if isLoading=true, then return Loading ...", "else return <img src={image} style={{width:"500px"}} /> "
@@ -52,11 +58,10 @@ const ImageUpload = () => {
                     </h3>
                 ) : (
                     <div className="cloudinary">
-                        <img src={image}  alt="img"/>
+                        <img src={image.secure_url}  />
                     </div>
                     )
             }
-
         </div>
     )
 }
