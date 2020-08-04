@@ -29,6 +29,11 @@
       "username": "me",
       "password": "4567",
       "id": 10
+    },
+    {
+      "email": "bob3@bob3.com",
+      "password": "bob3",
+      "id": 11
     }
   ],
   "folders": [
