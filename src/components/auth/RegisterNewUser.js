@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import UserManager from "../../modules/UserManager"
 
     //Function to assign unique ID to new users
@@ -41,7 +41,7 @@ const RegisterNewUser = (props) => {
         
         UserManager.getAll()
             .then(allUsers => {
-                let foundUser = allUsers.find(userObj => userObj.email === userCreds.Email);
+                let foundUser = allUsers.find(userObj => userObj.email === userCreds.email);
                 if (foundUser) {
                     alert("User already exists")
                     return;
