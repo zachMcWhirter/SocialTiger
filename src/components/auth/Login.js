@@ -3,11 +3,19 @@ import "./Login.css"
 import UserManager from "../../modules/UserManager";
 
 const Login = props => {
+
     const [credentials, setCredentials] = useState({
         username: "",
-        password: "",
-        userId: 0
+        password: "" 
     });
+
+    const isAuthenticated = () => sessionStorage.getItem("user") !== null
+
+    const [hasUser, setHasUser] = useState(isAuthenticated())
+    const setUser = user => {
+        sessionStorage.setItem("user" , JSON.stringify(user))
+        setHasUser(isAuthenticated()) 
+    }
         
     const handleFieldChange = e => {
         const stateToChange = { ...credentials };
@@ -24,13 +32,9 @@ const Login = props => {
             .then(usersFromAPI => {
                 usersFromAPI.find(user => {
                     if (user.username === userUsername && user.password === userPassword) {
-
-                        sessionStorage.setItem(
-                            "credentials",
-                            JSON.stringify(credentials),
-                            //maybe set re state here
+                            setUser(user)
                             props.history.push("/home")
-                        );
+                        
 
                     // } else {
                     //     alert("Plaese enter a correct username and password. Or register a new account.")

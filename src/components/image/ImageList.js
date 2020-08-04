@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ImageCard from "./ImageCard";
 import ImageManager from "../../modules/ImageManager";
 
+
 const ImageList = (props) => {
     const [images, setImages] = useState([]);
 
@@ -33,7 +34,6 @@ const ImageList = (props) => {
                     Add New Image
             </button>
             </section>
-                
             <div className="container-cards">
                 {images.map(image => 
                     <ImageCard 
