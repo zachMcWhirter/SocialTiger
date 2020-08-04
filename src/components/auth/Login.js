@@ -15,6 +15,9 @@ const Login = props => {
 
     const handleLogin = e => {
         e.preventDefault();
+        const userUsername = document.getElementById("username").value
+        const userPassword = document.getElementById("password").value
+
 
         sessionStorage.setItem(
             "credentials",

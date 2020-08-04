@@ -22,24 +22,52 @@ const RegisterNewUser = (props) => {
         e.preventDefault();
         const userEmail = document.getElementById("email").value
         const userUsername = document.getElementById("username").value
+        let getUserEmail = users.find(userObj => {
+            return userObj.email === userEmail;
+        })
+        let getUsername = users.find(userObj => {
+            return userObj.username === userUsername;
+        })
+        if (getUserEmail && getUsername) {
+            alert("User email and username already exists")
+        } else if (getUserEmail) {
+            alert("Email address already in use")
+        } else if (getUsername) {
+            alert(" Username already in use")
+        } else if (userCreds.email === "" || userCreds.username === "" || userCreds.password === "") {
+            alert("Complete all form fields")
+        } else {
+            setIsLoading(true)
+            UserManager.post(userCreds)
+                .then(() => {
+                    UserManager.getAll()
+                        .then(res => {
+                            res.find(user => {
+                                if (res.username === userUsername) {
+                                    userCreds.id = res.id
+                                    props.history.push("/")
+                                }
+                            })
 
-        users.forEach(user => {
-            if (user.email === userEmail) {
-                alert("The email address you entered matches an existing account");
-                    if(user.username === userUsername) {
-                        alert("The username you entered matches an existing account");
-                    }
-            }
-                setIsLoading(true);
+                            sessionStorage.setItem(
+                                "credentials",
+                                JSON.stringify(userCreds)
+                            );
+                            props.history.push("/home")
+                        })
+                })
+        }
+    }
 
-                // Create the User and redirect user to Login
-                UserManager.post(userCreds)
-                    .then(() => sessionStorage.setItem(
-                        "credentials",
-                        JSON.stringify(userCreds)
-                    )).then(() => props.history.push("/home"))
-        })   
-    };      
+    // Create the User and redirect user to Login
+
+
+    //                 })
+
+    //         }
+    //     })
+
+    // };
 
     const getUsers = () => {
         return UserManager.getAll()
