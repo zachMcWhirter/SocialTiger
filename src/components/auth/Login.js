@@ -1,12 +1,14 @@
 import React, { useState } from "react"
 import "./Login.css"
+import UserManager from "../../modules/UserManager";
 
 const Login = props => {
-    const [credentials, setCredentials] = useState({ 
-        username: "", 
-        password: "" 
+    const [credentials, setCredentials] = useState({
+        username: "",
+        password: "",
+        userId: 0
     });
-
+        
     const handleFieldChange = e => {
         const stateToChange = { ...credentials };
         stateToChange[e.target.id] = e.target.value;
@@ -18,13 +20,24 @@ const Login = props => {
         const userUsername = document.getElementById("username").value
         const userPassword = document.getElementById("password").value
 
+        UserManager.getAll()
+            .then(usersFromAPI => {
+                usersFromAPI.find(user => {
+                    if (user.username === userUsername && user.password === userPassword) {
 
-        sessionStorage.setItem(
-            "credentials",
-            JSON.stringify(credentials)
-        );
-        props.history.push("/home")
-    }
+                        sessionStorage.setItem(
+                            "credentials",
+                            JSON.stringify(credentials),
+                            //maybe set re state here
+                            props.history.push("/home")
+                        );
+
+                    // } else {
+                    //     alert("Plaese enter a correct username and password. Or register a new account.")
+                    }
+                })
+            })
+    };
 
     return (
         <>
@@ -52,13 +65,13 @@ const Login = props => {
                         <button type="submit">Log In</button>
                     </fieldset>
                 </form>
-                
+
                 <div className="registerButton-container">
                     <button className="registerButton"
-                            type="button"
-                            onClick={() => {  
+                        type="button"
+                        onClick={() => {
                             props.history.push("/registration")
-                            }}   
+                        }}
                     >Register New Account
                 </button>
                 </div>

@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import ImageManager from "../../modules/ImageManager";
 import FolderManager from "../../modules/FolderManager";
+import ImageUpload from "./ImageUpload";
 
 const ImageForm = (props) => {
     const [image, setImage] = useState({
         imageName: "",
         imageDescription: "",
-        url: "",
+        url: <ImageUpload { ...props} />,
         folderId: props.folderId
         
     });
@@ -23,7 +24,7 @@ const ImageForm = (props) => {
 
     const createNewImage = e => {
         e.preventDefault();
-        if (image.imageName === "" || image.imageDescription === "" || image.url === "") {
+        if (image.imageName === "" || image.imageDescription === "" || image.url === <ImageUpload { ...props } />) {
             window.alert("Please input an image name, image description, and url");
         } else {
             setIsLoading(true);
@@ -83,14 +84,17 @@ const ImageForm = (props) => {
                             value={image.imageDescription}
                         />
                         <br/>
-                        <input
+                        <ImageUpload { ...props } />
+                        <br/>
+                        
+                        {/* <input
                             type="text"
                             required
                             onChange={handleFieldChange}
-                            id="url"
+                            
                             placeholder="url"
-                            value={image.url}
-                        />
+                            
+                        /> */}
                         <div className="alignRight">
                             <button
                                 type="submit"

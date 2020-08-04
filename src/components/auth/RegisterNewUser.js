@@ -5,7 +5,8 @@ const RegisterNewUser = (props) => {
     const [userCreds, setUserCreds] = useState({
         email: "",
         username: "",
-        password: ""
+        password: "",
+        id: 0
     });
 
     const [users, setUsers] = useState([]);
@@ -38,13 +39,14 @@ const RegisterNewUser = (props) => {
             alert("Complete all form fields")
         } else {
             setIsLoading(true)
+            console.log(userCreds)
             UserManager.post(userCreds)
                 .then(() => {
                     UserManager.getAll()
                         .then(res => {
                             res.find(user => {
-                                if (res.username === userUsername) {
-                                    userCreds.id = res.id
+                                if (user.username === userUsername) {
+                                    userCreds.id = user.id
                                     props.history.push("/")
                                 }
                             })
@@ -58,16 +60,6 @@ const RegisterNewUser = (props) => {
                 })
         }
     }
-
-    // Create the User and redirect user to Login
-
-
-    //                 })
-
-    //         }
-    //     })
-
-    // };
 
     const getUsers = () => {
         return UserManager.getAll()

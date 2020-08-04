@@ -28,7 +28,7 @@ const BannerSignedIn = (props) => {
                 <div>
                     <img 
                         className="logo" 
-                        src="https://res.cloudinary.com/lordargyle22/image/upload/v1596292629/socialTiger/SocialTiger_bwtvfg.png" />
+                        src="https://res.cloudinary.com/lordargyle22/image/upload/v1596292548/socialTiger/SocialTiger_kmim0h.png" />
                 </div>        
                 
             </>

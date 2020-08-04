@@ -13,41 +13,34 @@
       "password": "bob"
     },
     {
-      "email": "me@gmail.com",
-      "username": "qrewg",
+      "email": "zach@zach.com",
+      "username": "me",
       "password": "1234",
-      "id": 3
+      "id": 4
+    },
+    {
+      "email": "y@y.com",
+      "username": "werth",
+      "password": "2345",
+      "id": 7
+    },
+    {
+      "email": "jon@jon.com",
+      "username": "jon",
+      "password": "7890",
+      "id": 8
     }
   ],
   "folders": [
     {
       "id": 1,
-      "folderName": "Funny Stuff"
+      "folderName": "Funny Stuff",
+      "userId": 1
     },
     {
       "id": 2,
-      "folderName": "Holiday Fun"
-    },
-    {
-      "id": 3,
-      "folderName": "Family Pics"
-    },
-    {
-      "id": 4,
-      "folderName": "ClassMates"
-    },
-    {
-      "id": 5,
-      "folderName": "Other Junk"
-    },
-    {
-      "id": 6,
-      "folderName": "Kids Stuff"
-    },
-    {
-      "folderName": "new folder",
-      "userId": 1,
-      "id": 7
+      "folderName": "Holiday Fun",
+      "userId": 2
     }
   ],
   "images": [
@@ -73,13 +66,6 @@
       "id": 6
     },
     {
-      "imageName": "Orange Beach",
-      "imageDescription": "Us at the Beach",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596210323/testImages/at_the_beach_l2hkks.jpg",
-      "folderId": 1,
-      "id": 7
-    },
-    {
       "imageName": "ROSE",
       "imageDescription": "Chad with Robs floating head",
       "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1595817115/testImages/Screen_Shot_2020-07-14_at_3.50.22_PM_hix9sj.png",
@@ -94,13 +80,6 @@
       "folderId": 2
     },
     {
-      "imageName": "Orange Beach",
-      "imageDescription": "Us at the Beach",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596210323/testImages/at_the_beach_l2hkks.jpg",
-      "folderId": 2,
-      "id": 18
-    },
-    {
       "id": 19,
       "imageName": "ROSE",
       "imageDescription": "more stuff",
@@ -108,39 +87,11 @@
       "folderId": 1
     },
     {
-      "imageName": "Orange Beach",
-      "imageDescription": "Us at the Beach!!!!",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596210323/testImages/at_the_beach_l2hkks.jpg",
-      "folderId": 3,
-      "id": 21
-    },
-    {
       "imageName": "funny",
       "imageDescription": "poster",
       "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596291325/socialTiger/angelPoster_fbgk8m.jpg",
       "folderId": 1,
       "id": 22
-    },
-    {
-      "imageName": "Sage",
-      "imageDescription": "Wait what's a breakout room?",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596261410/socialTiger/Wait_how_do_you_make_breakout_rooms_afsein.png",
-      "folderId": 4,
-      "id": 23
-    },
-    {
-      "imageName": "Sisi",
-      "imageDescription": "Listening to another Haiku...",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596290440/socialTiger/Screen_Shot_2020-07-17_at_1.19.27_PM_h4inpd.png",
-      "folderId": 4,
-      "id": 24
-    },
-    {
-      "imageName": "Amanda",
-      "imageDescription": "The Queen is not amused...",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1595816913/socialTiger/Screen_Shot_2020-07-17_at_1.15.49_PM_cfqeva.png",
-      "folderId": 4,
-      "id": 25
     }
   ]
 }
