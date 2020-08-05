@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import ImageCard from "./ImageCard";
 import ImageManager from "../../modules/ImageManager";
 
-
 const ImageList = (props) => {
     const [images, setImages] = useState([]);
 
@@ -13,8 +12,7 @@ const ImageList = (props) => {
                 setImages(imagesFromAPI);
             });
     }
-
-        //now use getImages() and pass (props.match.params.folderId) to it as well as passing it into the array.
+        // Use the getByFolderId() fetch call to sort the images by folderId. Be sure to pass (folderId) to getImages() and getByFolderId().
     useEffect(() => {
         getImages(props.match.params.folderId);
     }, [props.match.params.folderId]);

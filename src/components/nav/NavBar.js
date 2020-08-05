@@ -25,7 +25,7 @@ const NavBar = () => {
                             <div 
                             id="navFolders"
                             className="link-container">
-                                <Link className="nav-link" to="/folders">
+                                <Link className="nav-link" to="/folders/">
                                     Folders
                                 </Link>
                             </div>

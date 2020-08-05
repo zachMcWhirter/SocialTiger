@@ -36,7 +36,9 @@ const Login = props => {
                     props.history.push("/home");
 
                     return;
-                }   
+                } else {
+                    alert("Email/Password combnation incorrect")
+                }
             }
         )
     };

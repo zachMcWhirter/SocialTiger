@@ -5,19 +5,22 @@ import "./FolderList.css"
 
 const FolderList = (props) => {
     const [folders, setFolders] = useState([]);
-
-    const getFolders = () => {
-        // After the data comes back from the API, we use the setFolders function to update state
-        return FolderManager.getAll()
-            .then(foldersFromAPI => {
-                setFolders(foldersFromAPI);
-            });
-    }
-
+    
+    // the user's "credentials" are saved in sessionStorage as an object
+    //  containing 3 separate key:value strings. So you need to 
+    //  convert it to a javascript object by wrapping it in JSON.parse()
+    const [user, setUser] = useState(JSON.parse(sessionStorage.getItem("credentials")));
+    
+    //    Use the getByUserId() fetch call to sort 
+    //    the folders by userId.       
     useEffect(() => {
-        getFolders();
-    }, []);
+        console.log(user, user.email);
 
+        FolderManager.getByUserId(user.id)
+            .then((res) =>  {console.log(res)
+                setFolders(res)})
+    }, []);
+        
     const deleteFolder = id => {
         FolderManager.delete(id)
             .then(() => FolderManager.getAll()
@@ -34,6 +37,7 @@ const FolderList = (props) => {
             </button>
             </section>
             <div className="container-cards">
+                hey
                 {folders.map(folder => 
                     <FolderCard 
                         key={folder.id}

@@ -12,9 +12,10 @@ import CreateImagePage from "../pages/CreateImagePage";
 import EditImagePage from "../pages/EditImagePage";
 
 const ApplicationViews = (props) => {
-
+    // console.log("------HI!-------")
     return (
 
+        
         <>
             <Route exact path="/" component={LoginPage} />
             <Route exact path="/registration" component={RegistrationPage} />
