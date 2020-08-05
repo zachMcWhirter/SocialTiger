@@ -1,44 +1,44 @@
-import React, { useState } from "react"
-import "./Login.css"
+import React, { useState } from "react";
+import "./Login.css";
 import UserManager from "../../modules/UserManager";
 
 const Login = props => {
-    const [credentials, setCredentials] = useState({
+    const [userCreds, setUserCreds] = useState({
         email: "",
-        password: "" 
+        password: ""
     });
-
-   
-    // const [users, setUsers] = useState([]);
-        
+     
     const handleFieldChange = e => {
-        const stateToChange = { ...credentials };
+        const stateToChange = { ...userCreds };
         stateToChange[e.target.id] = e.target.value;
-        setCredentials(stateToChange);
+        setUserCreds(stateToChange);
     };
 
     const handleLogin = e => {
         e.preventDefault();
-        const userEmail = document.getElementById("email").value
-        const userPassword = document.getElementById("password").value
+
+        //if the user doesn't fill out the form
+        if (!userCreds.email || !userCreds.password) {
+            alert("Please fill out the form");
+            return;
+        }
 
         UserManager.getAll()
-            .then(usersFromAPI => {
-                usersFromAPI.find(user => {
-                    if (user.email === userEmail && user.password === userPassword) {
-                        
-                            sessionStorage.setItem(
-                            "credentials",
-                            JSON.stringify(credentials),
-                            //maybe set re state here
-                            props.history.push("/home")
-                        );
+            .then(allUsers => {
+                let foundUser = allUsers.find(userObj => 
+                    userObj.email === userCreds.email && userObj.password === userCreds.password);
 
-                    // } else {
-                    //     alert("Plaese enter a correct email and password. Or register a new account.")
-                    }
-                })
-            })
+                // if user enters an email and password that matches an existing account in database - log them into session storage
+                if (foundUser) {
+                    // log them in
+                    sessionStorage.setItem("credentials",
+                    JSON.stringify(foundUser));
+                    props.history.push("/home");
+
+                    return;
+                }   
+            }
+        )
     };
 
     return (

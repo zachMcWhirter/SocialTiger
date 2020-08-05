@@ -9,21 +9,6 @@
       "id": 2,
       "email": "bob@bob.com",
       "password": "bob"
-    },
-    {
-      "email": "jon@jon.com",
-      "password": "7890",
-      "id": 8
-    },
-    {
-      "email": "joe@joe.com",
-      "password": "4321",
-      "id": 9
-    },
-    {
-      "email": "me@gmail.com",
-      "password": "5678",
-      "id": 10
     }
   ],
   "folders": [
