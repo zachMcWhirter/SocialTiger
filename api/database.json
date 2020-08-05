@@ -36,6 +36,15 @@
       "folderName": "Bob's Folder",
       "userId": 1,
       "id": 7
+    },
+    {
+      "id": 8,
+      "folderName": "Everyday Rotation"
+    },
+    {
+      "folderName": "new folder",
+      "userId": 1,
+      "id": 9
     }
   ],
   "images": [

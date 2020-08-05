@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import ImageCard from "./ImageCard";
 import ImageManager from "../../modules/ImageManager";
 
-
 const ImageList = (props) => {
     const [images, setImages] = useState([]);
 
