@@ -1,22 +1,6 @@
 import React, { useState } from "react";
 import UserManager from "../../modules/UserManager"
 
-    //Function to assign unique ID to new users
-    function nextAvailableID(allUsers) {
-        //begin with an ID
-        var highestID = 0;
-
-        // loop through the list of users and make sure
-        //  you always have the highest ID strored
-        //  in highestID
-        for (let user of allUsers) {
-            if (user.id > highestID) {
-                highestID =user.id;
-            }
-        }
-        return highestID + 1;
-    }
-
 const RegisterNewUser = (props) => {
     const [userCreds, setUserCreds] = useState({
         email: "",
@@ -33,12 +17,12 @@ const RegisterNewUser = (props) => {
 
     const createNewUser = e => {
         e.preventDefault();
-        // const userEmail = userCreds.email;
+
         if (!userCreds.email || !userCreds.password) {
             alert("Please fill out the form");
             return;
-        } 
-        
+        }
+
         UserManager.getAll()
             .then(allUsers => {
                 let foundUser = allUsers.find(userObj => userObj.email === userCreds.email);
@@ -51,12 +35,11 @@ const RegisterNewUser = (props) => {
                 // Now we tell it how to make one.
                 let newUser = {
                     email: userCreds.email,
-                    password: userCreds.password,
-                    id: nextAvailableID(allUsers)
+                    password: userCreds.password
                 };
                 UserManager.post(newUser)
-                    .then(() => {
-                        sessionStorage.setItem("credentials", JSON.stringify(newUser));
+                    .then((res) => {
+                        sessionStorage.setItem("credentials", JSON.stringify(res));
                         props.history.push("/home");
                     });
             });
