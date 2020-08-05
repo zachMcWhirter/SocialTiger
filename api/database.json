@@ -23,19 +23,19 @@
       "userId": 2
     },
     {
-      "folderName": "folder5",
-      "userId": 9,
-      "id": 3
-    },
-    {
-      "folderName": "2",
-      "userId": 9,
-      "id": 4
-    },
-    {
       "folderName": "new folder",
       "userId": 1,
       "id": 5
+    },
+    {
+      "folderName": "folder8",
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "folderName": "Bob's Folder",
+      "userId": 1,
+      "id": 7
     }
   ],
   "images": [

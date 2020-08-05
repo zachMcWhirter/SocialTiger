@@ -5,18 +5,25 @@ import "./FolderList.css"
 
 const FolderList = (props) => {
     const [folders, setFolders] = useState([]);
-
-    const getFolders = () => {
-        // After the data comes back from the API, we use the setFolders function to update state
-        return FolderManager.getAll()
+    const user = (sessionStorage.getItem("credentials"));
+    
+    const getFolders = (userId) => {
+       // Use the getByFolderId() fetch call to sort the images by folderId. Be sure to pass (folderId) to getImages() and getByFolderId().
+        return FolderManager.getByUserId(userId)
             .then(foldersFromAPI => {
                 setFolders(foldersFromAPI);
+                    
             });
     }
-
+    // Use the getByUserId() fetch call to sort the images by folderId. Be sure to pass (folderId) to getImages() and getByFolderId().
     useEffect(() => {
-        getFolders();
+        console.log(user, user.email);
+
+        FolderManager.getByUserId(user.id)
+            .then((res) =>  {console.log(res)
+                setFolders(res)})
     }, []);
+        
 
     const deleteFolder = id => {
         FolderManager.delete(id)
@@ -34,6 +41,7 @@ const FolderList = (props) => {
             </button>
             </section>
             <div className="container-cards">
+                hey
                 {folders.map(folder => 
                     <FolderCard 
                         key={folder.id}
