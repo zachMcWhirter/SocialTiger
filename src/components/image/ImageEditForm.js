@@ -36,7 +36,7 @@ const ImageEditForm = props => {
             imageDescription: image.imageDescription,
             url: image.url,
 
-            // This will parse the "" string value of employeeId from const AnimalEditForm and make it an integer
+            // This will parse the "" string value of folderId from ImageEditForm and make it an integer
             folderId: parseInt(image.folderId)
         };
         

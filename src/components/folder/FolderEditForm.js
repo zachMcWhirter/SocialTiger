@@ -3,7 +3,8 @@ import FolderManager from "../../modules/FolderManager";
 
 const FolderEditForm = (props) => {
     const [folder, setFolder] = useState({
-        folderName: ""
+        folderName: "",
+        userId: props.userId
     });
 
     const [isLoading, setIsLoading] = useState(false);
@@ -21,12 +22,12 @@ const FolderEditForm = (props) => {
         // This is an edit, so we need to use the id
         const editedFolder = {
             id: props.match.params.folderId,
-            folderName: folder.folderName
-
-            // This will parse the "" string value of employeeId from const AnimalEditForm and make it an integer
-
-            // employeeId: parseInt(animal.employeeId)
+            folderName: folder.folderName,
+            userId: props.userId
         };
+          
+        // This will parse the "" string value of userId from FolderEditForm and make it an integer
+        folder.userId = parseInt(folder.userId)
         
         FolderManager.update(editedFolder)
         .then(() => props.history.push("/folders")) 

@@ -9,6 +9,11 @@
       "id": 2,
       "email": "bob@bob.com",
       "password": "bob"
+    },
+    {
+      "email": "c.mcwhirter@yahoo.com",
+      "password": "tiger",
+      "id": 3
     }
   ],
   "folders": [
@@ -45,6 +50,68 @@
       "folderName": "new folder",
       "userId": 1,
       "id": 9
+    },
+    {
+      "folderName": "Family Pics",
+      "userId": 1,
+      "id": 10
+    },
+    {
+      "folderName": "Awesome Sauce",
+      "userId": 1,
+      "id": 11
+    },
+    {
+      "folderName": "folder6",
+      "userId": "",
+      "id": 12
+    },
+    {
+      "folderName": "folder6",
+      "id": 13
+    },
+    {
+      "folderName": "new folder",
+      "id": 14
+    },
+    {
+      "folderName": "folder6",
+      "id": 15
+    },
+    {
+      "folderName": "new folder",
+      "userId": null,
+      "id": 16
+    },
+    {
+      "folderName": "new folder",
+      "userId": null,
+      "id": 17
+    },
+    {
+      "folderName": "new folder",
+      "userId": null,
+      "id": 18
+    },
+    {
+      "folderName": "Filtered Folder",
+      "id": 19
+    },
+    {
+      "folderName": "Filtered Folder",
+      "id": 20
+    },
+    {
+      "folderName": "Filtered Folder",
+      "id": 21
+    },
+    {
+      "folderName": "Filtered Folder",
+      "id": 22
+    },
+    {
+      "folderName": "Filtered Folder",
+      "id": 23
     }
   ],
   "images": [
@@ -84,52 +151,18 @@
       "folderId": 2
     },
     {
-      "id": 19,
-      "imageName": "ROSE",
-      "imageDescription": "more stuff",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1595816040/testImages/starry_woods_jqdzqe.jpg",
-      "folderId": 1
-    },
-    {
-      "imageName": "funny",
-      "imageDescription": "poster",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596291325/socialTiger/angelPoster_fbgk8m.jpg",
-      "folderId": 1,
-      "id": 22
-    },
-    {
-      "imageName": "eric",
-      "imageDescription": "Us at the Beach",
-      "url": "",
-      "folderId": 1,
-      "id": 23
-    },
-    {
-      "imageName": "ROSE",
-      "imageDescription": "Us at the Beach",
-      "url": "",
-      "folderId": 1,
-      "id": 24
-    },
-    {
-      "imageName": "Orange Beach",
-      "imageDescription": "Chad with Robs floating head",
-      "folderId": 1,
-      "id": 25
-    },
-    {
-      "imageName": "eric",
-      "imageDescription": "Chad with Robs floating head",
-      "url": "",
-      "folderId": 5,
-      "id": 26
-    },
-    {
       "imageName": "Sage",
       "imageDescription": "Chad with Robs floating head",
       "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596670255/socialTiger/Screen_Shot_2020-07-17_at_1.51.22_PM_w77nl8.png",
       "folderId": 1,
       "id": 27
+    },
+    {
+      "imageName": "eric",
+      "imageDescription": "eric face",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596673614/socialTiger/eric_hkcesb.png",
+      "folderId": 1,
+      "id": 28
     }
   ]
 }

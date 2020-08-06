@@ -27,10 +27,19 @@ const ImageForm = (props) => {
             window.alert("Please input an image name, image description, and url");
         } else {
             setIsLoading(true);
+
+            // Filter the images by folder as they are created
+            const filteredImage = {
+                id: props.match.params.id,
+                imageName: image.imageName,
+                imageDescription: image.imageDescription,
+                url: image.url,
+                folderId: props.folderId
+            }
             // This will parse the "" string value of folderId from ImageEditForm and make it an integer
             image.folderId = parseInt(image.folderId)
             // Create the Image and redirect user to Image list
-            ImageManager.post(image)
+            ImageManager.post(filteredImage)
                 .then(() => props.history.push("/folders"))
         }
     };
