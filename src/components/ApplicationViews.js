@@ -12,7 +12,6 @@ import CreateImagePage from "../pages/CreateImagePage";
 import EditImagePage from "../pages/EditImagePage";
 
 const ApplicationViews = (props) => {
-    // console.log("------HI!-------")
     return (
 
         
