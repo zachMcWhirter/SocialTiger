@@ -62,6 +62,7 @@ const ImageEditForm = props => {
       <form>
         <fieldset>
           <div className="formgrid">
+            {/* dropdown select to choose the folder you want to create the image in */}
             <select
                 onChange={handleFieldChange}
                 id='folderId'
@@ -94,25 +95,15 @@ const ImageEditForm = props => {
             />
             <label htmlFor="imageDescription">Description</label>
             <br/>
-
+            <input
+              type="text"
+              required
+              onChange={handleFieldChange}
+              placeholder="url"
+            />
+            <br />
             <ImageUpload { ...props } />
             <br/>
-
-            {/* (chap 13) */}
-
-            {/* <select
-              className="form-control"
-              id="folderId"
-              value={image.folderId}
-              onChange={handleFieldChange}
-            > */}
-              {/* This is where we map thru the folders array and display them in a selection box (dropdown) */}
-              {/* {folders.map(folder =>
-                <option key={folder.id} value={folder.id}>
-                  {folder.folderName}</option>
-              )}
-            </select>
-            <label htmlFor="folderId">Folder</label> */}
           </div>
           
           <div className="alignRight">
