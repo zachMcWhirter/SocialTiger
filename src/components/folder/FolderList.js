@@ -26,7 +26,7 @@ const FolderList = (props) => {
         
     const deleteFolder = id => {
         FolderManager.delete(id)
-            .then(() => FolderManager.getAll()
+            .then(() => FolderManager.getByUserId(user.id)
             .then(setFolders));
     };
 

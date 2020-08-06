@@ -31,7 +31,6 @@ const FolderForm = (props) => {
                 folderName: folder.folderName,
                 userId: user.id
             };
-            
 
             // This will parse the "" string value of userId from FolderEditForm and make it an integer
             // folder.userId = parseInt(filteredFolder.userId)
