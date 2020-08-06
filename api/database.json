@@ -14,48 +14,88 @@
       "email": "c.mcwhirter@yahoo.com",
       "password": "tiger",
       "id": 3
+    },
+    {
+      "email": "liam@mc.com",
+      "password": "567",
+      "id": 4
+    },
+    {
+      "email": "ts@ts.com",
+      "password": "12345",
+      "id": 5
     }
   ],
   "folders": [
-    {
-      "id": 1,
-      "folderName": "Funny Stuff",
-      "userId": 1
-    },
     {
       "id": 2,
       "folderName": "Holiday Fun",
       "userId": 2
     },
     {
-      "folderName": "Bob's Folder",
-      "userId": 1,
-      "id": 7
-    },
-    {
-      "folderName": "new folder",
-      "userId": 1,
-      "id": 9
-    },
-    {
-      "folderName": "Family Pics",
-      "userId": 1,
-      "id": 10
-    },
-    {
-      "id": 46,
-      "folderName": "yay!!!",
-      "userId": 3
-    },
-    {
       "folderName": "carly",
       "userId": 3,
-      "id": 48
+      "id": 17
     },
     {
-      "folderName": "2",
+      "folderName": "456",
       "userId": 3,
-      "id": 49
+      "id": 20
+    },
+    {
+      "folderName": "zach 1",
+      "userId": 3,
+      "id": 21
+    },
+    {
+      "folderName": "543",
+      "userId": 3,
+      "id": 22
+    },
+    {
+      "folderName": "werstdfdw",
+      "userId": 3,
+      "id": 23
+    },
+    {
+      "folderName": "redthgf",
+      "userId": 3,
+      "id": 24
+    },
+    {
+      "folderName": "folder6",
+      "userId": 1,
+      "id": 27
+    },
+    {
+      "folderName": "folder6",
+      "userId": 1,
+      "id": 28
+    },
+    {
+      "folderName": "Filtered Folder",
+      "userId": 1,
+      "id": 29
+    },
+    {
+      "folderName": "www",
+      "userId": 3,
+      "id": 33
+    },
+    {
+      "folderName": "liam 1",
+      "userId": 4,
+      "id": 34
+    },
+    {
+      "folderName": "liam 2222",
+      "userId": 4,
+      "id": 35
+    },
+    {
+      "folderName": "trigg shit",
+      "userId": 5,
+      "id": 36
     }
   ],
   "images": [
@@ -74,20 +114,6 @@
       "url": "https://www.retailmenot.com/blog/wp-content/uploads/sites/2/2020/05/CincoDeMayoDealsandFreebies2020-765x453.jpg"
     },
     {
-      "imageName": "Chad and Rob",
-      "imageDescription": "Chad with Robs floating head",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1595815946/testImages/chad_rob_hk7dz2.jpg",
-      "folderId": 1,
-      "id": 6
-    },
-    {
-      "imageName": "ROSE",
-      "imageDescription": "Chad with Robs floating head",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1595817115/testImages/Screen_Shot_2020-07-14_at_3.50.22_PM_hix9sj.png",
-      "folderId": 1,
-      "id": 13
-    },
-    {
       "id": 17,
       "imageName": "chad png",
       "imageDescription": "the chad",
@@ -95,31 +121,25 @@
       "folderId": 2
     },
     {
-      "imageName": "Sage",
-      "imageDescription": "Chad with Robs floating head",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596670255/socialTiger/Screen_Shot_2020-07-17_at_1.51.22_PM_w77nl8.png",
-      "folderId": 1,
-      "id": 27
+      "imageName": "4444",
+      "imageDescription": "4321",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596745954/socialTiger/plus-button-green_tt0rnp.jpg",
+      "folderId": 2,
+      "id": 19
     },
     {
-      "imageName": "eric",
-      "imageDescription": "eric face",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596673614/socialTiger/eric_hkcesb.png",
-      "folderId": 1,
-      "id": 28
+      "imageName": "34",
+      "imageDescription": "54",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596748353/socialTiger/add_folder_green_i9oy15.png",
+      "folderId": 34,
+      "id": 20
     },
     {
-      "imageName": "1234",
-      "imageDescription": "1234",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596733043/socialTiger/add_folder_blue_lifh6i.png",
-      "id": 29
-    },
-    {
-      "id": 30,
-      "imageName": "3215",
-      "imageDescription": "321",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596733179/socialTiger/add_folder_green_n9zh1t.png",
-      "folderId": "1"
+      "imageName": "asdfgdz",
+      "imageDescription": "adfsxgcv",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596748973/socialTiger/staff_photo_wlpne6.png",
+      "folderId": 36,
+      "id": 21
     }
   ]
 }

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ImageManager from "../../modules/ImageManager";
 import FolderManager from "../../modules/FolderManager";
 
+
 const ImageForm = (props) => {
     const [image, setImage] = useState({
         imageName: "",
@@ -9,6 +10,12 @@ const ImageForm = (props) => {
         url: "",
         folderId: props.folderId
     });
+
+    const currentUser = JSON.parse(sessionStorage.getItem("credentials"));
+
+    const [user, setUser] = useState({
+        id: currentUser.id
+    })
 
     const [upload, setUpload] = useState("");
     const [folders, setFolders] = useState([]);
@@ -30,14 +37,14 @@ const ImageForm = (props) => {
 
             // Filter the images by folder as they are created
             const filteredImage = {
-                id: props.match.params.id,
+                
                 imageName: image.imageName,
                 imageDescription: image.imageDescription,
                 url: image.url,
-                folderId: image.folderId
+                folderId: parseInt(image.folderId)
             }
             // This will parse the "" string value of folderId from ImageEditForm and make it an integer
-            image.folderId = parseInt(image.folderId)
+            // image.folderId = parseInt(image.folderId)
             // Create the Image and redirect user to Image list
             ImageManager.post(filteredImage)
                 .then(() => props.history.push("/folders"))
@@ -70,9 +77,10 @@ const ImageForm = (props) => {
         setIsLoading(false);
         (image.url) = file.secure_url
     }
+
     const getFolders = () => {
         // After the data comes back from the API, we use the setFolders function to update state
-        return FolderManager.getAll()
+        return FolderManager.getByUserId(user.id)
             .then(foldersFromAPI => {
                 setFolders(foldersFromAPI);
             });
