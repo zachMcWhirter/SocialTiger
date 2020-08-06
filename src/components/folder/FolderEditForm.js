@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import FolderManager from "../../modules/FolderManager";
 
-
+const user = JSON.parse(sessionStorage.getItem("credentials"))
 
 const FolderEditForm = (props) => {
     const [folder, setFolder] = useState({
         folderName: "",
-        userId: props.userId
+        userId: user.id
     });
 
     const [isLoading, setIsLoading] = useState(false);
@@ -25,11 +25,11 @@ const FolderEditForm = (props) => {
         const editedFolder = {
             id: props.match.params.folderId,
             folderName: folder.folderName,
-            userId: props.userId
+            userId: user.id
         };
           
         // This will parse the "" string value of userId from FolderEditForm and make it an integer
-        folder.userId = parseInt(folder.userId)
+        // folder.userId = parseInt(folder.userId)
         
         FolderManager.update(editedFolder)
         .then(() => props.history.push("/folders")) 
