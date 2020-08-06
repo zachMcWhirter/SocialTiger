@@ -28,7 +28,7 @@ const ImageList = (props) => {
             <section className="section-content">
                 <button type="button"
                     className="btn"
-                    onClick={() => { props.history.push("/images/CreateImage") }}>
+                    onClick={() => { props.history.push("/folders/:folderId/images/CreateImage") }}>
                     Add New Image
             </button>
             </section>

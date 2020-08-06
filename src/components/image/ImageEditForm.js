@@ -3,6 +3,8 @@ import ImageManager from "../../modules/ImageManager";
 import FolderManager from "../../modules/FolderManager"
 import ImageUpload from "./ImageUpload"
 
+
+
 const ImageEditForm = props => {
     const [image, setImage] = useState({ 
       imageName: "", 
@@ -35,11 +37,13 @@ const ImageEditForm = props => {
             imageName: image.imageName,
             imageDescription: image.imageDescription,
             url: image.url,
+            folderId: image.folderId
+
 
             // This will parse the "" string value of folderId from ImageEditForm and make it an integer
-            folderId: parseInt(image.folderId)
+            
         };
-        
+        image.folderId = parseInt(image.folderId)
         ImageManager.update(editedImage)
         .then(() => props.history.push("/folders")) 
     }

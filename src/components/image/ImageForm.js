@@ -34,7 +34,7 @@ const ImageForm = (props) => {
                 imageName: image.imageName,
                 imageDescription: image.imageDescription,
                 url: image.url,
-                folderId: props.folderId
+                folderId: image.folderId
             }
             // This will parse the "" string value of folderId from ImageEditForm and make it an integer
             image.folderId = parseInt(image.folderId)

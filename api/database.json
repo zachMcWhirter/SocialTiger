@@ -28,23 +28,9 @@
       "userId": 2
     },
     {
-      "folderName": "new folder",
-      "userId": 1,
-      "id": 5
-    },
-    {
-      "folderName": "folder8",
-      "userId": 1,
-      "id": 6
-    },
-    {
       "folderName": "Bob's Folder",
       "userId": 1,
       "id": 7
-    },
-    {
-      "id": 8,
-      "folderName": "Everyday Rotation"
     },
     {
       "folderName": "new folder",
@@ -57,77 +43,19 @@
       "id": 10
     },
     {
-      "folderName": "Awesome Sauce",
-      "userId": 1,
-      "id": 11
-    },
-    {
-      "folderName": "folder6",
-      "id": 13
-    },
-    {
-      "folderName": "new folder",
-      "id": 14
-    },
-    {
-      "folderName": "Filtered Folder",
-      "userId": 2,
-      "id": 27
-    },
-    {
-      "folderName": "carly",
-      "userId": 2,
-      "id": 28
-    },
-    {
-      "folderName": "FOLDERRRRR",
-      "userId": 2,
-      "id": 29
-    },
-    {
-      "folderName": "FFFFFOLDERR",
-      "id": 30
-    },
-    {
-      "folderName": "RRRRRRRRRR",
-      "id": 31
-    },
-    {
-      "id": 32,
-      "folderName": "AAAAAAAAAA!!!!!!!!!!"
-    },
-    {
-      "id": 33,
-      "folderName": "TTTTTTTTTT00000"
-    },
-    {
-      "id": 36,
-      "folderName": "1111111111112"
-    },
-    {
-      "id": 37,
-      "folderName": "$$$777"
-    },
-    {
-      "id": 39,
-      "folderName": "folder33"
-    },
-    {
-      "id": 41,
-      "folderName": "folder44"
-    },
-    {
-      "id": 44,
-      "folderName": "folder6888"
-    },
-    {
       "id": 46,
       "folderName": "yay!!!",
       "userId": 3
     },
     {
-      "id": 47,
-      "folderName": "old folder"
+      "folderName": "carly",
+      "userId": 3,
+      "id": 48
+    },
+    {
+      "folderName": "2",
+      "userId": 3,
+      "id": 49
     }
   ],
   "images": [
@@ -179,6 +107,19 @@
       "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596673614/socialTiger/eric_hkcesb.png",
       "folderId": 1,
       "id": 28
+    },
+    {
+      "imageName": "1234",
+      "imageDescription": "1234",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596733043/socialTiger/add_folder_blue_lifh6i.png",
+      "id": 29
+    },
+    {
+      "id": 30,
+      "imageName": "3215",
+      "imageDescription": "321",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596733179/socialTiger/add_folder_green_n9zh1t.png",
+      "folderId": "1"
     }
   ]
 }
