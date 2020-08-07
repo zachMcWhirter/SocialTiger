@@ -132,7 +132,7 @@ const ImageForm = (props) => {
                             onChange={handleFieldChange}
                             placeholder="url"
                         /> */}
-                        <br />
+                        {/* <br /> */}
                         <div>
                             <input
                                 type="file"
