@@ -8,7 +8,7 @@ const FolderCard = (props) => {
 
     return (
         <div className="card">
-            <div className="card-content">
+            {/* <div className="card-content"> */}
                 <div className="img-container">
                     {/* I chose to make my folders clickable by wrapping the folder icon with a button here */}
                     <button className="folderCard" type="button"
@@ -18,7 +18,7 @@ const FolderCard = (props) => {
                         />
                     </button>
                     {/* </Link> */}
-                    
+                <div className="button-container">
                     <button 
                         type="button" 
                         onClick={() => props.deleteFolder(props.folder.id)}>Delete
@@ -28,7 +28,8 @@ const FolderCard = (props) => {
                         Edit
                     </button>
                 </div>
-            </div>
+                </div>
+            {/* </div> */}
         </div>
     );
 };

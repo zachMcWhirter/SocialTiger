@@ -9,7 +9,7 @@ const ImageListPage = (props) => {
         <>
             <Banner />
             <NavBar/>
-            <div>
+            <div className="imageListBody">
                 <h3>My Images</h3>
                 <div className="imageList-container">
                     <ImageList

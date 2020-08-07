@@ -5,7 +5,7 @@ import "./FolderList.css"
 
 const FolderList = (props) => {
     const [folders, setFolders] = useState([]);
-    
+
     const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
 
     // the user's "credentials" are saved in sessionStorage as an object
@@ -20,14 +20,16 @@ const FolderList = (props) => {
     useEffect(() => {
 
         FolderManager.getByUserId(user.id)
-            .then((res) =>  {console.log(res)
-                setFolders(res)})
+            .then((res) => {
+                console.log(res)
+                setFolders(res)
+            })
     }, []);
-        
+
     const deleteFolder = id => {
         FolderManager.delete(id)
             .then(() => FolderManager.getByUserId(user.id)
-            .then(setFolders));
+                .then(setFolders));
     };
 
     return (
@@ -40,12 +42,12 @@ const FolderList = (props) => {
             </button>
             </section>
             <div className="container-cards">
-                {folders.map(folder => 
-                    <FolderCard 
+                {folders.map(folder =>
+                    <FolderCard
                         key={folder.id}
                         folder={folder}
                         deleteFolder={deleteFolder}
-                        { ...props}
+                        {...props}
                     />
                 )}
             </div>

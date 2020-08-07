@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ImageManager from "../../modules/ImageManager";
 import FolderManager from "../../modules/FolderManager"
-import ImageUpload from "./ImageUpload"
 
 const ImageEditForm = props => {
     const [image, setImage] = useState({ 
@@ -76,6 +75,7 @@ const ImageEditForm = props => {
                         </option>
                     ))}  
             </select> 
+            <label htmlFor="folderName">Folder</label>
             <br/>
             <input
               type="text"
@@ -96,18 +96,7 @@ const ImageEditForm = props => {
               value={image.imageDescription}
             />
             <label htmlFor="imageDescription">Description</label>
-            <br/>
-            <input
-              type="text"
-              required
-              onChange={handleFieldChange}
-              placeholder="url"
-            />
-            <br />
-            <ImageUpload { ...props } />
-            <br/>
           </div>
-          
           <div className="alignRight">
             <button
               type="button" disabled={isLoading}

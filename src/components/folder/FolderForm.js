@@ -21,13 +21,13 @@ const FolderForm = (props) => {
                 setUser(usersFromAPI);
             })
     }
- 
+
     useEffect(() => {
         getCurrentUser();
     }, []);
 
     const [isLoading, setIsLoading] = useState(false);
-    
+
     const handleFieldChange = e => {
         const stateToChange = { ...folder };
         stateToChange[e.target.id] = e.target.value;
@@ -46,12 +46,12 @@ const FolderForm = (props) => {
                 folderName: folder.folderName,
                 userId: user.id
             };
-            
+
             // This will parse the "" string value of userId from FolderEditForm and make it an integer
             // folder.userId = parseInt(filteredFolder.userId)
             // Create the folder and redirect user to folder list
             FolderManager.post(filteredFolder)
-            .then(() => props.history.push("/folders"))
+                .then(() => props.history.push("/folders"))
         }
     };
 

@@ -37,7 +37,7 @@ const ImageForm = (props) => {
 
             // Filter the images by folder as they are created
             const filteredImage = {
-                
+
                 imageName: image.imageName,
                 imageDescription: image.imageDescription,
                 url: image.url,
@@ -126,7 +126,6 @@ const ImageForm = (props) => {
                             value={image.imageDescription}
                         />
                         <br />
-                        {/* <ImageUpload {...props} /> */}
                         {/* <input
                             type="text"
                             required
@@ -135,9 +134,6 @@ const ImageForm = (props) => {
                         /> */}
                         <br />
                         <div>
-                            {/* <h3 className="upload_banner">
-                Upload Image
-            </h3> */}
                             <input
                                 type="file"
                                 name="file"

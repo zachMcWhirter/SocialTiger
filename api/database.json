@@ -29,6 +29,11 @@
       "email": "Ball@er.com",
       "password": "0000",
       "id": 6
+    },
+    {
+      "email": "rose@rw.com",
+      "password": "0000",
+      "id": 7
     }
   ],
   "folders": [
@@ -41,6 +46,46 @@
       "folderName": "baller 1",
       "userId": 6,
       "id": 3
+    },
+    {
+      "folderName": "Mommy",
+      "userId": 3,
+      "id": 4
+    },
+    {
+      "folderName": "Liam",
+      "userId": 3,
+      "id": 5
+    },
+    {
+      "folderName": "Owen",
+      "userId": 3,
+      "id": 6
+    },
+    {
+      "folderName": "Jameson",
+      "userId": 3,
+      "id": 7
+    },
+    {
+      "folderName": "Family",
+      "userId": 3,
+      "id": 8
+    },
+    {
+      "id": 9,
+      "folderName": "my new folder!!",
+      "userId": 7
+    },
+    {
+      "folderName": "1234",
+      "userId": 7,
+      "id": 10
+    },
+    {
+      "folderName": "zach 1",
+      "userId": 7,
+      "id": 11
     }
   ],
   "images": [
@@ -64,6 +109,90 @@
       "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596763248/socialTiger/crazy_sunset_dtwrjr.jpg",
       "folderId": 2,
       "id": 22
+    },
+    {
+      "imageName": "Blue Angels",
+      "imageDescription": "watching the Blue Angels fly over",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596810223/socialTiger/BlueAngels_hztnxx.jpg",
+      "folderId": 4,
+      "id": 23
+    },
+    {
+      "imageName": "PreSchool Thanksgiving",
+      "imageDescription": "PreSchool Thanksgiving Feast",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596810470/socialTiger/PreschoolThanksgiving_fmwiim.jpg",
+      "folderId": 4,
+      "id": 24
+    },
+    {
+      "imageName": "Orange Beach",
+      "imageDescription": "Us at the Beach",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596810549/socialTiger/at_the_beach_ztw2vs.jpg",
+      "folderId": 4,
+      "id": 26
+    },
+    {
+      "imageName": "Date Night",
+      "imageDescription": "Date Night in Nashville",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596810706/socialTiger/DateNight_uy3s2m.jpg",
+      "folderId": 4,
+      "id": 27
+    },
+    {
+      "imageName": "Calla",
+      "imageDescription": "Calla Lily Field",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596812569/socialTiger/CallaLily_ephw7m.jpg",
+      "folderId": 4,
+      "id": 29
+    },
+    {
+      "imageName": "Flash",
+      "imageDescription": "Flash",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596812704/socialTiger/the_flash_wr7vph.jpg",
+      "folderId": 5,
+      "id": 30
+    },
+    {
+      "imageName": "Wolverine",
+      "imageDescription": "Wolverine Attacks",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596812929/socialTiger/marvel-wolverine-premium-art-print-sideshow-feature-500555_zb1j3h.jpg",
+      "folderId": 6,
+      "id": 31
+    },
+    {
+      "imageName": "Spiderman",
+      "imageDescription": "Spiderman",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596813146/socialTiger/spider-logo2_y5p0co.jpg",
+      "folderId": 7,
+      "id": 32
+    },
+    {
+      "imageName": "Spiderman 2",
+      "imageDescription": "Spiderman 2",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596813187/socialTiger/spiderman_logo_vxhlxb.png",
+      "folderId": 7,
+      "id": 33
+    },
+    {
+      "imageName": "Mother's Day",
+      "imageDescription": "Mother's Day",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596813601/socialTiger/MothersDay_wardr0.jpg",
+      "folderId": 4,
+      "id": 34
+    },
+    {
+      "id": 35,
+      "imageName": "eric",
+      "imageDescription": "eric face!!!",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596814399/socialTiger/eric_v4urrp.png",
+      "folderId": 9
+    },
+    {
+      "imageName": "Orange Beach",
+      "imageDescription": "Us at the Beach",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596814654/socialTiger/at_the_beach_q33rj6.jpg",
+      "folderId": 8,
+      "id": 36
     }
   ]
 }
