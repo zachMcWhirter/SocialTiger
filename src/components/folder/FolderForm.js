@@ -7,7 +7,6 @@ import UserManager from "../../modules/UserManager";
 const FolderForm = (props) => {
 
     const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
-    console.log("test", currentUser)
 
     const [folder, setFolder] = useState({
         folderName: "",
@@ -22,7 +21,6 @@ const FolderForm = (props) => {
                 setUser(usersFromAPI);
             })
     }
-    console.log(currentUser.id)
  
     useEffect(() => {
         getCurrentUser();

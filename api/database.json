@@ -24,6 +24,11 @@
       "email": "ts@ts.com",
       "password": "12345",
       "id": 5
+    },
+    {
+      "email": "Ball@er.com",
+      "password": "0000",
+      "id": 6
     }
   ],
   "folders": [
@@ -33,96 +38,17 @@
       "userId": 2
     },
     {
-      "folderName": "carly",
-      "userId": 3,
-      "id": 17
-    },
-    {
-      "folderName": "456",
-      "userId": 3,
-      "id": 20
-    },
-    {
-      "folderName": "zach 1",
-      "userId": 3,
-      "id": 21
-    },
-    {
-      "folderName": "543",
-      "userId": 3,
-      "id": 22
-    },
-    {
-      "folderName": "werstdfdw",
-      "userId": 3,
-      "id": 23
-    },
-    {
-      "folderName": "redthgf",
-      "userId": 3,
-      "id": 24
-    },
-    {
-      "folderName": "folder6",
-      "userId": 1,
-      "id": 27
-    },
-    {
-      "folderName": "folder6",
-      "userId": 1,
-      "id": 28
-    },
-    {
-      "folderName": "Filtered Folder",
-      "userId": 1,
-      "id": 29
-    },
-    {
-      "folderName": "www",
-      "userId": 3,
-      "id": 33
-    },
-    {
-      "folderName": "liam 1",
-      "userId": 4,
-      "id": 34
-    },
-    {
-      "folderName": "liam 2222",
-      "userId": 4,
-      "id": 35
-    },
-    {
-      "folderName": "zach 1",
-      "userId": 5,
-      "id": 39
-    },
-    {
-      "folderName": "carly",
-      "userId": 5,
-      "id": 41
+      "folderName": "baller 1",
+      "userId": 6,
+      "id": 3
     }
   ],
   "images": [
     {
-      "id": 3,
-      "folderId": 2,
-      "imageName": "Brendas Angel",
-      "imageDescription": "Stick figure angel",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1595816013/testImages/BrendasAngel_hnt7le.jpg"
-    },
-    {
       "id": 4,
-      "folderId": 2,
       "imageName": "Cinco De Mayo 5",
       "imageDescription": "Repeating Tacos",
-      "url": "https://www.retailmenot.com/blog/wp-content/uploads/sites/2/2020/05/CincoDeMayoDealsandFreebies2020-765x453.jpg"
-    },
-    {
-      "id": 17,
-      "imageName": "chad png",
-      "imageDescription": "the chad",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1595817115/testImages/Screen_Shot_2020-07-14_at_3.50.22_PM_hix9sj.png",
+      "url": "https://www.retailmenot.com/blog/wp-content/uploads/sites/2/2020/05/CincoDeMayoDealsandFreebies2020-765x453.jpg",
       "folderId": 2
     },
     {
@@ -133,11 +59,11 @@
       "id": 19
     },
     {
-      "imageName": "34",
-      "imageDescription": "54",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596748353/socialTiger/add_folder_green_i9oy15.png",
-      "folderId": 34,
-      "id": 20
+      "imageName": "ert",
+      "imageDescription": "funny",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596763248/socialTiger/crazy_sunset_dtwrjr.jpg",
+      "folderId": 2,
+      "id": 22
     }
   ]
 }

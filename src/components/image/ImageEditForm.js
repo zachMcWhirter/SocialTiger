@@ -3,7 +3,6 @@ import ImageManager from "../../modules/ImageManager";
 import FolderManager from "../../modules/FolderManager"
 import ImageUpload from "./ImageUpload"
 
-
 const ImageEditForm = props => {
     const [image, setImage] = useState({ 
       imageName: "", 
