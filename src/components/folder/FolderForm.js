@@ -1,14 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import FolderManager from "../../modules/FolderManager";
+import UserManager from "../../modules/UserManager";
+
+
 
 const FolderForm = (props) => {
+
+    const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
+
     const [folder, setFolder] = useState({
         folderName: "",
-        userId: 1
+        userId: ""
     });
 
+    const [user, setUser] = useState({});
+
+    const getCurrentUser = () => {
+        return UserManager.get(currentUser.id)
+            .then(usersFromAPI => {
+                setUser(usersFromAPI);
+            })
+    }
+
+    useEffect(() => {
+        getCurrentUser();
+    }, []);
+
     const [isLoading, setIsLoading] = useState(false);
-    
+
     const handleFieldChange = e => {
         const stateToChange = { ...folder };
         stateToChange[e.target.id] = e.target.value;
@@ -21,9 +40,18 @@ const FolderForm = (props) => {
             window.alert("Please input a folder name");
         } else {
             setIsLoading(true);
+
+            //Filter the folders by user as they are created 
+            const filteredFolder = {
+                folderName: folder.folderName,
+                userId: user.id
+            };
+
+            // This will parse the "" string value of userId from FolderEditForm and make it an integer
+            // folder.userId = parseInt(filteredFolder.userId)
             // Create the folder and redirect user to folder list
-            FolderManager.post(folder)
-            .then(() => props.history.push("/folders"))
+            FolderManager.post(filteredFolder)
+                .then(() => props.history.push("/folders"))
         }
     };
 

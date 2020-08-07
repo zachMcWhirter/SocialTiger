@@ -6,8 +6,9 @@ const ImageUpload = (props) => {
     // setting state for loading as false
     const [isLoading, setIsLoading] = useState(false);
     // setting state for image as empty string
-    const [image, setImage] = useState("");
-
+    const [upload, setUpload] = useState({
+       url: ""
+    });
 
     const uploadImage = async e => {
         const files = e.target.files;
@@ -31,9 +32,9 @@ const ImageUpload = (props) => {
         console.log(file);
 
         // Now we use dot notation to access the secure_url property
-        setImage(file.secure_url);
+        setUpload(file.secure_url);
         setIsLoading(false);
-        // (image.url) = file.secure_url
+        (upload.url) = file.secure_url
     }
     
     return (
@@ -46,7 +47,7 @@ const ImageUpload = (props) => {
                 name="file" 
                 placeholder="Upload an Image" 
                 onChange={uploadImage}
-                value={image.url}
+                // value={image.url}
                 id="url" 
             />
 
@@ -58,7 +59,7 @@ const ImageUpload = (props) => {
                     </h3>
                 ) : (
                     <div className="cloudinary">
-                        <img src={image.secure_url}  />
+                        <img src={upload}  />
                     </div>
                     )
             }

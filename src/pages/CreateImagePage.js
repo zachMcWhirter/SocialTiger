@@ -3,7 +3,6 @@ import NavBar from "../components/nav/NavBar"
 import Authentication from "../components/auth/Authentication";
 import Banner from "../components/Banner"
 import ImageForm from "../components/image/ImageForm"
-import ImageUpload from "../components/image/ImageUpload"
 import "./CreateImagePage.css"
 
 
@@ -18,9 +17,6 @@ const CreateImagePage = (props) => {
                <ImageForm
                { ...props}
                />
-               {/* <ImageUpload
-               {...props} 
-               /> */}
             </div>
         </>
     );

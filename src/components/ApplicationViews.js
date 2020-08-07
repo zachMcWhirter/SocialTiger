@@ -12,7 +12,6 @@ import CreateImagePage from "../pages/CreateImagePage";
 import EditImagePage from "../pages/EditImagePage";
 
 const ApplicationViews = (props) => {
-    // console.log("------HI!-------")
     return (
 
         
@@ -25,7 +24,8 @@ const ApplicationViews = (props) => {
             <Route exact path="/folders/:folderId(\d+)/edit" component={EditFolderPage} />
             <Route exact path="/folders/:folderId(\d+)" component={ImageListPage} />
             <Route exact path="/images/:imageId(\d+)" component={ImageViewPage} />
-            <Route exact path="/images/CreateImage" component={CreateImagePage} />
+            <Route exact path="/folders/:folderId/images/CreateImage" component={CreateImagePage} />
+            {/* <Route exact path="/images/CreateImage" component={CreateImagePage} /> */}
             <Route exact path="/images/:imageId(\d+)/edit" component={EditImagePage} />
             
         </>

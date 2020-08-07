@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ImageManager from "../../modules/ImageManager";
 import FolderManager from "../../modules/FolderManager"
-import ImageUpload from "./ImageUpload"
 
 const ImageEditForm = props => {
     const [image, setImage] = useState({ 
@@ -35,11 +34,13 @@ const ImageEditForm = props => {
             imageName: image.imageName,
             imageDescription: image.imageDescription,
             url: image.url,
+            folderId: image.folderId
 
-            // This will parse the "" string value of employeeId from const AnimalEditForm and make it an integer
-            folderId: parseInt(image.folderId)
+
+            // This will parse the "" string value of folderId from ImageEditForm and make it an integer
+            
         };
-        
+        image.folderId = parseInt(image.folderId)
         ImageManager.update(editedImage)
         .then(() => props.history.push("/folders")) 
     }
@@ -62,6 +63,7 @@ const ImageEditForm = props => {
       <form>
         <fieldset>
           <div className="formgrid">
+            {/* dropdown select to choose the folder you want to create the image in */}
             <select
                 onChange={handleFieldChange}
                 id='folderId'
@@ -73,6 +75,7 @@ const ImageEditForm = props => {
                         </option>
                     ))}  
             </select> 
+            <label htmlFor="folderName">Folder</label>
             <br/>
             <input
               type="text"
@@ -93,28 +96,7 @@ const ImageEditForm = props => {
               value={image.imageDescription}
             />
             <label htmlFor="imageDescription">Description</label>
-            <br/>
-
-            <ImageUpload { ...props } />
-            <br/>
-
-            {/* (chap 13) */}
-
-            {/* <select
-              className="form-control"
-              id="folderId"
-              value={image.folderId}
-              onChange={handleFieldChange}
-            > */}
-              {/* This is where we map thru the folders array and display them in a selection box (dropdown) */}
-              {/* {folders.map(folder =>
-                <option key={folder.id} value={folder.id}>
-                  {folder.folderName}</option>
-              )}
-            </select>
-            <label htmlFor="folderId">Folder</label> */}
           </div>
-          
           <div className="alignRight">
             <button
               type="button" disabled={isLoading}

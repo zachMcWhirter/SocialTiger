@@ -32,7 +32,7 @@ const NavBar = () => {
                         </li>
                         <li>
                             <div className="link-container">
-                                <Link className="nav-link" to="/images/CreateImage">
+                                <Link className="nav-link" to="/folders/:folderId/images/CreateImage">
                                     Create Image
                                 </Link>
                             </div>    

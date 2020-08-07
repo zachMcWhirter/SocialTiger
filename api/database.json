@@ -9,93 +9,190 @@
       "id": 2,
       "email": "bob@bob.com",
       "password": "bob"
+    },
+    {
+      "email": "c.mcwhirter@yahoo.com",
+      "password": "tiger",
+      "id": 3
+    },
+    {
+      "email": "liam@mc.com",
+      "password": "567",
+      "id": 4
+    },
+    {
+      "email": "ts@ts.com",
+      "password": "12345",
+      "id": 5
+    },
+    {
+      "email": "Ball@er.com",
+      "password": "0000",
+      "id": 6
+    },
+    {
+      "email": "rose@rw.com",
+      "password": "0000",
+      "id": 7
     }
   ],
   "folders": [
-    {
-      "id": 1,
-      "folderName": "Funny Stuff",
-      "userId": 1
-    },
     {
       "id": 2,
       "folderName": "Holiday Fun",
       "userId": 2
     },
     {
-      "folderName": "new folder",
-      "userId": 1,
+      "folderName": "baller 1",
+      "userId": 6,
+      "id": 3
+    },
+    {
+      "folderName": "Mommy",
+      "userId": 3,
+      "id": 4
+    },
+    {
+      "folderName": "Liam",
+      "userId": 3,
       "id": 5
     },
     {
-      "folderName": "folder8",
-      "userId": 1,
+      "folderName": "Owen",
+      "userId": 3,
       "id": 6
     },
     {
-      "folderName": "Bob's Folder",
-      "userId": 1,
+      "folderName": "Jameson",
+      "userId": 3,
       "id": 7
     },
     {
-      "id": 8,
-      "folderName": "Everyday Rotation"
+      "folderName": "Family",
+      "userId": 3,
+      "id": 8
     },
     {
-      "folderName": "new folder",
-      "userId": 1,
-      "id": 9
+      "id": 9,
+      "folderName": "my new folder!!",
+      "userId": 7
+    },
+    {
+      "folderName": "1234",
+      "userId": 7,
+      "id": 10
+    },
+    {
+      "folderName": "zach 1",
+      "userId": 7,
+      "id": 11
     }
   ],
   "images": [
     {
-      "id": 3,
-      "folderId": 2,
-      "imageName": "Brendas Angel",
-      "imageDescription": "Stick figure angel",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1595816013/testImages/BrendasAngel_hnt7le.jpg"
-    },
-    {
       "id": 4,
-      "folderId": 2,
       "imageName": "Cinco De Mayo 5",
       "imageDescription": "Repeating Tacos",
-      "url": "https://www.retailmenot.com/blog/wp-content/uploads/sites/2/2020/05/CincoDeMayoDealsandFreebies2020-765x453.jpg"
-    },
-    {
-      "imageName": "Chad and Rob",
-      "imageDescription": "Chad with Robs floating head",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1595815946/testImages/chad_rob_hk7dz2.jpg",
-      "folderId": 1,
-      "id": 6
-    },
-    {
-      "imageName": "ROSE",
-      "imageDescription": "Chad with Robs floating head",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1595817115/testImages/Screen_Shot_2020-07-14_at_3.50.22_PM_hix9sj.png",
-      "folderId": 1,
-      "id": 13
-    },
-    {
-      "id": 17,
-      "imageName": "chad png",
-      "imageDescription": "the chad",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1595817115/testImages/Screen_Shot_2020-07-14_at_3.50.22_PM_hix9sj.png",
+      "url": "https://www.retailmenot.com/blog/wp-content/uploads/sites/2/2020/05/CincoDeMayoDealsandFreebies2020-765x453.jpg",
       "folderId": 2
     },
     {
-      "id": 19,
-      "imageName": "ROSE",
-      "imageDescription": "more stuff",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1595816040/testImages/starry_woods_jqdzqe.jpg",
-      "folderId": 1
+      "imageName": "4444",
+      "imageDescription": "4321",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596745954/socialTiger/plus-button-green_tt0rnp.jpg",
+      "folderId": 2,
+      "id": 19
     },
     {
-      "imageName": "funny",
-      "imageDescription": "poster",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596291325/socialTiger/angelPoster_fbgk8m.jpg",
-      "folderId": 1,
+      "imageName": "ert",
+      "imageDescription": "funny",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596763248/socialTiger/crazy_sunset_dtwrjr.jpg",
+      "folderId": 2,
       "id": 22
+    },
+    {
+      "imageName": "Blue Angels",
+      "imageDescription": "watching the Blue Angels fly over",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596810223/socialTiger/BlueAngels_hztnxx.jpg",
+      "folderId": 4,
+      "id": 23
+    },
+    {
+      "imageName": "PreSchool Thanksgiving",
+      "imageDescription": "PreSchool Thanksgiving Feast",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596810470/socialTiger/PreschoolThanksgiving_fmwiim.jpg",
+      "folderId": 4,
+      "id": 24
+    },
+    {
+      "imageName": "Orange Beach",
+      "imageDescription": "Us at the Beach",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596810549/socialTiger/at_the_beach_ztw2vs.jpg",
+      "folderId": 4,
+      "id": 26
+    },
+    {
+      "imageName": "Date Night",
+      "imageDescription": "Date Night in Nashville",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596810706/socialTiger/DateNight_uy3s2m.jpg",
+      "folderId": 4,
+      "id": 27
+    },
+    {
+      "imageName": "Calla",
+      "imageDescription": "Calla Lily Field",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596812569/socialTiger/CallaLily_ephw7m.jpg",
+      "folderId": 4,
+      "id": 29
+    },
+    {
+      "imageName": "Flash",
+      "imageDescription": "Flash",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596812704/socialTiger/the_flash_wr7vph.jpg",
+      "folderId": 5,
+      "id": 30
+    },
+    {
+      "imageName": "Wolverine",
+      "imageDescription": "Wolverine Attacks",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596812929/socialTiger/marvel-wolverine-premium-art-print-sideshow-feature-500555_zb1j3h.jpg",
+      "folderId": 6,
+      "id": 31
+    },
+    {
+      "imageName": "Spiderman",
+      "imageDescription": "Spiderman",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596813146/socialTiger/spider-logo2_y5p0co.jpg",
+      "folderId": 7,
+      "id": 32
+    },
+    {
+      "imageName": "Spiderman 2",
+      "imageDescription": "Spiderman 2",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596813187/socialTiger/spiderman_logo_vxhlxb.png",
+      "folderId": 7,
+      "id": 33
+    },
+    {
+      "imageName": "Mother's Day",
+      "imageDescription": "Mother's Day",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596813601/socialTiger/MothersDay_wardr0.jpg",
+      "folderId": 4,
+      "id": 34
+    },
+    {
+      "id": 35,
+      "imageName": "eric",
+      "imageDescription": "eric face!!!",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596814399/socialTiger/eric_v4urrp.png",
+      "folderId": 9
+    },
+    {
+      "imageName": "Orange Beach",
+      "imageDescription": "Us at the Beach",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596814654/socialTiger/at_the_beach_q33rj6.jpg",
+      "folderId": 8,
+      "id": 36
     }
   ]
 }
