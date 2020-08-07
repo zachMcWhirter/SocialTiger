@@ -14,7 +14,7 @@ div.folderList-container {
 
 div.container-cards {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
 img.folderImage {

@@ -93,9 +93,14 @@
       "id": 35
     },
     {
-      "folderName": "trigg shit",
+      "folderName": "zach 1",
       "userId": 5,
-      "id": 36
+      "id": 39
+    },
+    {
+      "folderName": "carly",
+      "userId": 5,
+      "id": 41
     }
   ],
   "images": [
@@ -133,13 +138,6 @@
       "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596748353/socialTiger/add_folder_green_i9oy15.png",
       "folderId": 34,
       "id": 20
-    },
-    {
-      "imageName": "asdfgdz",
-      "imageDescription": "adfsxgcv",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596748973/socialTiger/staff_photo_wlpne6.png",
-      "folderId": 36,
-      "id": 21
     }
   ]
 }

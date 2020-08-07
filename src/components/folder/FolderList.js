@@ -40,7 +40,6 @@ const FolderList = (props) => {
             </button>
             </section>
             <div className="container-cards">
-                hey
                 {folders.map(folder => 
                     <FolderCard 
                         key={folder.id}
