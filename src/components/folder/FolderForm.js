@@ -6,17 +6,18 @@ import UserManager from "../../modules/UserManager";
 
 const FolderForm = (props) => {
 
-    const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
+    // const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
 
     const [folder, setFolder] = useState({
         folderName: "",
-        userId: ""
+        userId: props.userId
     });
 
+    
     const [user, setUser] = useState({});
 
     const getCurrentUser = () => {
-        return UserManager.get(currentUser.id)
+        return UserManager.get(props.userId)
             .then(usersFromAPI => {
                 setUser(usersFromAPI);
             })
@@ -44,7 +45,7 @@ const FolderForm = (props) => {
             //Filter the folders by user as they are created 
             const filteredFolder = {
                 folderName: folder.folderName,
-                userId: user.id
+                userId: props.userId
             };
 
             // This will parse the "" string value of userId from FolderEditForm and make it an integer

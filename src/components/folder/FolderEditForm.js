@@ -60,22 +60,6 @@ const FolderEditForm = (props) => {
               />
               <label htmlFor="name">Folder Name</label>
   
-              {/* (chap 13)
-
-              <select
-                className="form-control"
-                id="employeeId"
-                value={animal.employeeId}
-                onChange={handleFieldChange}
-              > */}
-                {/* This is where we map thru the employees array and display them in a selection box (dropdown) */}
-
-                {/* {employees.map(employee =>
-                  <option key={employee.id} value={employee.id}>
-                    {employee.name}</option>
-                )}
-              </select>
-              <label htmlFor="employeeId">Employee</label> */}
             </div>
             
             <div className="alignRight">
