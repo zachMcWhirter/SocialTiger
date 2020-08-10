@@ -14,11 +14,6 @@
       "email": "c.mcwhirter@yahoo.com",
       "password": "tiger",
       "id": 3
-    },
-    {
-      "email": "me@gmail.com",
-      "password": "meme",
-      "id": 4
     }
   ],
   "folders": [
@@ -76,31 +71,6 @@
       "id": 16,
       "folderName": "41 No Filter",
       "userId": 1
-    },
-    {
-      "id": 17,
-      "folderName": "bbbb",
-      "userId": 1
-    },
-    {
-      "id": 19,
-      "folderName": "wefsadce",
-      "userId": 1
-    },
-    {
-      "id": 20,
-      "folderName": "1",
-      "userId": 2
-    },
-    {
-      "id": 21,
-      "folderName": "1",
-      "userId": 2
-    },
-    {
-      "id": 22,
-      "folderName": "1",
-      "userId": 2
     }
   ],
   "images": [
@@ -383,13 +353,6 @@
       "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596825938/socialTiger/marvel-wolverine-premium-art-print-sideshow-feature-500555_kxscai.jpg",
       "folderId": 4,
       "id": 66
-    },
-    {
-      "imageName": "2",
-      "imageDescription": "3",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1597074536/socialTiger/Screen_Shot_2020-05-26_at_9.28.36_AM_vf5icp.png",
-      "folderId": 22,
-      "id": 67
     }
   ]
 }

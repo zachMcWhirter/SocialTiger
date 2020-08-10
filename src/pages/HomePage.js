@@ -11,8 +11,8 @@ const HomePage = (props) => {
         <Banner/>
         <NavBar/>
         <div className="homePageBody">
-          {/* <ImageRandomizer 
-          { ...props }/> */}
+          <ImageRandomizer 
+          { ...props }/>
         </div>
       </>
   );
