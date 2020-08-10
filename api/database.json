@@ -14,6 +14,11 @@
       "email": "c.mcwhirter@yahoo.com",
       "password": "tiger",
       "id": 3
+    },
+    {
+      "email": "bob2@bob.com",
+      "password": "bobo",
+      "id": 4
     }
   ],
   "folders": [
@@ -74,13 +79,6 @@
     }
   ],
   "images": [
-    {
-      "id": 4,
-      "imageName": "Cinco De Mayo 5",
-      "imageDescription": "Repeating Tacos",
-      "url": "https://www.retailmenot.com/blog/wp-content/uploads/sites/2/2020/05/CincoDeMayoDealsandFreebies2020-765x453.jpg",
-      "folderId": 2
-    },
     {
       "imageName": "Blue Angels",
       "imageDescription": "watching the Blue Angels fly over",
@@ -348,11 +346,32 @@
       "id": 65
     },
     {
-      "imageName": "Mommy's Favorite",
-      "imageDescription": "Hahaha jokes on mom",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596825938/socialTiger/marvel-wolverine-premium-art-print-sideshow-feature-500555_kxscai.jpg",
-      "folderId": 4,
-      "id": 66
+      "imageName": "qwdsa",
+      "imageDescription": "asdf",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596827138/socialTiger/acorn-1635444_ikjrdd.png",
+      "folderId": 2,
+      "id": 67
+    },
+    {
+      "imageName": "John",
+      "imageDescription": "Post-Capstone Face",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596856489/socialTiger/Screen_Shot_2020-08-07_at_7.32.45_PM_hokaww.png",
+      "folderId": 12,
+      "id": 68
+    },
+    {
+      "imageName": "Team mount-etna",
+      "imageDescription": "RDJ group project",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596856639/socialTiger/Screen_Shot_2020-05-27_at_9.43.50_AM_y58jmj.png",
+      "folderId": 12,
+      "id": 69
+    },
+    {
+      "imageName": "Original Brenda's Angel",
+      "imageDescription": "Original Brenda's Angel",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596856815/socialTiger/Screen_Shot_2020-07-08_at_2.59.26_PM_lpwqc9.png",
+      "folderId": 12,
+      "id": 70
     }
   ]
 }
