@@ -14,18 +14,18 @@ const FolderForm = (props) => {
     });
 
     
-    const [user, setUser] = useState({});
+    // const [user, setUser] = useState({});
 
-    const getCurrentUser = () => {
-        return UserManager.get(props.userId)
-            .then(usersFromAPI => {
-                setUser(usersFromAPI);
-            })
-    }
+    // const getCurrentUser = () => {
+    //     return UserManager.get(props.userId)
+    //         .then(usersFromAPI => {
+    //             setUser(usersFromAPI);
+    //         })
+    // }
 
-    useEffect(() => {
-        getCurrentUser();
-    }, []);
+    // useEffect(() => {
+    //     getCurrentUser();
+    // }, []);
 
     const [isLoading, setIsLoading] = useState(false);
 
@@ -45,7 +45,7 @@ const FolderForm = (props) => {
             //Filter the folders by user as they are created 
             const filteredFolder = {
                 folderName: folder.folderName,
-                userId: props.userId
+                userId: props.user.id
             };
 
             // This will parse the "" string value of userId from FolderEditForm and make it an integer
