@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import FolderManager from "../../modules/FolderManager";
 
-const user = JSON.parse(sessionStorage.getItem("credentials"))
 
 const FolderEditForm = (props) => {
-    const [folder, setFolder] = useState({
+
+  const user = JSON.parse(sessionStorage.getItem("credentials"))
+    
+  const [folder, setFolder] = useState({
         folderName: "",
         userId: user.id
     });
