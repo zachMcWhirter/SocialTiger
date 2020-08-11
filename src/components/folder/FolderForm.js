@@ -10,7 +10,7 @@ const FolderForm = (props) => {
 
     const [folder, setFolder] = useState({
         folderName: "",
-        userId: props.userId
+        userId: props.user.id
     });
 
     

@@ -8,7 +8,7 @@ const FolderEditForm = (props) => {
     
   const [folder, setFolder] = useState({
         folderName: "",
-        userId: props.userId
+        userId: props.user.id
     });
 
     const [isLoading, setIsLoading] = useState(false);
