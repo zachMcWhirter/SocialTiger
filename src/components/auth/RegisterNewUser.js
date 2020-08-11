@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import UserManager from "../../modules/UserManager"
+import "./RegisterNewUser.css"
 
 const RegisterNewUser = (props) => {
     const [userCreds, setUserCreds] = useState({

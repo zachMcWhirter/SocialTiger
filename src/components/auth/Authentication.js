@@ -3,12 +3,18 @@ import { Redirect } from "react-router-dom";
 
 const Authentication = (Component) => {
 
-    const userLoggedIn = () => {
-        return window.sessionStorage.credentials !== undefined ? true : false
+    const getUser = () => {
+        if (window.sessionStorage.credentials) {
+            return JSON.parse(window.sessionStorage.credentials)
+        }
+        return undefined
     };
+ 
     return (props) => {
-        if (userLoggedIn()) {
-            return <Component {...props} />
+        const user = getUser()
+
+        if (user) {
+            return <Component user={user}{...props} />
         } else {
             return <Redirect to="/" />
         }

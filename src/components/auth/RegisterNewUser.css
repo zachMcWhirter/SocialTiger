@@ -1,0 +1,15 @@
+fieldset.registrationFieldset {
+    box-shadow: -1px -1px 17px 7px #000000, -1px -1px 45px 1px rgba(0,0,0,0.28);
+}
+
+div.registration-h3-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    height: auto;
+    border-radius: 3px;
+}
+
+h3.registration-h3 {
+    margin: 10px;
+    padding: 2px;
+}

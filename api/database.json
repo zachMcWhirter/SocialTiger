@@ -14,38 +14,13 @@
       "email": "c.mcwhirter@yahoo.com",
       "password": "tiger",
       "id": 3
-    },
-    {
-      "email": "liam@mc.com",
-      "password": "567",
-      "id": 4
-    },
-    {
-      "email": "ts@ts.com",
-      "password": "12345",
-      "id": 5
-    },
-    {
-      "email": "Ball@er.com",
-      "password": "0000",
-      "id": 6
-    },
-    {
-      "email": "rose@rw.com",
-      "password": "0000",
-      "id": 7
     }
   ],
   "folders": [
     {
       "id": 2,
-      "folderName": "Holiday Fun",
+      "folderName": "Bob's Folder!!",
       "userId": 2
-    },
-    {
-      "folderName": "baller 1",
-      "userId": 6,
-      "id": 3
     },
     {
       "folderName": "Mommy",
@@ -73,42 +48,43 @@
       "id": 8
     },
     {
-      "id": 9,
-      "folderName": "my new folder!!",
-      "userId": 7
+      "id": 12,
+      "folderName": "41 Memories",
+      "userId": 1
     },
     {
-      "folderName": "1234",
-      "userId": 7,
-      "id": 10
+      "id": 13,
+      "folderName": "Everyday BGs!!!",
+      "userId": 1
     },
     {
-      "folderName": "zach 1",
-      "userId": 7,
-      "id": 11
+      "folderName": "Holiday Fun",
+      "userId": 1,
+      "id": 14
+    },
+    {
+      "folderName": "Social Tiger",
+      "userId": 1,
+      "id": 15
+    },
+    {
+      "id": 16,
+      "folderName": "41 No Filter",
+      "userId": 1
+    },
+    {
+      "folderName": "folderList test",
+      "userId": 1,
+      "id": 20
     }
   ],
   "images": [
     {
       "id": 4,
-      "imageName": "Cinco De Mayo 5",
+      "imageName": "Cinco De Mayo 5!",
       "imageDescription": "Repeating Tacos",
       "url": "https://www.retailmenot.com/blog/wp-content/uploads/sites/2/2020/05/CincoDeMayoDealsandFreebies2020-765x453.jpg",
       "folderId": 2
-    },
-    {
-      "imageName": "4444",
-      "imageDescription": "4321",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596745954/socialTiger/plus-button-green_tt0rnp.jpg",
-      "folderId": 2,
-      "id": 19
-    },
-    {
-      "imageName": "ert",
-      "imageDescription": "funny",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596763248/socialTiger/crazy_sunset_dtwrjr.jpg",
-      "folderId": 2,
-      "id": 22
     },
     {
       "imageName": "Blue Angels",
@@ -181,18 +157,207 @@
       "id": 34
     },
     {
-      "id": 35,
-      "imageName": "eric",
-      "imageDescription": "eric face!!!",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596814399/socialTiger/eric_v4urrp.png",
-      "folderId": 9
-    },
-    {
       "imageName": "Orange Beach",
       "imageDescription": "Us at the Beach",
       "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596814654/socialTiger/at_the_beach_q33rj6.jpg",
       "folderId": 8,
       "id": 36
+    },
+    {
+      "id": 37,
+      "imageName": "Angel Poster",
+      "imageDescription": "Angel Poster",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596822125/socialTiger/angelPoster_czi926.jpg",
+      "folderId": 13
+    },
+    {
+      "imageName": "Chad and Rob",
+      "imageDescription": "Chad with Robs floating head",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596822204/socialTiger/chad_rob_wgfout.jpg",
+      "folderId": 13,
+      "id": 38
+    },
+    {
+      "imageName": "Stars in the Woods",
+      "imageDescription": "Starry Woods",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596822275/socialTiger/starry_woods_qr7us9.jpg",
+      "folderId": 13,
+      "id": 39
+    },
+    {
+      "imageName": "Beer",
+      "imageDescription": "Beer",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596822358/socialTiger/beer_w9v88g.jpg",
+      "folderId": 14,
+      "id": 40
+    },
+    {
+      "imageName": "Cinco De Mayo",
+      "imageDescription": "Cinco de Mayo Neon",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596822456/socialTiger/CincoDeMayo_o7grdi.jpg",
+      "folderId": 14,
+      "id": 41
+    },
+    {
+      "imageName": "4th of July",
+      "imageDescription": "Merica",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596822596/socialTiger/july-fourth_hngggv.jpg",
+      "folderId": 14,
+      "id": 42
+    },
+    {
+      "imageName": "Brenda",
+      "imageDescription": "Brenda on Little Debbie Day",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596822842/socialTiger/Screen_Shot_2020-07-31_at_1.05.29_PM_jrwj3p.png",
+      "folderId": 12,
+      "id": 43
+    },
+    {
+      "imageName": "Social Tiger",
+      "imageDescription": "Social Tiger Definition 2",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596823042/socialTiger/Screen_Shot_2020-07-23_at_6.52.47_PM_uhb3px.png",
+      "folderId": 15,
+      "id": 45
+    },
+    {
+      "imageName": "Tasha",
+      "imageDescription": "Tasha's Birthday!",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596823121/socialTiger/Screen_Shot_2020-08-03_at_10.13.20_AM_ojtnpt.png",
+      "folderId": 12,
+      "id": 46
+    },
+    {
+      "imageName": "eric",
+      "imageDescription": "eric winning ",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596823274/socialTiger/eric_idjd85.png",
+      "folderId": 12,
+      "id": 47
+    },
+    {
+      "imageName": "chad",
+      "imageDescription": "chad murder face",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596823493/socialTiger/Chad2_qzuvuw.png",
+      "folderId": 12,
+      "id": 48
+    },
+    {
+      "imageName": "Amanda",
+      "imageDescription": "Amanda Queen of Filters",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596823616/socialTiger/Screen_Shot_2020-07-15_at_1.36.58_PM_zdaudl.png",
+      "folderId": 12,
+      "id": 49
+    },
+    {
+      "imageName": "Sage",
+      "imageDescription": "Umm.. how do you make Breakout Rooms",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596823671/socialTiger/Wait_how_do_you_make_breakout_rooms_bkr4lt.png",
+      "folderId": 12,
+      "id": 50
+    },
+    {
+      "imageName": "Trigg",
+      "imageDescription": "LinkedIn Face",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596824125/socialTiger/Screen_Shot_2020-08-03_at_9.20.31_AM_gwkx3n.png",
+      "folderId": 16,
+      "id": 51
+    },
+    {
+      "imageName": "Sisi",
+      "imageDescription": "LinkedIn Face",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596824260/socialTiger/Screen_Shot_2020-07-17_at_1.19.27_PM_i264ea.png",
+      "folderId": 16,
+      "id": 53
+    },
+    {
+      "imageName": "Brandon",
+      "imageDescription": "LinkedIn Face",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596824315/socialTiger/Screen_Shot_2020-07-15_at_4.01.57_PM_xmw1xj.png",
+      "folderId": 16,
+      "id": 54
+    },
+    {
+      "imageName": "Lacey",
+      "imageDescription": "LinkedIn Face",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596824407/socialTiger/Screen_Shot_2020-07-17_at_1.26.58_PM_vyem0o.png",
+      "folderId": 16,
+      "id": 55
+    },
+    {
+      "imageName": "Tyler",
+      "imageDescription": "LinkedIn Face",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596824475/socialTiger/Screen_Shot_2020-07-17_at_1.51.22_PM_baaxyv.png",
+      "folderId": 16,
+      "id": 56
+    },
+    {
+      "imageName": "Chris",
+      "imageDescription": "LinkedIn Face",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596824749/socialTiger/Screen_Shot_2020-08-03_at_9.42.39_AM_eegpe0.png",
+      "folderId": 16,
+      "id": 57
+    },
+    {
+      "imageName": "Brenden",
+      "imageDescription": "LinkedIn Face",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596824844/socialTiger/Screen_Shot_2020-08-03_at_9.28.00_AM_smmogj.png",
+      "folderId": 16,
+      "id": 58
+    },
+    {
+      "imageName": "Gavin",
+      "imageDescription": "LinkedIn Face",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596824902/socialTiger/Screen_Shot_2020-08-03_at_9.37.56_AM_mzwfph.png",
+      "folderId": 16,
+      "id": 59
+    },
+    {
+      "imageName": "James",
+      "imageDescription": "LinkedIn Face",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596824991/socialTiger/Screen_Shot_2020-08-03_at_9.36.21_AM_yiqcpm.png",
+      "folderId": 16,
+      "id": 60
+    },
+    {
+      "imageName": "Kelley",
+      "imageDescription": "LinkedIn Face",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596825087/socialTiger/Screen_Shot_2020-07-17_at_1.11.41_PM_acrwv4.png",
+      "folderId": 16,
+      "id": 61
+    },
+    {
+      "imageName": "Amanda",
+      "imageDescription": "LinkedIn Face",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596825168/socialTiger/Screen_Shot_2020-07-17_at_1.15.49_PM_wrslpz.png",
+      "folderId": 16,
+      "id": 62
+    },
+    {
+      "imageName": "Anthony",
+      "imageDescription": "LinkedIn Face",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596825466/socialTiger/Screen_Shot_2020-08-03_at_9.22.02_AM_zbhavs.png",
+      "folderId": 16,
+      "id": 63
+    },
+    {
+      "imageName": "Patrick",
+      "imageDescription": "LinkedIn Face",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596825601/socialTiger/Screen_Shot_2020-07-17_at_1.21.23_PM_rz3rqz.png",
+      "folderId": 16,
+      "id": 64
+    },
+    {
+      "imageName": "Tasha",
+      "imageDescription": "LinkedIn Face",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596825673/socialTiger/Screen_Shot_2020-07-17_at_1.49.08_PM_kwmxtf.png",
+      "folderId": 16,
+      "id": 65
+    },
+    {
+      "imageName": "Mommy's Favorite",
+      "imageDescription": "Hahaha jokes on mom",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596825938/socialTiger/marvel-wolverine-premium-art-print-sideshow-feature-500555_kxscai.jpg",
+      "folderId": 4,
+      "id": 66
     }
   ]
 }
