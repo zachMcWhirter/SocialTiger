@@ -19,7 +19,7 @@ div.h1-container {
 h1 {
     font-size: 120px;
     margin: 0 auto;
-    text-shadow: 0 0 10px #FFFFFF, 2px 2px 17px #71D31C, 2px 2px 9px #71D31C, 2px 2px 9px #71D31C;
+    text-shadow: 0 0 10px #FFFFFF, 2px 2px 17px #71d31cf6, 2px 2px 9px #71D31C, 2px 2px 9px #71D31C;
 }
 
 img.logo {

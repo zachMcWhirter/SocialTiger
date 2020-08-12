@@ -11,15 +11,15 @@ const FolderList = (props) => {
     // the user's "credentials" are saved in sessionStorage as an object
     //  containing 3 separate key:value strings. So you need to 
     //  convert it to a javascript object by wrapping it in JSON.parse()
-    // const [user, setUser] = useState({
-    //     id: currentUser.id
-    // });
+    const [user, setUser] = useState({
+        id: props.user.id
+    });
 
     //    Use the getByUserId() fetch call to sort 
     //    the folders by userId.       
     useEffect(() => {
 
-        FolderManager.getByUserId(props.folder.userId)
+        FolderManager.getByUserId(user.id)
             .then((res) => {
                 console.log(res)
                 setFolders(res)
@@ -28,7 +28,7 @@ const FolderList = (props) => {
 
     const deleteFolder = id => {
         FolderManager.delete(id)
-            .then(() => FolderManager.getByUserId(props.folder.userId)
+            .then(() => FolderManager.getByUserId(user.id)
                 .then(setFolders));
     };
 

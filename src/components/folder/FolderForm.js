@@ -1,31 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import FolderManager from "../../modules/FolderManager";
-import UserManager from "../../modules/UserManager";
-
 
 
 const FolderForm = (props) => {
-
-    // const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
 
     const [folder, setFolder] = useState({
         folderName: "",
         userId: props.user.id
     });
-
-    
-    // const [user, setUser] = useState({});
-
-    // const getCurrentUser = () => {
-    //     return UserManager.get(props.userId)
-    //         .then(usersFromAPI => {
-    //             setUser(usersFromAPI);
-    //         })
-    // }
-
-    // useEffect(() => {
-    //     getCurrentUser();
-    // }, []);
 
     const [isLoading, setIsLoading] = useState(false);
 

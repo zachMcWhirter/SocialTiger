@@ -21,9 +21,19 @@ export default {
             .then(images => {
                 const randomIndex = Math.floor(Math.random() * images.length);
                 const randomImage = images[randomIndex];
-                return randomImage.id; 
+                return randomImage.id;
             });
     },
+    getRandomImageIdByFolder(folderId) {
+        return fetch(`${remoteURL}/images?folderId=${folderId}`)
+            .then(result => result.json())
+            .then(images => {
+                const randomIndex = Math.floor(Math.random() * images.length);
+                const randomImage = images[randomIndex];
+                return randomImage.id;
+            });
+    },
+
     delete(id) {
         return fetch(`${remoteURL}/images/${id}`, {
             method: "DELETE"
@@ -40,12 +50,12 @@ export default {
     },
     update(editedImage) {
         return fetch(`${remoteURL}/images/${editedImage.id}`, {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify(editedImage)
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(editedImage)
         }).then(data => data.json());
-      }
-     
+    }
+
 }

@@ -15,7 +15,7 @@ const ImageRandomizer = (props) => {
 
     return (
         <>
-          <h3>Image Randomizer</h3>
+          {/* <h3>Image Randomizer</h3> */}
           <button onClick={refreshSpotlightImage}>Reload &#x27f3;</button>
           {
             spotlightId && <ImageSpotLight imageId={spotlightId} />
