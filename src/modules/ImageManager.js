@@ -33,7 +33,17 @@ export default {
                 return randomImage.id;
             });
     },
-
+    getRandomImageForUser(userId) {
+        return fetch(`${remoteURL}/folders?userId=${userId}`)
+            .then(result => result.json())
+            .then(folders => {
+                let folderIdStrings = folders.map(folder => `folderId=${folder.id}`);
+                let queryString = folderIdStrings.join('&');
+                return fetch(`${remoteURL}/images?${queryString}`);
+            })
+            .then(result => result.json())
+            .then(images => images[Math.floor(Math.random() * images.length)])
+    },
     delete(id) {
         return fetch(`${remoteURL}/images/${id}`, {
             method: "DELETE"

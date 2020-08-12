@@ -4,11 +4,11 @@ import ImageManager from "../../modules/ImageManager";
 
 const ImageRandomizer = (props) => {
     const [spotlightId, setSpotlightId] = useState(0);
-  
+
     const refreshSpotlightImage = () => {
-      ImageManager.getRandomImageId().then(setSpotlightId);
+      ImageManager.getRandomImageForUser(props.user.id).then(image => setSpotlightId(image.id));
     };
-  
+
     useEffect(() => {
       refreshSpotlightImage();
     }, [props.imageId]);
@@ -23,5 +23,5 @@ const ImageRandomizer = (props) => {
         </>
       );
     };
-    
+
     export default ImageRandomizer;
