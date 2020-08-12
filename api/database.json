@@ -86,6 +86,11 @@
       "id": 22,
       "folderName": "65432",
       "userId": 2
+    },
+    {
+      "folderName": "folder6",
+      "userId": 1,
+      "id": 23
     }
   ],
   "images": [
