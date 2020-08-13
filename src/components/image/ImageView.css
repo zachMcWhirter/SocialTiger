@@ -1,7 +1,8 @@
 img.imageViewImg {
     width: 800px;
-    padding: 20px;
-    /* border: black 20px double */
+    margin: 20px;
+    border: black 1px inset;
+    box-shadow: -1px -1px 17px 7px #000000, -1px -1px 45px 1px rgba(0,0,0,0.28);
 }
 
 /* div.card {
@@ -15,12 +16,28 @@ div.card-content {
 }
 
 div.imageDetails-container {
-    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h3.image-view-name {
+    font-size: 24px;
+    margin: 0;
+    margin-top: 20px;
+}
+
+h3.image-view-description {
+    font-size: 20px;
+    color: whitesmoke
 }
 
 div.imageViewBody {
     background-color: rgba(58, 58, 58, 0.8);
     margin: 60px;
     border: black 20px double
+}
 
+button#img-view-delete-button {
+    width: 65px
 }

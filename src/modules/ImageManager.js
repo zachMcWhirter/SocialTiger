@@ -24,15 +24,15 @@ export default {
                 return randomImage.id;
             });
     },
-    getRandomImageIdByFolder(folderId) {
-        return fetch(`${remoteURL}/images?folderId=${folderId}`)
-            .then(result => result.json())
-            .then(images => {
-                const randomIndex = Math.floor(Math.random() * images.length);
-                const randomImage = images[randomIndex];
-                return randomImage.id;
-            });
-    },
+    // getRandomImageIdByFolder(folderId) {
+    //     return fetch(`${remoteURL}/images?folderId=${folderId}`)
+    //         .then(result => result.json())
+    //         .then(images => {
+    //             const randomIndex = Math.floor(Math.random() * images.length);
+    //             const randomImage = images[randomIndex];
+    //             return randomImage.id;
+    //         });
+    // },
 
     delete(id) {
         return fetch(`${remoteURL}/images/${id}`, {

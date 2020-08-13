@@ -26,7 +26,7 @@
   .nav-link:hover {
     color: black;
     background: gray;
-    text-shadow: 0 0 10px #FFFFFF, 2px 2px 17px #71D31C, 2px 2px 9px #71D31C, 2px 2px 9px #71D31C;
+    text-shadow: -2px -2px 10px #FFFFFF, 2px 2px 17px #93ff18d7, 2px 2px 6px #93ff18d7, -2px -2px 1px #93ff18d7;
   }
 
 div.link-container {
@@ -40,8 +40,8 @@ div.link-container:hover {
     width: 13vw;
     border-radius: 5px;
     box-shadow:
-      0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF
-    , 0 0 20px #49ff18, 0 0 30px #49FF18;
+    0 0 5px #93ff18d7, 0 0 5px #FFF
+    , 0 0 20px #93ff18d7, 0 0 30px #93ff18d7;
 }
 
 div#navHome {
@@ -49,6 +49,6 @@ div#navHome {
 }
 
 div#navFolders {
-    margin-left: 140px;
+    margin-left: 133px;
 }
 

@@ -48,9 +48,9 @@ const ImageView = props => {
                     </picture>
                 </div>
                 <div className="imageDetails-container">
-                    <h3>Image Name: <span>{image.imageName}</span></h3>
-                    <h3>Description: {image.imageDescription}</h3>
-                    <button type="button" disabled={isLoading} onClick={handleDelete}>
+                    <h3 className="image-view-name">Image Name: <span>{image.imageName}</span></h3>
+                    <h3 className="image-view-description">Description: {image.imageDescription}</h3>
+                    <button id="img-view-delete-button" type="button" disabled={isLoading} onClick={handleDelete}>
                         Delete
                     </button>
                 </div>
