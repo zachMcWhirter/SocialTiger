@@ -1,6 +1,6 @@
 div.folderListBody {
     /* display: flex;
-    flex-direction: row; */
+    flex-direction: column; */
 }
 div.folderList-container { 
     display: flex;
@@ -41,6 +41,14 @@ div.button-container {
     flex-direction: row;
 }
 
+div.h3-container-myFolders {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 div.img-container {
     margin: 12px;
     display: flex;
@@ -49,6 +57,13 @@ div.img-container {
 
 h3 {
     text-align: center;
+    padding-top: 0px;
+    padding-right: 5px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    border: yellowgreen 1px solid;
+    border-radius: 5px;
+    background-color: rgb(32, 32, 32);
 }
 
 /* From ImageCard.css */
@@ -62,5 +77,13 @@ div.imageEditForm {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+div.h3-container-editImage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
 }

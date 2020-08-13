@@ -10,7 +10,9 @@ const EditImagePage = (props) => {
             {/* <Banner /> */}
             <NavBar />
             <div>
-                <h3>Edit Image</h3>
+                <div className="h3-container-editImage">
+                    <h3>Edit Image</h3>
+                </div>
                 <ImageEditForm
                 { ...props } />
             </div>
