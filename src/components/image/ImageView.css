@@ -25,11 +25,14 @@ h3.image-view-name {
     font-size: 24px;
     margin: 0;
     margin-top: 20px;
+    border: none;
 }
 
 h3.image-view-description {
     font-size: 20px;
-    color: whitesmoke
+    color: whitesmoke;
+    border: none;
+    background-color: none;
 }
 
 div.imageViewBody {

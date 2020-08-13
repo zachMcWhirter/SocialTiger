@@ -6,10 +6,16 @@ div.registration-h3-container {
     background-color: rgba(0, 0, 0, 0.5);
     width: fit-content;
     height: auto;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 h3.registration-h3 {
-    margin: 10px;
-    padding: 2px;
+    margin: 0px;
+    padding-top: 0px;
+    padding-right: 5px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    border: yellowgreen 1px solid;
+    border-radius: 5px;
+    font-size: 20px;
 }

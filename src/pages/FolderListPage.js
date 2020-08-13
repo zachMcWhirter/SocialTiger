@@ -11,7 +11,9 @@ const FolderListPage = (props) => {
             {/* <Banner /> */}
             <NavBar/>
             <div className="folderListBody">
-                <h3>My Folders</h3>
+                <div className="h3-container-myFolders">
+                    <h3>My Folders</h3>
+                </div>
                 <div className="folderList-container">
                     <FolderList
                     { ...props }/>
