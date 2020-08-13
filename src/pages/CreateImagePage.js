@@ -13,7 +13,7 @@ const CreateImagePage = (props) => {
             {/* <Banner/> */}
             <NavBar/>
             <div className="underNav">
-                {/* <h3>Create Image</h3> */}
+                <h3>Create Image</h3>
                <ImageForm
                { ...props}
                />

@@ -3,6 +3,7 @@ import NavBar from "../components/nav/NavBar"
 import Authentication from "../components/auth/Authentication";
 // import Banner from "../components/Banner"
 import FolderForm from "../components/folder/FolderForm"
+import "./CreateImagePage.css"
 
 const CreateFolderPage = (props) => {
 
@@ -10,7 +11,7 @@ const CreateFolderPage = (props) => {
         <>
             {/* <Banner/> */}
             <NavBar/>
-            <div>
+            <div className="underNav">
                 <h3>Create Folder</h3>
                <FolderForm
                { ...props}

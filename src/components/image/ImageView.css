@@ -35,7 +35,8 @@ h3.image-view-description {
 div.imageViewBody {
     background-color: rgba(58, 58, 58, 0.8);
     margin: 60px;
-    border: black 20px double
+    border: black 20px double;
+    box-shadow: 2px 2px 17px 6px #000000, -1px -1px 45px 1px rgba(0,0,0,0.28);
 }
 
 button#img-view-delete-button {
