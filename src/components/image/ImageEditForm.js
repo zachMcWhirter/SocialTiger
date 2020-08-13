@@ -10,6 +10,12 @@ const ImageEditForm = props => {
       folderId: props.folderId
     });
 
+    const currentUser = JSON.parse(sessionStorage.getItem("credentials"));
+
+    const [user, setUser] = useState({
+        id: currentUser.id
+    })
+
     const [isLoading, setIsLoading] = useState(false);
 
     // This is setting state for folders that are responsible for each Image
@@ -49,7 +55,7 @@ const ImageEditForm = props => {
       useEffect(() => {
         ImageManager.get(props.match.params.imageId)
           .then(image => {
-            FolderManager.getAll()
+            FolderManager.getByUserId(user.id)
             .then(folders => {
               setFolders(folders)
               setImage(image);
