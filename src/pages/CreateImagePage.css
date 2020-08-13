@@ -1,11 +1,16 @@
 div.underNav {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px
+    /* padding: 40px */
 }
 
 h3 {
-    color: yellowgreen
+    color: yellowgreen;
+    font-size: 24px;
+}
+
+fieldset {
+    box-shadow: -1px -1px 17px 7px #000000, -1px -1px 45px 1px rgba(0,0,0,0.28);
 }

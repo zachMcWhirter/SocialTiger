@@ -1,21 +1,16 @@
-div.imageListBody {
-    /* display: flex;
-    flex-direction: row; */
-}
-div.imageList-container { 
+/* div.imageListBody {
+    display: flex;
+    flex-direction: row;
+} */
+/* div.imageList-container { 
     display: flex;
     flex-wrap: wrap;
 }
-
-/* to make the Add Folder button larger use this  */
-/* section.section-content {
-    display: flex;
-} */
 
 div.container-cards {
     display: flex;
     flex-wrap: wrap;
-}
+} */
 
 
 
