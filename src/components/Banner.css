@@ -1,12 +1,12 @@
  
-button.logOutButton {
+/* button.logOutButton {
     position: absolute;
     top: 15px;
     left: 15px;
     height: auto;
     font-size: 18px;
     
-}
+} */
 
 div.h1-container {
     display: flex;

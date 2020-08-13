@@ -11,11 +11,13 @@ import ImageViewPage from "../pages/ImageViewPage";
 import CreateImagePage from "../pages/CreateImagePage";
 import EditImagePage from "../pages/EditImagePage";
 
+
 const ApplicationViews = (props) => {
     return (
 
-        
         <>
+           
+
             <Route exact path="/" component={LoginPage} />
             <Route exact path="/registration" component={RegistrationPage} />
             <Route exact path="/home" component={HomePage} />    
@@ -25,9 +27,7 @@ const ApplicationViews = (props) => {
             <Route exact path="/folders/:folderId(\d+)" component={ImageListPage} />
             <Route exact path="/images/:imageId(\d+)" component={ImageViewPage} />
             <Route exact path="/folders/:folderId/images/CreateImage" component={CreateImagePage} />
-            {/* <Route exact path="/images/CreateImage" component={CreateImagePage} /> */}
             <Route exact path="/images/:imageId(\d+)/edit" component={EditImagePage} />
-            
         </>
     );
 };

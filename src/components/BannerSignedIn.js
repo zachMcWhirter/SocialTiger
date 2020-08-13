@@ -1,28 +1,28 @@
 import React, { useState }from "react";
-import { Redirect } from "react-router-dom";
+// import { Redirect } from "react-router-dom";
 
 const BannerSignedIn = (props) => {
     
-    const [isAuthenticated, setIsAuthenticated] = useState(true);
+    // const [isAuthenticated, setIsAuthenticated] = useState(true);
     
-    const handleLogout = (e) => {
-        e.preventDefault();
-        sessionStorage.removeItem("credentials");
-        sessionStorage.clear();
-        setIsAuthenticated(false);
-    }
+    // const handleLogout = (e) => {
+    //     e.preventDefault();
+    //     sessionStorage.removeItem("credentials");
+    //     sessionStorage.clear();
+    //     setIsAuthenticated(false);
+    // }
 
-    if (isAuthenticated) {
+    // if (isAuthenticated) {
 
         return (
 
             <>
                 <div className="h1-container">
-                    <button className="logOutButton"
+                    {/* <button className="logOutButton"
                             type="button"
                             onClick={handleLogout}>
                         LogOut
-                    </button>
+                    </button> */}
                     <h1>SOCIAL TIGER</h1>
                 </div>  
                 <div>
@@ -33,9 +33,9 @@ const BannerSignedIn = (props) => {
                 
             </>
         );
-    } else {
-        return <Redirect to="/" />;
-    }
+            // } else {
+            //     return <Redirect to="/" />;
+            
 };
 
 export default BannerSignedIn;
