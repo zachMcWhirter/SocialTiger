@@ -91,6 +91,11 @@
       "folderName": "folder6",
       "userId": 1,
       "id": 23
+    },
+    {
+      "folderName": "Flowers",
+      "userId": 3,
+      "id": 24
     }
   ],
   "images": [
@@ -394,6 +399,27 @@
       "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1597164931/socialTiger/Screen_Shot_2020-08-03_at_9.11.55_AM_syrdtv.png",
       "folderId": 22,
       "id": 70
+    },
+    {
+      "imageName": "Cherry Blossom Night",
+      "imageDescription": "Cherry Blossoms by lamp light",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1597285608/socialTiger/CherryBlossomNight_gur9zg.jpg",
+      "folderId": 24,
+      "id": 71
+    },
+    {
+      "imageName": "Tulip Bouquets",
+      "imageDescription": "variety of tulip bouquets",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1597285686/socialTiger/TulipBouquets_ealxop.jpg",
+      "folderId": 24,
+      "id": 72
+    },
+    {
+      "imageName": "Wildflower Field",
+      "imageDescription": "Wildflowers in a field",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1597285748/socialTiger/WildflowerField_a3n149.jpg",
+      "folderId": 24,
+      "id": 73
     }
   ]
 }
