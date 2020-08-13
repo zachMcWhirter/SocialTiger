@@ -22,9 +22,9 @@ const ImageSpotlight = props => {
     return (
       <div className="image-spotlight">
         <img className="randomImage" src={(image.url)} alt="My Img" />
-        <div>
-          <h3>{image.imageName}</h3>
-          <p>{image.imageDescription}</p>
+        <div className="spotlight-info-container">
+          <h3 className="spotlight-imageName">{image.imageName}</h3>
+          <p className="spotlight-imageDescription">{image.imageDescription}</p>
         </div>
       </div>
     );
