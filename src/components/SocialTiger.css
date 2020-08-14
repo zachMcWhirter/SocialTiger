@@ -27,6 +27,7 @@ button {
     border-radius: 5px;
     font-family: 'Ubuntu Condensed', sans-serif;
     font-size: 18px;
+    cursor: pointer;
 }
 
 /* div.welcome-container {
