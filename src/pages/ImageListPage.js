@@ -3,6 +3,7 @@ import NavBar from "../components/nav/NavBar";
 import Authentication from "../components/auth/Authentication";
 // import Banner from "../components/Banner";
 import ImageList from "../components/image/ImageList"
+import "../components/folder/FolderList.css"
 
 const ImageListPage = (props) => {
     return (
@@ -10,7 +11,9 @@ const ImageListPage = (props) => {
             {/* <Banner /> */}
             <NavBar/>
             <div className="imageListBody">
-                <h3>My Images</h3>
+            <div className="h3-container-myImages">
+                    <h3>My Images</h3>
+                </div>
                 <div className="imageList-container">
                     <ImageList
                     { ...props }/>

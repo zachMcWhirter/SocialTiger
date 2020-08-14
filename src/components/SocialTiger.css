@@ -8,6 +8,7 @@ fieldset {
     background-color: gray;
     border-radius: 5px;
     width: fit-content;
+    box-shadow: -1px -1px 17px 7px #000000, -1px -1px 45px 1px rgba(0,0,0,0.28);
 }
 
 input, select{
@@ -58,7 +59,7 @@ div.h2-container {
     justify-content: center;
     align-items: center;
     /* background-color: rgba(60, 60, 60, 0.8); */
-    background-color: rgba(134, 205, 50, 0.75);
+    background-color: rgb(143, 204, 1);
     margin: 35px;
     padding: 5px;
     height: fit-content;
@@ -70,21 +71,22 @@ div.social-tiger-definition {
     background-color: black;
     height: fit-content;
     margin: 35px;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-right: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     padding-left: 30px;
     box-shadow: -1px -1px 17px 7px #000000, -1px -1px 45px 1px rgba(0,0,0,0.28);
     border-radius: 5px;
-    color: rgba(134, 205, 50, 0.75);
-    border: #93ff18d7 1px inset;;
+    color: rgba(170, 255, 11, 0.884);
+    border: rgba(170, 255, 11, 0.884) 1px inset;
+
 }
 
 h2 {
-    color: rgb(236, 223, 223);
+    color: rgba(240, 240, 240, 0.949);
     margin: 10px;
     font-size: 30px;
-    text-shadow: 3px 2px 2px rgba(0,0,0,0.47), 3px 2px 10px rgba(0,0,0,0.47), 3px 2px 10px rgba(0,0,0,0.47);
+    text-shadow: 3px 2px 2px rgba(0,0,0,0.47), 3px 2px 8px rgba(0,0,0,0.47), 3px 2px 10px rgba(0,0,0,0.47);
 }
 
 p.welcome-instructions {
@@ -108,7 +110,7 @@ h4#ST-definition-h4 {
 }
 
 p#ST-definition-body {
-    color: rgba(134, 205, 50, 0.75);
+    color: rgba(170, 255, 11, 0.884);
     line-height: 1.5;
     font-size: 20px;
 }

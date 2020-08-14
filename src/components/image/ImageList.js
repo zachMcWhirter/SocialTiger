@@ -35,7 +35,13 @@ const ImageList = (props) => {
                     className="btn"
                     onClick={() => { props.history.push("/folders/:folderId/images/CreateImage") }}>
                     Add New Image
-            </button>
+                </button>
+                <button type="button"
+                    className="btn"
+                    onClick={() => { props.history.push("/folders/") }}>
+                    Back to Folders
+                </button>
+
             </section>
             <div className="container-cards">
                 {images.map(image =>

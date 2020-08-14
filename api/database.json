@@ -86,6 +86,11 @@
       "folderName": "Flowers",
       "userId": 3,
       "id": 24
+    },
+    {
+      "folderName": "1",
+      "userId": 1,
+      "id": 25
     }
   ],
   "images": [
@@ -125,11 +130,11 @@
       "id": 29
     },
     {
-      "imageName": "Flash",
-      "imageDescription": "Flash",
+      "id": 30,
+      "imageName": "The Flash",
+      "imageDescription": "The Flash Symbol",
       "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596812704/socialTiger/the_flash_wr7vph.jpg",
-      "folderId": 5,
-      "id": 30
+      "folderId": 5
     },
     {
       "imageName": "Wolverine",
@@ -417,6 +422,13 @@
       "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1597287370/socialTiger/PlanetHulk_yo2qxv.jpg",
       "folderId": 6,
       "id": 74
+    },
+    {
+      "imageName": "Spiderman - Miles Morales",
+      "imageDescription": "Miles Morales Spiderman in action",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1597435810/socialTiger/miles_morales_spider-man_ipjgw5.jpg",
+      "folderId": 5,
+      "id": 75
     }
   ]
 }
