@@ -24,6 +24,7 @@ div.container-cards {
 
 img.folderImage {
     max-height: 20vh;
+
 }
 
 button.folderCard {
@@ -64,12 +65,13 @@ h3 {
     border: yellowgreen 1px solid;
     border-radius: 5px;
     background-color: rgb(32, 32, 32);
+    width: fit-content;
+    padding: 4px 10px 4px 10px;
 }
 
 /* From ImageCard.css */
 img.imageThunbnails {
     box-shadow: -1px -1px 17px 7px #000000, -1px -1px 45px 1px rgba(0,0,0,0.28);
-
 }
 
 /* From ImageEditForm  */

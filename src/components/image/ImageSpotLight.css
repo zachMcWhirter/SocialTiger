@@ -16,15 +16,18 @@ div.image-spotlight {
     display: flex;
     background-color: rgba(58, 58, 58, 0.8);
     margin: 0;
+    margin-bottom: 60px;
     border: black 10px double;
-    box-shadow: -1px -1px 17px 8px #000000, -1px -1px 45px 1px rgba(0,0,0,0.28);
-    width: 55vw;
+    box-shadow: 0px 0px 17px 5px #000000, 0px 0px 45px 1px rgba(0,0,0,0.28);
+    width: fit-content;
+    padding: 10px;
 }
 
 img.randomImage {
-    height: 300px;
+    height: 400px;
     width: auto;
-    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 17px 2px #000000, 0px 0px 45px 1px rgba(0,0,0,0.28);
 }
 
 div.randomizer-h3-container {
@@ -39,8 +42,10 @@ div.randomizer-h3-container {
 
 h3.randomizer-h3 {
     color: whitesmoke;
-    font-size: 24px;
+    font-size: 28px;
     margin: 0;
+    border: none;
+    background-color: inherit;
 }
 
 button#refresh-button {
