@@ -28,13 +28,25 @@ img.folderImage {
 }
 
 button.folderCard {
-    background-color: silver;
+    background-color: rgba(153, 152, 152, 0.87);
     border-radius: 5px;
+    box-shadow: 0px 0px 19px 2px #000000, 0px 0px 45px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #0e0e0e;
+    font-size: 22px;
+    border: 0;
 }
 
-button.folderCard {
-    box-shadow: -1px -1px 19px 2px #000000, -1px -1px 45px 1px rgba(0, 0, 0, 0.3);
-    margin-bottom: 3px;
+div#folder-name {
+    padding: 2px 5px 2px 5px;
+    border: rgba(255, 255, 255, 0.65) 2px set;
+    background-color: rgba(26, 26, 26, 0.65);
+    border-radius: 5px;
+    margin-top: 3px;
+    color:rgba(150, 205, 50, 0.966)
 }
 
 div.button-container {
@@ -58,15 +70,13 @@ div.img-container {
 
 h3 {
     text-align: center;
-    padding-top: 0px;
-    padding-right: 5px;
-    padding-bottom: 1px;
-    padding-left: 5px;
     border: yellowgreen 1px solid;
     border-radius: 5px;
-    background-color: rgb(32, 32, 32);
+    background-color: rgba(26, 26, 26, 0.959);
     width: fit-content;
     padding: 4px 10px 4px 10px;
+    color: yellowgreen;
+    font-size: 28px;
 }
 
 /* From ImageCard.css */
@@ -83,6 +93,15 @@ div.imageEditForm {
 }
 
 div.h3-container-editImage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* From ImageListPage.js */
+div.h3-container-myImages {
     width: 100%;
     display: flex;
     flex-direction: column;

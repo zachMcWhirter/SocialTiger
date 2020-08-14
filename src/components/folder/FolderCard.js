@@ -13,7 +13,9 @@ const FolderCard = (props) => {
                     {/* I chose to make my folders clickable by wrapping the folder icon with a button here */}
                     <button className="folderCard" type="button"
                         onClick={() => props.history.push(`/folders/${props.folder.id}`)}>
+                        <div id="folder-name">    
                             {props.folder.folderName}
+                        </div>
                         <img className="folderImage" src={FolderImage} alt="folder" 
                         />
                     </button>
