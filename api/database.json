@@ -6,22 +6,17 @@
       "password": "123"
     },
     {
-      "id": 2,
-      "email": "bob@bob.com",
-      "password": "bob"
-    },
-    {
       "email": "c.mcwhirter@yahoo.com",
       "password": "tiger",
       "id": 3
+    },
+    {
+      "email": "bob@bob.com",
+      "password": "bob",
+      "id": 4
     }
   ],
   "folders": [
-    {
-      "id": 2,
-      "folderName": "Bob!!",
-      "userId": 2
-    },
     {
       "id": 4,
       "folderName": "Mommy",
@@ -88,9 +83,14 @@
       "id": 26
     },
     {
-      "folderName": "my folder",
+      "folderName": "Happy",
+      "userId": 1,
+      "id": 28
+    },
+    {
+      "folderName": "bob1",
       "userId": 4,
-      "id": 27
+      "id": 29
     }
   ],
   "images": [
@@ -354,20 +354,6 @@
       "id": 66
     },
     {
-      "imageName": "1234",
-      "imageDescription": "4321",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1597160309/socialTiger/Chad2_b5cuay.png",
-      "folderId": 2,
-      "id": 67
-    },
-    {
-      "imageName": "1111",
-      "imageDescription": "2222",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1597160467/socialTiger/Screen_Shot_2020-07-26_at_6.16.42_PM_nnw0za.png",
-      "folderId": 2,
-      "id": 68
-    },
-    {
       "imageName": "Cherry Blossom Night",
       "imageDescription": "Cherry Blossoms by lamp light",
       "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1597285608/socialTiger/CherryBlossomNight_gur9zg.jpg",
@@ -485,6 +471,27 @@
       "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1597698512/socialTiger/Team_McNulty_q9civu.png",
       "folderId": 15,
       "id": 87
+    },
+    {
+      "imageName": "Happy Rose",
+      "imageDescription": "Rose",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1597755631/socialTiger/image_o7dyuw.png",
+      "folderId": 28,
+      "id": 88
+    },
+    {
+      "imageName": "Team McNulty",
+      "imageDescription": "Holiday Road Group",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1597761698/socialTiger/image_1_ihoqut.png",
+      "folderId": 28,
+      "id": 89
+    },
+    {
+      "imageName": "efg",
+      "imageDescription": "wergsf",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1597762511/socialTiger/Screen_Shot_2020-08-16_at_5.21.20_PM_wopccq.png",
+      "folderId": 29,
+      "id": 90
     }
   ]
 }

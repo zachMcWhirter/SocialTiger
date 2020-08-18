@@ -154,7 +154,14 @@ const ImageForm = (props) => {
                                 type="submit"
                                 disabled={isLoading}
                                 onClick={createNewImage}
-                            >Submit</button>
+                                >Submit
+                            </button>
+                            <button type="button"
+                                className="btn"
+                                onClick={() => { props.history.push("/imageEditor") }}>
+                                Image Editor
+                            </button>
+
                         </div>
                     </div>
                 </fieldset>

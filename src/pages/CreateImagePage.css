@@ -10,3 +10,8 @@ div.underNav {
 /* fieldset {
     box-shadow: -1px -1px 17px 7px #000000, -1px -1px 45px 1px rgba(0,0,0,0.28);
 } */
+
+div.underNav-editor {
+    justify-content: center;
+    align-items: center;
+}

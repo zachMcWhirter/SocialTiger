@@ -10,6 +10,7 @@ import ImageListPage from "../pages/ImageListPage";
 import ImageViewPage from "../pages/ImageViewPage";
 import CreateImagePage from "../pages/CreateImagePage";
 import EditImagePage from "../pages/EditImagePage";
+import ImageEditorPage from "../pages/ImageEditorPage"
 
 
 const ApplicationViews = (props) => {
@@ -28,6 +29,9 @@ const ApplicationViews = (props) => {
             <Route exact path="/images/:imageId(\d+)" component={ImageViewPage} />
             <Route exact path="/folders/:folderId/images/CreateImage" component={CreateImagePage} />
             <Route exact path="/images/:imageId(\d+)/edit" component={EditImagePage} />
+            <Route path="/imageEditor" exact component={ImageEditorPage}
+        />
+          
         </>
     );
 };
