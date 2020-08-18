@@ -1,33 +1,38 @@
-# social-tiger md
+# Social Tiger
 
-## Contact Info
-
-Zach McWhirter
-Email Address: zmac7811@gmail.com
-Github Repo: https://github.com/zachMcWhirter/social-tiger
 
 ## front-end-capstone
-An app that allows the user to upload images to be used as Zoom backgrounds. Images are uploaded by the user and can be saved in default folders or user can create custom folders instead. The user will have the abilty to create, edit and delete both images and folders. There will also be a photo editor so the user can use filter effects and markup on their uploaded images.
+Social Tiger is a React web app with full CRUD functionality that allows the user to upload images to be used as Zoom backgrounds. Images are uploaded by the user and can be saved in default folders or user can create custom folders instead. The user will have the abilty to create, edit and delete both images and folders. There will also be a photo editor so the user can use filter effects and markup on their uploaded images.
 
-## MVP Definition
-User-specific CRUD for images uploaded
-User-specific CRUD for folders
-SessionStorage (login/registration)
+## Installation
+In your terminal run git clone SSH KEY HERE
 
-## Dream Stretch Goals
-A photo editing feature that would allow the user to add filters, effects, text, and markups to saved images
-A “spotlight” feature that randomly displays a saved image on the main page
-A search feature to find a specific a folder or image
-Create a way to make user icons/avatars, or allow user to make them
+cd into the project directory
 
-## Planning Links
-[ERD(https://dbdiagram.io/d/5f199d28e586385b4ff7ab01)]
-[Wireframe(https://miro.com/app/board/o9J_kpdrGkQ=/)]
-[Link to Repo with tickets(https://github.com/zachMcWhirter/social-tiger]
+From the main directory, run npm install to install dependencies
 
-## Research for any external tools/technology you plan on using (i.e. external API’S):
-Reactstrap
-Cloudinary
+npm start
+
+## Users
+{   
+    "id": 1,  
+    "email": "bob@bob.com", 
+    "password": "bob" 
+}
+## Folders
+{ 
+    "id": 1, 
+    "userId": 1, 
+    "folderName": "Bob!"
+}
+## Images
+{ 
+    "id": 1, 
+    "folderId": 1, 
+    "imageName": "Beach Bob" 
+    "imageDescription": "Bob on the beach",
+    "url": "(string)" 
+}
 
 Available Scripts
 In the project directory, you can run:

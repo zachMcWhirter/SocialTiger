@@ -8,7 +8,6 @@ const FolderCard = (props) => {
 
     return (
         <div className="card">
-            {/* <div className="card-content"> */}
                 <div className="img-container">
                     {/* I chose to make my folders clickable by wrapping the folder icon with a button here */}
                     <button className="folderCard" type="button"
@@ -31,7 +30,6 @@ const FolderCard = (props) => {
                     </button>
                 </div>
                 </div>
-            {/* </div> */}
         </div>
     );
 };

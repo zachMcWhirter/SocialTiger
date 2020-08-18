@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ImageCard from "./ImageCard";
 import ImageManager from "../../modules/ImageManager";
+import "../folder/FolderList.css"
 
 
 const ImageList = (props) => {
@@ -27,6 +28,8 @@ const ImageList = (props) => {
 
             );
     };
+
+    console.log("MoreProps", props);
 
     return (
         <>

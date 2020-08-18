@@ -12,14 +12,15 @@ div.folderList-container {
     flex-direction: column;
 }
 /* to make the Add Folder button larger use this  */
-/* section.section-content {
-    display: flex;
-} */
+section.section-content {
+    margin-left: 10px;
+}
 
 
 div.container-cards {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
 img.folderImage {
@@ -52,6 +53,7 @@ div#folder-name {
 div.button-container {
     display: flex;
     flex-direction: row;
+    margin-left: 10px
 }
 
 div.h3-container-myFolders {

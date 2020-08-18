@@ -9,7 +9,9 @@ const ImageViewPage = (props) => {
         <>
             {/* <Banner /> */}
             <NavBar/>
+            
             <div className="imageViewBody">
+                
                 <ImageView imageId={parseInt(props.match.params.imageId)} {...props} />
             </div>
         </>

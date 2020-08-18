@@ -40,22 +40,26 @@ const ImageView = props => {
 
     return (
         // this is where we use JSX to tell the browser what an ImageDetail card will look like. And return it
-        <div className="card">
-            <div className="card-content">
-                <div className="imageViewImg-container">
-                    <picture>
-                        <img className="imageViewImg" src={(image.url)} alt="My Img" />
-                    </picture>
-                </div>
-                <div className="imageDetails-container">
-                    <h3 className="image-view-name">Image Name: <span>{image.imageName}</span></h3>
-                    <h3 className="image-view-description">Description: {image.imageDescription}</h3>
-                    <button id="img-view-delete-button" type="button" disabled={isLoading} onClick={handleDelete}>
-                        Delete
-                    </button>
+        <>
+            <div className="card">
+                <div className="card-content">
+                    <div className="imageViewImg-container">
+                        <picture>
+                            <img className="imageViewImg" src={(image.url)} alt="My Img" />
+                        </picture>
+                    </div>
+                    <div className="imageDetails-container">
+                        <h3 className="image-view-name">Image Name: <span>{image.imageName}</span></h3>
+                        <h3 className="image-view-description">Description: {image.imageDescription}</h3>
+                        <button id="img-view-delete-button" 
+                            type="button" disabled={isLoading} 
+                            onClick={handleDelete}>
+                            Delete
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 
