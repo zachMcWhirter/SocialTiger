@@ -39,6 +39,7 @@ const FolderList = (props) => {
                     className="btn"
                     onClick={() => { props.history.push("/folders/CreateFolder") }}>
                     Add New Folder
+                    
             </button>
             </section>
             <div className="container-cards">

@@ -126,13 +126,6 @@ const ImageForm = (props) => {
                             value={image.imageDescription}
                         />
                         <br />
-                        {/* <input
-                            type="text"
-                            required
-                            onChange={handleFieldChange}
-                            placeholder="url"
-                        /> */}
-
                         <div>
                             <input
                                 type="file"
@@ -142,7 +135,6 @@ const ImageForm = (props) => {
                                 // value={image.url}
                                 id="url"
                             />
-
                             {
                                 // This is essentially an if/else statement written inside the return using the "?" as the if, and ":" as the else. This code reads: "if isLoading=true, then return Loading ...", "else return <img src={image} style={{width:"500px"}} /> "
                                 isLoading ? (

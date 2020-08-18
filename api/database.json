@@ -73,29 +73,24 @@
       "userId": 1
     },
     {
-      "id": 21,
-      "folderName": "bob456",
-      "userId": 2
-    },
-    {
-      "id": 22,
-      "folderName": "65432",
-      "userId": 2
-    },
-    {
       "folderName": "Flowers",
       "userId": 3,
       "id": 24
     },
     {
       "id": 25,
-      "folderName": "Evolution",
+      "folderName": "Angel Evolution",
       "userId": 1
     },
     {
       "folderName": "Sage Inception",
       "userId": 1,
       "id": 26
+    },
+    {
+      "folderName": "my folder",
+      "userId": 4,
+      "id": 27
     }
   ],
   "images": [
@@ -217,13 +212,6 @@
       "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596822842/socialTiger/Screen_Shot_2020-07-31_at_1.05.29_PM_jrwj3p.png",
       "folderId": 12,
       "id": 43
-    },
-    {
-      "imageName": "Social Tiger",
-      "imageDescription": "Social Tiger Definition 2",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1596823042/socialTiger/Screen_Shot_2020-07-23_at_6.52.47_PM_uhb3px.png",
-      "folderId": 15,
-      "id": 45
     },
     {
       "imageName": "Tasha",
@@ -380,20 +368,6 @@
       "id": 68
     },
     {
-      "imageName": "43",
-      "imageDescription": "34",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1597160968/socialTiger/Screen_Shot_2020-07-23_at_6.52.47_PM_qmkgy4.png",
-      "folderId": 21,
-      "id": 69
-    },
-    {
-      "imageName": "what",
-      "imageDescription": "funny",
-      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1597164931/socialTiger/Screen_Shot_2020-08-03_at_9.11.55_AM_syrdtv.png",
-      "folderId": 22,
-      "id": 70
-    },
-    {
       "imageName": "Cherry Blossom Night",
       "imageDescription": "Cherry Blossoms by lamp light",
       "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1597285608/socialTiger/CherryBlossomNight_gur9zg.jpg",
@@ -490,6 +464,27 @@
       "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1597446529/socialTiger/Screen_Shot_2020-08-14_at_5.57.21_PM_pqfuod.png",
       "folderId": 26,
       "id": 84
+    },
+    {
+      "imageName": "Spiderman 1",
+      "imageDescription": "Spiderman web slingin",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1597517081/socialTiger/spider-man-web_jgiisz.jpg",
+      "folderId": 7,
+      "id": 85
+    },
+    {
+      "imageName": "Spiderman",
+      "imageDescription": "Spiderman web ",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1597532180/socialTiger/miles_morales_spider-man_u8myog.jpg",
+      "folderId": 7,
+      "id": 86
+    },
+    {
+      "imageName": "Team McNulty",
+      "imageDescription": "epic",
+      "url": "https://res.cloudinary.com/lordargyle22/image/upload/v1597698512/socialTiger/Team_McNulty_q9civu.png",
+      "folderId": 15,
+      "id": 87
     }
   ]
 }
